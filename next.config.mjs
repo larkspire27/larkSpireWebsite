@@ -9,6 +9,7 @@ const nextConfig = {
    * If you also use standard <Image /> tags elsewhere in your site, configure domains/formats below.
    */
   output: 'export',
+  basePath: '/larkSpireWebsite',
   images: {
     unoptimized: true, // Prevents image optimization overhead for rapid frame sequences if served as static files
   },

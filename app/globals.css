@@ -3,25 +3,104 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #d6ebe6;
+  --foreground: #1A1A1A;
+  --primary-teal: #0A4B51;
+  --secondary-tint: #E4EEEC;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
+  background-color: #d6ebe6;
+  background-image: 
+    radial-gradient(circle at 10% 20%, rgba(10, 75, 81, 0.15) 0%, transparent 40%),
+    radial-gradient(circle at 90% 15%, rgba(20, 120, 130, 0.12) 0%, transparent 45%),
+    linear-gradient(135deg, #dceee9 0%, #c4e5de 40%, #d8ebd7 70%, #bce0d8 100%);
   color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.bg-background {
+  background-color: transparent !important;
+}
+
+/* Custom sleek scrollbar for light theme */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #EFEFEF;
+}
+::-webkit-scrollbar-thumb {
+  background: #C4DBD7;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #0A4B51;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+@keyframes marquee-reverse {
+  0% {
+    transform: translate3d(-50%, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .animate-marquee {
+    display: flex;
+    width: max-content;
+    animation: marquee 28s linear infinite;
+    will-change: transform;
+  }
+
+  .animate-marquee-reverse {
+    display: flex;
+    width: max-content;
+    animation: marquee-reverse 28s linear infinite;
+    will-change: transform;
+  }
+
+  /* Light mode glass navbar / card styles */
+  .glass-nav {
+    background: rgba(220, 238, 233, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(10, 75, 81, 0.08);
+  }
+  
+  .glass-card {
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(10, 75, 81, 0.12);
+    box-shadow: 0 10px 30px -10px rgba(10, 75, 81, 0.05);
+  }
+
+  .text-brand-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-teal-700 via-teal-800 to-slate-900;
+  }
+
+  .border-text-stroke {
+    -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.35);
   }
 }

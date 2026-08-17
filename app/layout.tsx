@@ -77,7 +77,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={inter.variable}>
       <head>
-        <link rel="icon" href="/logo.webp" type="image/webp" />
+        <link rel="icon" href="/larkSpireWebsite/logo.webp" type="image/webp" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

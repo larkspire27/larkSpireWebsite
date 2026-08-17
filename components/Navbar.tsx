@@ -4,6 +4,7 @@ import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { getAssetPath } from "@/lib/basePath";
 import {
   Menu,
   X,
@@ -113,7 +114,7 @@ export default function Navbar() {
         {/* Logo */}
         <Link href="/" className="flex items-center group focus:outline-none">
           <Image
-            src="/logo.webp"
+            src={getAssetPath("/logo.webp")}
             alt="LarkSpire Logo"
             width={240}
             height={70}

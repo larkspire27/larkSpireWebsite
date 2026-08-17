@@ -3,6 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { getAssetPath } from "@/lib/basePath";
 import { Mail, Phone } from "lucide-react";
 
 function InstagramIcon(props: React.SVGProps<SVGSVGElement>) {
@@ -34,7 +35,7 @@ export default function Footer() {
         <div className="space-y-6">
           <Link href="/" className="inline-block focus:outline-none">
             <Image
-              src="/logo.webp"
+              src={getAssetPath("/logo.webp")}
               alt="LarkSpire Logo"
               width={240}
               height={70}

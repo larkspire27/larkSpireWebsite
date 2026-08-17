@@ -1,3 +1,5 @@
+import { getAssetPath } from "./basePath";
+
 export interface ServiceFeature {
   title: string;
   description: string;
@@ -45,7 +47,7 @@ export const servicesDataMap: Record<string, ServiceData> = {
     tagline: "High-Performance Custom Web Experiences",
     heroDescription:
       "We design and engineer bespoke, lightning-fast web applications built with clean, high-performance architecture. Optimized for sub-second page loads, conversion, and seamless user experiences.",
-    heroImage: "/images/services/web-development.jpg",
+    heroImage: getAssetPath("/images/services/web-development.jpg"),
     metaTitle: "Custom Web Development | Larkspire",
     metaDescription:
       "Custom web development services engineered for high speed, conversion, and scalability by Larkspire.",
@@ -151,7 +153,7 @@ export const servicesDataMap: Record<string, ServiceData> = {
     tagline: "Unforgettable Visual Identities & Systems",
     heroDescription:
       "Transform your brand with bespoke visual identity systems, modern typography, logo design, design tokens, and brand guidelines crafted to capture immediate market attention.",
-    heroImage: "/images/services/graphic-design.jpg",
+    heroImage: getAssetPath("/images/services/graphic-design.jpg"),
     metaTitle: "Graphic & Brand Design Services | Larkspire",
     metaDescription:
       "Bespoke graphic design, visual branding, typography systems, and corporate design tokens crafted by Larkspire.",
@@ -257,7 +259,7 @@ export const servicesDataMap: Record<string, ServiceData> = {
     tagline: "Omnichannel Growth & Funnel Optimization",
     heroDescription:
       "Accelerate revenue with data-backed digital marketing strategies, conversion funnel optimization, content campaigns, and performance analytics built for maximum ROI.",
-    heroImage: "/images/services/digital-marketing.jpg",
+    heroImage: getAssetPath("/images/services/digital-marketing.jpg"),
     metaTitle: "Digital Marketing & Growth Agency | Larkspire",
     metaDescription:
       "Omnichannel digital marketing, conversion funnel optimization, and data-driven growth strategies by Larkspire.",
@@ -355,7 +357,7 @@ export const servicesDataMap: Record<string, ServiceData> = {
     tagline: "High-Impact Visual Artwork & Print Media",
     heroDescription:
       "Capture immediate visual focus with bespoke promotional posters, event artwork, digital billboards, and editorial graphics crafted with master-level typography and composition.",
-    heroImage: "/images/services/poster-design.jpg",
+    heroImage: getAssetPath("/images/services/poster-design.jpg"),
     metaTitle: "Bespoke Poster & Print Design | Larkspire",
     metaDescription:
       "High-impact poster design, promotional artwork, event graphics, and editorial print media by Larkspire.",
@@ -461,7 +463,7 @@ export const servicesDataMap: Record<string, ServiceData> = {
     tagline: "Dominant Search Rankings & Organic Growth",
     heroDescription:
       "Rank at the top of search results with technical SEO audits, keyword strategy, high-authority content optimization, and structured schema implementation designed for high-intent traffic.",
-    heroImage: "/images/services/search-engine-optimization.jpg",
+    heroImage: getAssetPath("/images/services/search-engine-optimization.jpg"),
     metaTitle: "Technical & Content SEO Optimization | Larkspire",
     metaDescription:
       "Enterprise technical SEO, keyword strategy, content optimization, and search rankings growth services by Larkspire.",
@@ -559,7 +561,7 @@ export const servicesDataMap: Record<string, ServiceData> = {
     tagline: "High-Converting Facebook & Instagram Paid Ads",
     heroDescription:
       "Scale user acquisition with high-converting Facebook and Instagram ad campaigns featuring scroll-stopping video/image creatives, conversion tracking, and precise audience targeting.",
-    heroImage: "/images/services/meta-ads.jpg",
+    heroImage: getAssetPath("/images/services/meta-ads.jpg"),
     metaTitle: "Meta Ads & Paid Social Agency | Larkspire",
     metaDescription:
       "Targeted Facebook & Instagram ad management, creative production, and server-side tracking by Larkspire.",

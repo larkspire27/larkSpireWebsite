@@ -2,9 +2,12 @@ import type { Metadata } from "next";
 import ServicesClient from "@/components/ServicesClient";
 
 export const metadata: Metadata = {
-  title: "Our Services | Web Development, SEO, Graphic Design & Meta Ads",
+  title: "Our Services | Larkspire Digital Agency",
   description:
-    "Discover Larkspire's 14+ specialized digital agency capabilities: Custom Web Engineering, SEO, WordPress, Shopify, E-Commerce, Graphic Design, Mobile Apps, SaaS & Performance Marketing.",
+    "Discover Larkspire's 14+ specialized digital agency capabilities: Custom Web Engineering, SEO, Graphic Design, Mobile Apps, SaaS & Performance Marketing.",
+  alternates: {
+    canonical: "https://larkspire.in/services",
+  },
   keywords: [
     "Digital Agency Services",
     "Web Development Capabilities",

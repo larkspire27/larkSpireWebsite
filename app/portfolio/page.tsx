@@ -2,9 +2,12 @@ import type { Metadata } from "next";
 import PortfolioClient from "@/components/PortfolioClient";
 
 export const metadata: Metadata = {
-  title: "Portfolio & Case Studies | Selected Works & Digital Products",
+  title: "Portfolio & Works | Larkspire Agency",
   description:
-    "Explore Larkspire's portfolio of custom web platforms, visual brand identity systems, omnichannel growth campaigns, poster designs, and e-commerce solutions.",
+    "Explore Larkspire's portfolio of custom web platforms, brand identity systems, digital growth campaigns, poster designs, and e-commerce solutions.",
+  alternates: {
+    canonical: "https://larkspire.in/portfolio",
+  },
   keywords: [
     "Larkspire Portfolio",
     "Web Development Case Studies",

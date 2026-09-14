@@ -15,6 +15,9 @@ export const metadata: Metadata = {
     default: "Larkspire | Digital & Creative Agency",
     template: "%s | Larkspire",
   },
+  alternates: {
+    canonical: "https://larkspire.in",
+  },
   description:
     "Larkspire is a boutique digital agency delivering world-class web development, graphic design, digital marketing, SEO, and brand experiences.",
   keywords: [

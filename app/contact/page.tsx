@@ -2,9 +2,12 @@ import type { Metadata } from "next";
 import ContactClient from "@/components/ContactClient";
 
 export const metadata: Metadata = {
-  title: "Contact Us | Start Your Project & Inquiry",
+  title: "Contact Us | Start Your Project | Larkspire",
   description:
-    "Get in touch with Larkspire. Submit a project inquiry or consultation request for web development, graphic design, SEO, or digital growth marketing.",
+    "Get in touch with Larkspire. Submit a project inquiry for web development, graphic design, SEO, or digital growth marketing.",
+  alternates: {
+    canonical: "https://larkspire.in/contact",
+  },
   keywords: [
     "Contact Larkspire",
     "Hire Web Developers",

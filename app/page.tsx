@@ -13,9 +13,12 @@ import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Larkspire | Boutique Digital & Creative Studio",
+  title: "Larkspire | Digital & Creative Studio",
   description:
-    "We build digital experiences that rank, convert & scale your business. Boutique creative agency delivering high-speed web development, graphic design, SEO, and digital growth marketing.",
+    "Boutique digital agency delivering high-speed web development, UI/UX design, SEO, and digital growth marketing.",
+  alternates: {
+    canonical: "https://larkspire.in",
+  },
   keywords: [
     "Boutique Digital Agency",
     "Web Engineering Studio",

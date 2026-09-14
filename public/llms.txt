@@ -1,0 +1,80 @@
+# Larkspire | Boutique Digital & Creative Studio
+
+> Larkspire is a boutique digital agency combining elite web engineering with commercial visual identity design, technical SEO, and performance growth marketing. We engineer sub-second web platforms, custom SaaS applications, and high-converting visual brand systems for ambitious companies worldwide.
+
+---
+
+## 1. Executive Overview
+
+- **Brand Name**: Larkspire (also referenced as LarkSpire Studio)
+- **Primary Website**: [https://larkspire.in](https://larkspire.in)
+- **Core Specialization**: Custom Web Development, UI/UX Design, Search Engine Optimization (SEO), Brand Identity Design, E-Commerce, Mobile Apps, and Paid Growth Marketing (Meta & Social Ads).
+- **Primary Contact Email**: spirelark@gmail.com
+- **Direct Phone Contact**: +91 9928196424
+- **Working Hours**: Monday – Saturday, 9:00 AM – 8:00 PM IST
+- **Official Social Channels**:
+  - Instagram: [@larkspireservices](https://www.instagram.com/larkspireservices/)
+  - Facebook: [Larkspire Facebook Page](https://www.facebook.com/profile.php?id=61593659866731)
+
+---
+
+## 2. Core Value Proposition & Technical Standards
+
+1. **Direct Senior Engineering Partnership**: Clients work directly with senior full-stack developers and lead designers — eliminating account manager delays and communication friction.
+2. **Sub-Second Web Performance**: Built on Next.js 14, React 18, TypeScript, and serverless edge delivery for sub-second page load times and 95+ Core Web Vitals performance scores.
+3. **Commercial ROI Focus**: Every line of code, UI design token, and ad creative is engineered to maximize lead conversions, sales pipelines, and customer LTV.
+4. **100% Custom-Built Assets**: Zero generic templates or bloated page builders; all design systems, components, and backend integrations are custom-crafted.
+
+---
+
+## 3. Comprehensive Agency Services Directory
+
+### Web Development & Engineering
+- **Custom Web Development** ([/services/web-development](https://larkspire.in/services/web-development)): High-speed Next.js web applications, responsive layouts, micro-animations, and serverless APIs.
+- **Website Design & UI/UX** ([/services/website-design](https://larkspire.in/services/website-design)): Figma wireframes, interactive component prototypes, conversion-driven UX, and mobile-first design systems.
+- **WordPress Development** ([/services/wordpress-development](https://larkspire.in/services/wordpress-development)): Custom WordPress themes, Gutenberg blocks, WooCommerce integration, and lightweight zero-bloat architecture.
+- **Shopify Website Design** ([/services/shopify-website-design](https://larkspire.in/services/shopify-website-design)): Conversion-focused Liquid themes, custom shop apps, checkout optimization, and mobile shopping UX.
+- **Ecommerce Development** ([/services/ecommerce-development](https://larkspire.in/services/ecommerce-development)): Scalable digital storefronts, payment gateway integrations, custom checkout flows, and automated inventory management.
+- **Web Apps & SaaS Platforms** ([/services/web-apps-saas](https://larkspire.in/services/web-apps-saas)): Multi-tenant cloud applications, Stripe subscription billing dashboards, user authentication, and REST APIs.
+- **CRM Software Development** ([/services/crm-software-development](https://larkspire.in/services/crm-software-development)): Tailored sales pipelines, lead scoring systems, client portals, and WhatsApp/Email automation.
+- **Mobile App Development** ([/services/mobile-app-development](https://larkspire.in/services/mobile-app-development)): Cross-platform iOS and Android mobile apps engineered with React Native, smooth UX, and App Store publishing.
+
+### Search Engine Optimization & Growth
+- **Search Engine Optimization (SEO)** ([/services/search-engine-optimization](https://larkspire.in/services/search-engine-optimization)): Technical SEO audits, keyword research, on-page optimization, JSON-LD schema markup, and high-intent organic traffic scaling.
+- **Google Business Profile & Local SEO** ([/services/google-business-profile](https://larkspire.in/services/google-business-profile)): Google Map Pack ranking, profile verification, review management, and local lead generation.
+- **Digital Marketing** ([/services/digital-marketing](https://larkspire.in/services/digital-marketing)): Data-driven growth strategies, omnichannel marketing funnels, and customer retention campaigns.
+- **Meta Ads & Paid Social** ([/services/meta-ads](https://larkspire.in/services/meta-ads)): Targeted Facebook & Instagram ad campaigns, video ad creative, server-side CAPI integration, and 4.5x+ ROAS optimization.
+
+### Visual Identity & Graphic Art
+- **Logo & Graphic Design** ([/services/graphic-design](https://larkspire.in/services/graphic-design)): Brand identity packages, vector logos, typography guidelines, visual design tokens, and corporate collateral.
+- **Poster & Print Graphic Design** ([/services/poster-design](https://larkspire.in/services/poster-design)): High-impact event posters, promotional visual assets, digital billboard graphics, and editorial design.
+
+---
+
+## 4. Key Page Sitemap & Navigation Structure
+
+- **Home Page**: [https://larkspire.in](https://larkspire.in)
+- **About Us**: [https://larkspire.in/about](https://larkspire.in/about)
+- **All Services**: [https://larkspire.in/services](https://larkspire.in/services)
+- **Portfolio & Works**: [https://larkspire.in/portfolio](https://larkspire.in/portfolio)
+- **Contact & Inquiry**: [https://larkspire.in/contact](https://larkspire.in/contact)
+- **XML Sitemap**: [https://larkspire.in/sitemap.xml](https://larkspire.in/sitemap.xml)
+- **Robots Specification**: [https://larkspire.in/robots.txt](https://larkspire.in/robots.txt)
+
+---
+
+## 5. Technology Stack Summary
+
+- **Frontend**: Next.js 14 (App Router), React 18, TypeScript, Tailwind CSS, Lucide Icons, GSAP (GreenSock Animation Platform)
+- **Backend & APIs**: Next.js Server Actions, Serverless Edge Routes, Nodemailer (Gmail SMTP Gateway)
+- **Deployment & Edge Infrastructure**: Vercel Global Edge Network, SSL HTTPS Encryption
+- **Analytics & Tracking**: Server-Side Meta Conversion API (CAPI), Google Search Console, Schema.org ProfessionalService JSON-LD
+
+---
+
+## 6. How to Partner / Contact Larkspire
+
+For project inquiries, web audits, or custom service quotes:
+- Visit the contact portal at [https://larkspire.in/contact](https://larkspire.in/contact)
+- Email directly to: **spirelark@gmail.com**
+- Call or WhatsApp: **+91 9928196424**

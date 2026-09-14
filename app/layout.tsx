@@ -30,6 +30,11 @@ export const metadata: Metadata = {
     "Brand Strategy",
     "Larkspire",
   ],
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.png",
+    apple: "/favicon.png",
+  },
   authors: [{ name: "Larkspire Agency" }],
   openGraph: {
     title: "Larkspire | Digital & Creative Agency",
@@ -83,7 +88,9 @@ export default function RootLayout({
   return (
     <html lang="en" className={inter.variable}>
       <head>
-        <link rel="icon" href="/logo.webp" type="image/webp" />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/favicon.png" type="image/png" />
+        <link rel="apple-touch-icon" href="/favicon.png" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

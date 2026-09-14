@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: ["/api/"],
     },
-    sitemap: "https://larkspire.com/sitemap.xml",
+    sitemap: "https://larkspire.in/sitemap.xml",
   };
 }

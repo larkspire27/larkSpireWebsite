@@ -30,7 +30,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     openGraph: {
       title: service.metaTitle,
       description: service.metaDescription,
-      url: `https://larkspire.com/services/${service.slug}`,
+      url: `https://larkspire.in/services/${service.slug}`,
       siteName: "Larkspire",
       locale: "en_US",
       type: "website",

@@ -6,6 +6,25 @@ import Link from "next/link";
 import { getAssetPath } from "@/lib/basePath";
 import { Mail, Phone } from "lucide-react";
 
+function FacebookIcon(props: React.SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+    </svg>
+  );
+}
+
 function InstagramIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
@@ -49,6 +68,15 @@ export default function Footer() {
           </p>
 
           <div className="flex items-center gap-3">
+            <a
+              href="https://www.facebook.com/profile.php?id=61593659866731"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-9 h-9 rounded-full bg-teal-50 border border-teal-100 flex items-center justify-center text-teal-700 hover:bg-teal-700 hover:text-white transition-colors duration-200"
+              aria-label="Facebook"
+            >
+              <FacebookIcon className="w-4 h-4" />
+            </a>
             <a
               href="https://www.instagram.com/larkspireservices/"
               target="_blank"
@@ -175,6 +203,17 @@ export default function Footer() {
                 className="hover:text-teal-700 transition-colors"
               >
                 @larkspireservices
+              </a>
+            </li>
+            <li className="flex items-center gap-3">
+              <FacebookIcon className="w-4 h-4 text-teal-700 shrink-0" />
+              <a
+                href="https://www.facebook.com/profile.php?id=61593659866731"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-teal-700 transition-colors"
+              >
+                Facebook Page
               </a>
             </li>
           </ul>

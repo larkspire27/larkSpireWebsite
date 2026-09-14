@@ -2,7 +2,7 @@ import { MetadataRoute } from "next";
 import { servicesData } from "@/lib/servicesData";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://larkspire.com";
+  const baseUrl = "https://larkspire.in";
 
   // Static core routes
   const staticRoutes: MetadataRoute.Sitemap = [

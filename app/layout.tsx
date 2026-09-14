@@ -10,8 +10,11 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://larkspire.com"),
-  title: "Larkspire | Digital & Creative Agency",
+  metadataBase: new URL("https://larkspire.in"),
+  title: {
+    default: "Larkspire | Digital & Creative Agency",
+    template: "%s | Larkspire",
+  },
   description:
     "Larkspire is a boutique digital agency delivering world-class web development, graphic design, digital marketing, SEO, and brand experiences.",
   keywords: [
@@ -29,7 +32,7 @@ export const metadata: Metadata = {
     title: "Larkspire | Digital & Creative Agency",
     description:
       "Transforming ambitious brands through world-class web development, design, and digital marketing.",
-    url: "https://larkspire.com",
+    url: "https://larkspire.in",
     siteName: "Larkspire",
     locale: "en_US",
     type: "website",
@@ -48,10 +51,10 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "ProfessionalService",
-      "@id": "https://larkspire.com/#organization",
+      "@id": "https://larkspire.in/#organization",
       "name": "Larkspire",
-      "url": "https://larkspire.com",
-      "logo": "https://larkspire.com/logo.webp",
+      "url": "https://larkspire.in",
+      "logo": "https://larkspire.in/logo.webp",
       "description":
         "Larkspire is a boutique digital agency delivering world-class web development, graphic design, digital marketing, SEO, and brand experiences.",
       "email": "spirelark@gmail.com",
@@ -59,11 +62,11 @@ const jsonLd = {
     },
     {
       "@type": "WebSite",
-      "@id": "https://larkspire.com/#website",
-      "url": "https://larkspire.com",
+      "@id": "https://larkspire.in/#website",
+      "url": "https://larkspire.in",
       "name": "Larkspire",
       "publisher": {
-        "@id": "https://larkspire.com/#organization",
+        "@id": "https://larkspire.in/#organization",
       },
     },
   ],
@@ -77,7 +80,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={inter.variable}>
       <head>
-        <link rel="icon" href="/larkSpireWebsite/logo.webp" type="image/webp" />
+        <link rel="icon" href="/logo.webp" type="image/webp" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

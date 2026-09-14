@@ -12,14 +12,25 @@ import {
   ChevronDown,
   Code,
   Palette,
-  TrendingUp,
-  Image as ImageIcon,
   Search,
-  Target,
+  Layout,
+  Globe,
+  ShoppingBag,
+  ShoppingCart,
+  Database,
+  Smartphone,
+  Cloud,
+  MapPin,
 } from "lucide-react";
 import { clsx } from "clsx";
 
 const servicesList = [
+  {
+    name: "Website Design",
+    href: "/services/website-design",
+    description: "Bespoke UI/UX & landing page layouts",
+    icon: Layout,
+  },
   {
     name: "Web Development",
     href: "/services/web-development",
@@ -27,34 +38,58 @@ const servicesList = [
     icon: Code,
   },
   {
-    name: "Graphic Design",
-    href: "/services/graphic-design",
-    description: "Visual identity & brand systems",
-    icon: Palette,
-  },
-  {
-    name: "Digital Marketing",
-    href: "/services/digital-marketing",
-    description: "Omnichannel growth strategies",
-    icon: TrendingUp,
-  },
-  {
-    name: "Poster Design",
-    href: "/services/poster-design",
-    description: "Promotional artwork & print",
-    icon: ImageIcon,
-  },
-  {
-    name: "SEO Optimization",
+    name: "Search Engine Optimization (SEO)",
     href: "/services/search-engine-optimization",
-    description: "Organic rankings & traffic",
+    description: "Organic rankings & traffic growth",
     icon: Search,
   },
   {
-    name: "Meta Ads",
-    href: "/services/meta-ads",
-    description: "Facebook & Instagram campaigns",
-    icon: Target,
+    name: "WordPress Development",
+    href: "/services/wordpress-development",
+    description: "Bespoke themes & Gutenberg blocks",
+    icon: Globe,
+  },
+  {
+    name: "Shopify Website Design",
+    href: "/services/shopify-website-design",
+    description: "High-converting Liquid themes",
+    icon: ShoppingBag,
+  },
+  {
+    name: "Ecommerce Development",
+    href: "/services/ecommerce-development",
+    description: "Scalable digital storefronts & carts",
+    icon: ShoppingCart,
+  },
+  {
+    name: "Logo & Graphic Design",
+    href: "/services/graphic-design",
+    description: "Logos, branding & design systems",
+    icon: Palette,
+  },
+  {
+    name: "CRM Software Development",
+    href: "/services/crm-software-development",
+    description: "Custom sales pipelines & portals",
+    icon: Database,
+  },
+  {
+    name: "Mobile App Development",
+    href: "/services/mobile-app-development",
+    description: "iOS & Android cross-platform apps",
+    icon: Smartphone,
+  },
+  {
+    name: "Web Apps & SaaS",
+    href: "/services/web-apps-saas",
+    description: "Multi-tenant cloud platforms",
+    icon: Cloud,
+  },
+  {
+    name: "Google Business Profile",
+    href: "/services/google-business-profile",
+    description: "Local SEO & Google Maps pack",
+    icon: MapPin,
   },
 ];
 
@@ -116,10 +151,10 @@ export default function Navbar() {
           <Image
             src={getAssetPath("/logo.webp")}
             alt="LarkSpire Logo"
-            width={240}
-            height={70}
-            sizes="(max-width: 768px) 160px, 240px"
-            className="h-14 sm:h-16 md:h-18 w-auto transition-transform duration-300 group-hover:scale-105 object-contain"
+            width={280}
+            height={65}
+            sizes="(max-width: 768px) 180px, 280px"
+            className="h-10 sm:h-11 md:h-12 w-auto transition-transform duration-300 group-hover:scale-105 object-contain"
             priority
           />
         </Link>
@@ -134,6 +169,7 @@ export default function Navbar() {
           >
             <Link
               href="/services"
+              prefetch={true}
               className={clsx(
                 "inline-flex items-center gap-1 text-sm font-medium transition-colors duration-200 py-1",
                 pathname.startsWith("/services")
@@ -152,7 +188,7 @@ export default function Navbar() {
 
             {/* Desktop Mega-Menu Dropdown Panel */}
             {servicesDropdownOpen && (
-              <div className="absolute top-full -left-20 w-[32rem] mt-2 p-4 bg-white rounded-2xl border border-teal-100 shadow-floating grid grid-cols-2 gap-2 animate-in fade-in slide-in-from-top-2 duration-200">
+              <div className="absolute top-full -left-48 w-[42rem] mt-2 p-5 bg-white rounded-2xl border border-teal-100 shadow-2xl grid grid-cols-2 gap-3 max-h-[75vh] overflow-y-auto animate-in fade-in slide-in-from-top-2 duration-200 scrollbar-thin">
                 {servicesList.map((service) => {
                   const Icon = service.icon;
                   const isServiceActive = pathname === service.href;
@@ -163,32 +199,32 @@ export default function Navbar() {
                       prefetch={true}
                       onClick={() => setServicesDropdownOpen(false)}
                       className={clsx(
-                        "group p-3 rounded-xl transition-all duration-200 flex items-start gap-3 hover:bg-teal-50",
+                        "group p-2.5 rounded-xl transition-all duration-200 flex items-start gap-3 hover:bg-teal-50",
                         isServiceActive ? "bg-teal-50/80 border border-teal-200/60" : ""
                       )}
                     >
-                      <div className="p-2 rounded-lg bg-teal-100/60 text-teal-700 group-hover:bg-teal-700 group-hover:text-white transition-colors">
+                      <div className="p-2 rounded-lg bg-teal-100/60 text-teal-700 group-hover:bg-teal-700 group-hover:text-white transition-colors shrink-0">
                         <Icon className="w-4 h-4" />
                       </div>
                       <div>
                         <p className="text-xs font-bold text-slate-900 group-hover:text-teal-700 transition-colors">
                           {service.name}
                         </p>
-                        <p className="text-[11px] text-slate-500 font-light leading-snug">
+                        <p className="text-[11px] text-slate-500 font-light leading-snug line-clamp-1">
                           {service.description}
                         </p>
                       </div>
                     </Link>
                   );
                 })}
-                <div className="col-span-2 pt-2 border-t border-slate-100 flex items-center justify-between text-xs font-semibold">
+                <div className="col-span-2 pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-semibold">
                   <Link
                     href="/services"
+                    prefetch={true}
                     onClick={() => setServicesDropdownOpen(false)}
                     className="text-teal-700 hover:underline flex items-center gap-1"
                   >
-                    <span>View All Services Landing Page</span>
-                    <ArrowUpRight className="w-3.5 h-3.5" />
+                    <span>View All Services Landing Page &rarr;</span>
                   </Link>
                 </div>
               </div>
@@ -198,6 +234,7 @@ export default function Navbar() {
           {/* About Link */}
           <Link
             href="/about"
+            prefetch={true}
             className={clsx(
               "text-sm font-medium transition-colors duration-200",
               pathname === "/about"
@@ -211,6 +248,7 @@ export default function Navbar() {
           {/* Portfolio Link */}
           <Link
             href="/portfolio"
+            prefetch={true}
             className={clsx(
               "text-sm font-medium transition-colors duration-200",
               pathname === "/portfolio"
@@ -224,6 +262,7 @@ export default function Navbar() {
           {/* Contact Link */}
           <Link
             href="/contact"
+            prefetch={true}
             className={clsx(
               "text-sm font-medium transition-colors duration-200",
               pathname === "/contact"
@@ -237,6 +276,7 @@ export default function Navbar() {
           {/* CTA Button */}
           <Link
             href="/contact"
+            prefetch={true}
             className="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-full bg-teal-700 text-white text-xs font-semibold tracking-wide uppercase shadow-sm hover:bg-teal-800 transition-all duration-300 hover:shadow-card hover:scale-[1.02]"
           >
             <span>Start a Project</span>
@@ -256,7 +296,7 @@ export default function Navbar() {
 
       {/* Mobile Slide-down Navigation Menu */}
       {mobileMenuOpen && (
-        <div className="md:hidden fixed inset-x-0 top-[65px] bg-background/95 backdrop-blur-xl border-b border-teal-100 p-6 shadow-floating flex flex-col gap-4 animate-in slide-in-from-top-4 duration-300 max-h-[85vh] overflow-y-auto">
+        <div className="md:hidden fixed inset-x-0 top-[65px] bg-background/95 backdrop-blur-xl border-b border-teal-100 p-6 shadow-2xl flex flex-col gap-4 animate-in slide-in-from-top-4 duration-300 max-h-[85vh] overflow-y-auto">
           {/* Services Mobile Accordion */}
           <div className="border-b border-slate-200/50 pb-2">
             <button
@@ -264,7 +304,7 @@ export default function Navbar() {
               className="w-full flex items-center justify-between text-lg font-medium text-slate-800 py-2"
             >
               <span className={pathname.startsWith("/services") ? "text-teal-700 font-bold" : ""}>
-                Services
+                Services ({servicesList.length})
               </span>
               <ChevronDown
                 className={clsx(
@@ -275,11 +315,12 @@ export default function Navbar() {
             </button>
 
             {mobileServicesAccordion && (
-              <div className="pl-4 py-2 space-y-3 border-l-2 border-teal-200 my-2">
+              <div className="pl-4 py-2 space-y-2.5 border-l-2 border-teal-200 my-2 max-h-[60vh] overflow-y-auto">
                 <Link
                   href="/services"
+                  prefetch={true}
                   onClick={() => setMobileMenuOpen(false)}
-                  className="block text-xs font-bold text-teal-700 uppercase tracking-wider mb-2"
+                  className="block text-xs font-bold text-teal-700 uppercase tracking-wider mb-3"
                 >
                   &rarr; All Services Overview
                 </Link>
@@ -289,9 +330,10 @@ export default function Navbar() {
                     href={service.href}
                     prefetch={true}
                     onClick={() => setMobileMenuOpen(false)}
-                    className="block text-sm text-slate-600 hover:text-teal-700 py-1"
+                    className="flex items-center gap-2.5 text-sm text-slate-700 hover:text-teal-700 py-1"
                   >
-                    {service.name}
+                    <service.icon className="w-4 h-4 text-teal-600 shrink-0" />
+                    <span>{service.name}</span>
                   </Link>
                 ))}
               </div>
@@ -300,6 +342,7 @@ export default function Navbar() {
 
           <Link
             href="/about"
+            prefetch={true}
             onClick={() => setMobileMenuOpen(false)}
             className={clsx(
               "text-lg font-medium py-2 border-b border-slate-200/50",
@@ -311,6 +354,7 @@ export default function Navbar() {
 
           <Link
             href="/portfolio"
+            prefetch={true}
             onClick={() => setMobileMenuOpen(false)}
             className={clsx(
               "text-lg font-medium py-2 border-b border-slate-200/50",
@@ -322,6 +366,7 @@ export default function Navbar() {
 
           <Link
             href="/contact"
+            prefetch={true}
             onClick={() => setMobileMenuOpen(false)}
             className={clsx(
               "text-lg font-medium py-2 border-b border-slate-200/50",
@@ -333,6 +378,7 @@ export default function Navbar() {
 
           <Link
             href="/contact"
+            prefetch={true}
             onClick={() => setMobileMenuOpen(false)}
             className="mt-2 w-full py-3 rounded-xl bg-teal-700 text-white text-center text-sm font-semibold uppercase tracking-wider shadow-md hover:bg-teal-800"
           >

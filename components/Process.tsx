@@ -97,7 +97,7 @@ export default function Process() {
     <section
       id="process"
       ref={sectionRef}
-      className="py-24 px-6 bg-teal-100/40 border-t border-slate-200/60 relative"
+      className="py-24 px-6 bg-transparent border-t border-slate-200/60 relative"
     >
       <div className="max-w-7xl mx-auto space-y-16">
         {/* Section Heading */}

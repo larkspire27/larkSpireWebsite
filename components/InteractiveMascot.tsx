@@ -12,11 +12,11 @@ export default function InteractiveMascot() {
   >("center");
 
   // Image Asset Paths with BasePath Prefix
-  const imgFarLeft = getAssetPath("/images/char_far_left.png");
-  const imgLeft = getAssetPath("/images/char_left.png");
-  const imgCenter = getAssetPath("/images/char_center.png");
-  const imgRight = getAssetPath("/images/char_right.png");
-  const imgFarRight = getAssetPath("/images/char_far_right.png");
+  const imgFarLeft = getAssetPath("/images/char_far_left.webp");
+  const imgLeft = getAssetPath("/images/char_left.webp");
+  const imgCenter = getAssetPath("/images/char_center.webp");
+  const imgRight = getAssetPath("/images/char_right.webp");
+  const imgFarRight = getAssetPath("/images/char_far_right.webp");
 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {

@@ -22,6 +22,10 @@ export const metadata: Metadata = {
   description:
     "Larkspire is a boutique digital agency delivering world-class web development, graphic design, digital marketing, SEO, and brand experiences.",
   keywords: [
+    "Larkspire",
+    "Larkspire Services",
+    "Larkspire Agency",
+    "Larkspire Digital Agency",
     "Digital Agency",
     "Web Development",
     "Graphic Design",
@@ -29,7 +33,6 @@ export const metadata: Metadata = {
     "SEO",
     "Meta Ads",
     "Brand Strategy",
-    "Larkspire",
   ],
   icons: {
     icon: "/favicon.ico",
@@ -38,17 +41,17 @@ export const metadata: Metadata = {
   },
   authors: [{ name: "Larkspire Agency" }],
   openGraph: {
-    title: "Larkspire | Digital & Creative Agency",
+    title: "Larkspire Services | Digital & Creative Agency",
     description:
       "Transforming ambitious brands through world-class web development, design, and digital marketing.",
     url: "https://larkspire.in",
-    siteName: "Larkspire",
+    siteName: "Larkspire Services",
     locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Larkspire | Digital & Creative Agency",
+    title: "Larkspire Services | Digital & Creative Agency",
     description: "Boutique creative agency specializing in modern web design and digital growth.",
   },
 };
@@ -62,6 +65,7 @@ const jsonLd = {
       "@type": "ProfessionalService",
       "@id": "https://larkspire.in/#organization",
       "name": "Larkspire",
+      "alternateName": ["Larkspire Services", "Larkspire Digital Agency", "Larkspire Agency"],
       "url": "https://larkspire.in",
       "logo": "https://larkspire.in/logo.webp",
       "description":
@@ -73,7 +77,7 @@ const jsonLd = {
       "@type": "WebSite",
       "@id": "https://larkspire.in/#website",
       "url": "https://larkspire.in",
-      "name": "Larkspire",
+      "name": "Larkspire Services",
       "publisher": {
         "@id": "https://larkspire.in/#organization",
       },

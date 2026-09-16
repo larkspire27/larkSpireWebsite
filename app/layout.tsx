@@ -63,27 +63,80 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "ProfessionalService",
+      "@type": ["ProfessionalService", "LocalBusiness", "Organization"],
       "@id": "https://larkspire.in/#organization",
-      "name": "Larkspire",
-      "alternateName": ["Larkspire Services", "Larkspire Digital Agency", "Larkspire Agency"],
+      "name": "LarkSpire Services",
+      "alternateName": ["LarkSpire", "Larkspire", "Larkspire Agency", "Larkspire Digital Agency"],
       "url": "https://larkspire.in",
       "logo": "https://larkspire.in/logo.webp",
+      "image": "https://larkspire.in/logo.webp",
       "description":
         "Larkspire is the best website development and digital marketing company in jaipur. We offer web design, SEO, graphic design, and online marketing to help your business grow online.",
+      "telephone": "+91 9928196424",
       "email": "spirelark@gmail.com",
       "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Jaipur",
+        "addressRegion": "Rajasthan",
+        "addressCountry": "IN"
+      },
+      "areaServed": ["India", "Rajasthan", "Jaipur", "Bharatpur"],
+      "sameAs": [
+        "https://www.instagram.com/larkspireservices/",
+        "https://www.facebook.com/profile.php?id=61593659866731"
+      ],
+      "knowsAbout": [
+        "Website Development",
+        "SEO",
+        "Digital Marketing",
+        "Graphic Design"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Website Development"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "SEO"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Digital Marketing"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Graphic Design"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "WebSite",
       "@id": "https://larkspire.in/#website",
       "url": "https://larkspire.in",
-      "name": "Larkspire Services",
+      "name": "LarkSpire Services",
       "publisher": {
-        "@id": "https://larkspire.in/#organization",
-      },
-    },
-  ],
+        "@id": "https://larkspire.in/#organization"
+      }
+    }
+  ]
 };
 
 export default function RootLayout({

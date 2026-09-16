@@ -149,12 +149,20 @@ export default function ServicePageLayout({ service }: ServicePageLayoutProps) {
     name: service.title,
     serviceType: service.title,
     provider: {
-      "@type": "Organization",
-      name: "Larkspire",
+      "@type": "ProfessionalService",
+      name: "LarkSpire Services",
+      alternateName: ["LarkSpire", "Larkspire", "Larkspire Agency", "Larkspire Digital Agency"],
       url: "https://larkspire.in",
+      logo: "https://larkspire.in/logo.webp",
+      telephone: "+91 9928196424",
+      email: "spirelark@gmail.com",
+      sameAs: [
+        "https://www.instagram.com/larkspireservices/",
+        "https://www.facebook.com/profile.php?id=61593659866731"
+      ],
     },
     description: service.heroDescription,
-    areaServed: "Worldwide",
+    areaServed: ["India", "Rajasthan", "Jaipur", "Bharatpur"],
   };
 
   return (

@@ -157,6 +157,7 @@ export default function ServicePageLayout({ service }: ServicePageLayoutProps) {
       telephone: "+91 9928196424",
       email: "spirelark@gmail.com",
       sameAs: [
+        "https://www.linkedin.com/company/larkspire-services/",
         "https://www.instagram.com/larkspireservices/",
         "https://www.facebook.com/profile.php?id=61593659866731"
       ],

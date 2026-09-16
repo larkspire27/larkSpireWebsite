@@ -46,6 +46,27 @@ function InstagramIcon(props: React.SVGProps<SVGSVGElement>) {
   );
 }
 
+function LinkedinIcon(props: React.SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+      <rect width="4" height="12" x="2" y="9" />
+      <circle cx="4" cy="4" r="2" />
+    </svg>
+  );
+}
+
 export default function Footer() {
   return (
     <footer className="bg-white border-t border-slate-200/80 pt-16 pb-12 text-slate-700 font-sans">
@@ -58,8 +79,7 @@ export default function Footer() {
               alt="LarkSpire Logo"
               width={240}
               height={70}
-              sizes="(max-width: 768px) 160px, 240px"
-              className="h-14 sm:h-16 md:h-18 w-auto object-contain"
+              className="w-48 sm:w-56 h-auto object-contain"
             />
           </Link>
 
@@ -68,6 +88,15 @@ export default function Footer() {
           </p>
 
           <div className="flex items-center gap-3">
+            <a
+              href="https://www.linkedin.com/company/larkspire-services/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-9 h-9 rounded-full bg-teal-50 border border-teal-100 flex items-center justify-center text-teal-700 hover:bg-teal-700 hover:text-white transition-colors duration-200"
+              aria-label="LinkedIn"
+            >
+              <LinkedinIcon className="w-4 h-4" />
+            </a>
             <a
               href="https://www.facebook.com/profile.php?id=61593659866731"
               target="_blank"
@@ -192,6 +221,17 @@ export default function Footer() {
               <Phone className="w-4 h-4 text-teal-700 shrink-0" />
               <a href="tel:+919928196424" className="hover:text-teal-700 transition-colors">
                 +91 9928196424
+              </a>
+            </li>
+            <li className="flex items-center gap-3">
+              <LinkedinIcon className="w-4 h-4 text-teal-700 shrink-0" />
+              <a
+                href="https://www.linkedin.com/company/larkspire-services/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-teal-700 transition-colors"
+              >
+                LinkedIn Page
               </a>
             </li>
             <li className="flex items-center gap-3">

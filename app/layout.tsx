@@ -83,6 +83,7 @@ const jsonLd = {
       },
       "areaServed": ["India", "Rajasthan", "Jaipur", "Bharatpur"],
       "sameAs": [
+        "https://www.linkedin.com/company/larkspire-services/",
         "https://www.instagram.com/larkspireservices/",
         "https://www.facebook.com/profile.php?id=61593659866731"
       ],

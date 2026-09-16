@@ -20,19 +20,19 @@ export const metadata: Metadata = {
     canonical: "https://larkspire.in",
   },
   description:
-    "Larkspire is a boutique digital agency delivering world-class web development, graphic design, digital marketing, SEO, and brand experiences.",
+    "Larkspire is the best website development and digital marketing company in jaipur. We offer web design, SEO, graphic design, and online marketing to help your business grow online.",
   keywords: [
+    "best website development and digital marketing company in jaipur",
     "Larkspire",
     "Larkspire Services",
     "Larkspire Agency",
     "Larkspire Digital Agency",
-    "Digital Agency",
-    "Web Development",
+    "Digital Agency Jaipur",
+    "Web Development Jaipur",
     "Graphic Design",
-    "Digital Marketing",
-    "SEO",
+    "Digital Marketing Jaipur",
+    "SEO Jaipur",
     "Meta Ads",
-    "Brand Strategy",
   ],
   icons: {
     icon: "/favicon.ico",
@@ -41,9 +41,9 @@ export const metadata: Metadata = {
   },
   authors: [{ name: "Larkspire Agency" }],
   openGraph: {
-    title: "Larkspire Services | Digital & Creative Agency",
+    title: "Larkspire Services | Best Website Development & Digital Marketing Company in Jaipur",
     description:
-      "Transforming ambitious brands through world-class web development, design, and digital marketing.",
+      "Larkspire is the best website development and digital marketing company in jaipur. We offer web design, SEO, graphic design, and online marketing to help your business grow online.",
     url: "https://larkspire.in",
     siteName: "Larkspire Services",
     locale: "en_US",
@@ -51,8 +51,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Larkspire Services | Digital & Creative Agency",
-    description: "Boutique creative agency specializing in modern web design and digital growth.",
+    title: "Larkspire Services | Best Website Development & Digital Marketing Company in Jaipur",
+    description:
+      "Larkspire is the best website development and digital marketing company in jaipur. We offer web design, SEO, graphic design, and online marketing to help your business grow online.",
   },
 };
 
@@ -69,7 +70,7 @@ const jsonLd = {
       "url": "https://larkspire.in",
       "logo": "https://larkspire.in/logo.webp",
       "description":
-        "Larkspire is a boutique digital agency delivering world-class web development, graphic design, digital marketing, SEO, and brand experiences.",
+        "Larkspire is the best website development and digital marketing company in jaipur. We offer web design, SEO, graphic design, and online marketing to help your business grow online.",
       "email": "spirelark@gmail.com",
       "priceRange": "$$",
     },

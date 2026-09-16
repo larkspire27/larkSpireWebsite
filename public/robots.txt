@@ -21,4 +21,4 @@ Allow: /
 
 # Sitemap & LLM Context Specifications
 Sitemap: https://larkspire.in/sitemap.xml
-LLMs-Txt: https://larkspire.in/llms.txt
+# LLMs-Txt: https://larkspire.in/llms.txt

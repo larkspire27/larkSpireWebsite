@@ -8,6 +8,7 @@ import Process from "@/components/Process";
 import IndustriesWeServeSection from "@/components/IndustriesWeServeSection";
 import Portfolio from "@/components/Portfolio";
 import Testimonials from "@/components/Testimonials";
+import InstagramFeed from "@/components/InstagramFeed";
 import CTASection from "@/components/CTASection";
 import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
@@ -75,6 +76,9 @@ export default function Home() {
 
         {/* 7. Client Testimonials */}
         <Testimonials />
+
+        {/* Instagram Feed Widget */}
+        <InstagramFeed />
 
         {/* 8. Contrast CTA Block */}
         <CTASection />

@@ -154,7 +154,7 @@ export default function AboutClient() {
           <div ref={heroRef} className="max-w-4xl mx-auto text-center space-y-6">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card border border-teal-200/60 shadow-subtle text-xs font-semibold tracking-wider text-teal-700 uppercase">
               <Sparkles className="w-3.5 h-3.5" />
-              <span>Boutique Creative &amp; Digital Studio</span>
+              <span>Creative Digital Studio</span>
             </div>
 
             <h1 className="text-4xl sm:text-6xl font-bold tracking-tight text-slate-900 leading-tight">

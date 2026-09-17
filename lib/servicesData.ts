@@ -171,6 +171,26 @@ const graphicDesignData: ServiceData = {
       question: "How long does a full brand identity project take?",
       answer: "Typical branding projects take 2 to 3 weeks depending on the number of concepts and collateral pieces requested.",
     },
+    {
+      question: "Who owns the copyright to the logo and graphics created?",
+      answer: "You receive 100% full commercial copyright ownership of all final designs, trademarks, vector graphics, and brand guidelines upon project completion.",
+    },
+    {
+      question: "What is included in a complete Brand Guidelines book?",
+      answer: "Our Brand Book includes logo usage rules, color palettes with HEX/CMYK/RGB codes, typography hierarchy, imagery style rules, and design tokens.",
+    },
+    {
+      question: "Can you design print collateral like business cards and packaging?",
+      answer: "Yes! We design print marketing assets (brochures, business cards, flyers, packaging) and digital graphics (social media kits, ad banners, email templates).",
+    },
+    {
+      question: "How many initial logo concepts will I receive?",
+      answer: "We present 3 to 5 distinct creative concept directions during the initial review stage and refine your chosen concept to perfection.",
+    },
+    {
+      question: "What if I already have a logo but need a modern visual rebrand?",
+      answer: "We specialize in brand modernizations, preserving your brand recognition while elevating your typography, color tokens, and overall visual presence.",
+    },
   ],
   detailedSeoContent: {
     overview:
@@ -205,7 +225,7 @@ export const servicesDataMap: Record<string, ServiceData> = {
     tagline: "Bespoke UI/UX & High-Converting Web Design",
     heroDescription:
       "We craft visually stunning, user-centered website designs that captivate visitors, elevate your brand identity, and maximize conversions across every screen size.",
-    heroImage: getAssetPath("/images/services/web-development.jpg"),
+    heroImage: getAssetPath("/images/services/website-design.jpg"),
     metaTitle: "Professional Website Design Services | UI/UX & Wireframing | Larkspire",
     metaDescription:
       "Elevate your online presence with bespoke website design by Larkspire. Custom Figma UI/UX design, mobile responsiveness, and conversion-optimized layouts.",
@@ -282,7 +302,7 @@ export const servicesDataMap: Record<string, ServiceData> = {
         id: "web-design-1",
         title: "Fintech Dashboard Redesign",
         category: "Website Design",
-        description: "Modern UI/UX design overhaul for a fast-growing financial SaaS platform.",
+        description: "Modern UI/UX design overhaul for a fastgrowing financial SaaS platform.",
         gradient: "from-teal-600 to-emerald-600",
       },
       {
@@ -301,6 +321,26 @@ export const servicesDataMap: Record<string, ServiceData> = {
       {
         question: "Can you redesign my existing website?",
         answer: "Absolutely! We specialize in web redesigns to modernize user interfaces, fix mobile usability issues, and boost conversion rates.",
+      },
+      {
+        question: "What is the difference between Web Design and Web Development?",
+        answer: "Web Design focuses on visual architecture, UI/UX aesthetics, layout, and prototyping in tools like Figma. Web Development converts those designs into functional, high-speed code.",
+      },
+      {
+        question: "How many revision rounds are included in the website design process?",
+        answer: "We include unlimited revisions during the initial wireframing and UI concept phase until you are 100% satisfied with the visual direction.",
+      },
+      {
+        question: "Will my website design be fully responsive on mobile and tablets?",
+        answer: "Yes, every layout is custom crafted with a mobile-first approach, ensuring seamless UX across smartphones, tablets, laptops, and ultra-wide desktops.",
+      },
+      {
+        question: "How long does a custom website design project take?",
+        answer: "A typical custom website design project takes between 1 to 3 weeks depending on the number of pages, custom graphics, and prototype complexity.",
+      },
+      {
+        question: "Do you provide design assets and Figma master files upon project completion?",
+        answer: "Yes, you receive complete ownership of all organized Figma master files, UI component libraries, vector assets, design tokens, and exportable graphics.",
       },
     ],
     detailedSeoContent: {
@@ -431,6 +471,26 @@ export const servicesDataMap: Record<string, ServiceData> = {
         question: "Will my website be mobile-friendly and fast?",
         answer: "Yes! Every site we build is optimized for 95+ performance scores and engineered for responsive performance on all screen sizes.",
       },
+      {
+        question: "Can you build custom API integrations and headless CMS platforms?",
+        answer: "Yes, we integrate third-party APIs, payment gateways (Stripe, Razorpay, PayPal), CRM systems, and headless CMS platforms like Sanity, Strapi, or Contentful.",
+      },
+      {
+        question: "Is technical SEO included in web development?",
+        answer: "Yes, technical SEO is baked into our development process — including semantic HTML5, dynamic XML sitemaps, structured JSON-LD schemas, and meta tag optimization.",
+      },
+      {
+        question: "What support and maintenance do you offer after launch?",
+        answer: "We provide 30 days of post-launch technical warranty, continuous security monitoring, speed audits, and ongoing monthly maintenance retainers.",
+      },
+      {
+        question: "Can you migrate my legacy site to Next.js without losing SEO rankings?",
+        answer: "Yes, we handle seamless zero-downtime migrations with 301 redirect mappings, canonical link setup, and structure preservation to protect and boost your organic search rankings.",
+      },
+      {
+        question: "Who owns the codebase once the website is built?",
+        answer: "You retain 100% full intellectual property ownership of the source code, repository, hosting infrastructure, and deployment keys.",
+      },
     ],
     detailedSeoContent: {
       overview:
@@ -557,8 +617,28 @@ export const servicesDataMap: Record<string, ServiceData> = {
         answer: "SEO is a long-term compound strategy. Technical fixes usually show results within 4 to 8 weeks, while competitive keywords typically mature in 3 to 6 months.",
       },
       {
-        question: "Do you offer local SEO optimization?",
-        answer: "Yes! We optimize Google Business Profiles, local map pack rankings, and geo-targeted landing pages.",
+        question: "What is the difference between On-Page, Off-Page, and Technical SEO?",
+        answer: "Technical SEO fixes site speed, crawling, and indexing. On-Page SEO optimizes content, keywords, and meta tags. Off-Page SEO builds domain authority, backlinks, and brand citations.",
+      },
+      {
+        question: "Do you offer local SEO and Google Business Profile optimization?",
+        answer: "Yes! We specialize in local map pack optimization, geo-targeted landing page creation, local citation indexing, and review management.",
+      },
+      {
+        question: "How do you choose target keywords for my business?",
+        answer: "We perform high-intent keyword research analyzing search volume, buyer intent, keyword difficulty, and competitor rank gaps to target terms that generate real revenue.",
+      },
+      {
+        question: "Do you guarantee #1 rankings on Google?",
+        answer: "No reputable agency can guarantee #1 positions due to search engine algorithm updates, but we use proven white-hat methods that consistently achieve top page rankings.",
+      },
+      {
+        question: "Will I receive monthly SEO progress reports?",
+        answer: "Yes, you receive transparent monthly analytics tracking keyword rank positioning, organic traffic growth, domain authority gains, and conversion lead metrics.",
+      },
+      {
+        question: "What schema markup do you implement for SEO?",
+        answer: "We implement structured JSON-LD schemas including Organization, LocalBusiness, Service, Product, Article, BreadcrumbList, and FAQPage schemas.",
       },
     ],
     detailedSeoContent: {
@@ -592,7 +672,7 @@ export const servicesDataMap: Record<string, ServiceData> = {
     tagline: "Custom, Fast & Secure WordPress Solutions",
     heroDescription:
       "Custom WordPress website development with bespoke themes, plugin integration, Gutenberg/Elementor support, and bulletproof security for easy content management.",
-    heroImage: getAssetPath("/images/services/web-development.jpg"),
+    heroImage: getAssetPath("/images/services/wordpress-development.jpg"),
     metaTitle: "Custom WordPress Development Services | Bespoke Themes | Larkspire",
     metaDescription:
       "Tailor-made WordPress websites engineered for speed, custom Gutenberg blocks, WooCommerce, and robust security by Larkspire.",
@@ -689,6 +769,26 @@ export const servicesDataMap: Record<string, ServiceData> = {
         question: "Will I be able to update content easily on my own?",
         answer: "Absolutely. We build user-friendly Gutenberg blocks so you can update text, images, and pages without writing code.",
       },
+      {
+        question: "How do you ensure WordPress site security and prevent hacking?",
+        answer: "We implement enterprise security protocols including firewall configuration, malware scanning, 2FA logins, custom admin URL paths, and automated off-site backups.",
+      },
+      {
+        question: "Why is our current WordPress site slow and how will you fix it?",
+        answer: "Slow WordPress sites are usually caused by heavy themes and plugin bloat. We build lightweight themes, implement object caching, database cleanup, and CDN optimization.",
+      },
+      {
+        question: "Do you develop custom WooCommerce online stores?",
+        answer: "Yes, we build scalable WooCommerce stores complete with custom product builders, payment gateways, tax calculation, and automated inventory sync.",
+      },
+      {
+        question: "Can you repair a broken or hacked WordPress website?",
+        answer: "Yes, we clean malware, fix PHP database errors, resolve plugin conflicts, and restore website functionality promptly.",
+      },
+      {
+        question: "Do you offer monthly WordPress maintenance and update plans?",
+        answer: "Yes, our monthly WordPress maintenance plans include core updates, plugin audits, database optimization, security monitoring, and daily backups.",
+      },
     ],
     detailedSeoContent: {
       overview:
@@ -721,7 +821,7 @@ export const servicesDataMap: Record<string, ServiceData> = {
     tagline: "High-Converting Shopify & Liquid Stores",
     heroDescription:
       "Build and scale your e-commerce brand with custom Shopify theme design, conversion-driven storefronts, seamless app integrations, and mobile shopping optimization.",
-    heroImage: getAssetPath("/images/services/web-development.jpg"),
+    heroImage: getAssetPath("/images/services/shopify-website-design.jpg"),
     metaTitle: "Custom Shopify Website Design Services | E-commerce Store Builds | Larkspire",
     metaDescription:
       "Scale your store with bespoke Shopify theme design by Larkspire. Fast checkout, custom Liquid templates, and conversion rate optimization.",
@@ -818,6 +918,26 @@ export const servicesDataMap: Record<string, ServiceData> = {
         question: "Do you customize existing Shopify themes?",
         answer: "Yes! Whether you need a ground-up custom theme or section customizations on your current theme, we can help.",
       },
+      {
+        question: "How do you optimize Shopify store conversion rates (CRO)?",
+        answer: "We implement mobile-optimized sticky cart drawers, quick buy buttons, customer review widgets, product video showcases, upsell cross-sells, and trust badges.",
+      },
+      {
+        question: "Can you integrate third-party Shopify apps for subscriptions and marketing?",
+        answer: "Yes, we integrate top apps like Recharge, Klaviyo, Yotpo, Gorgias, Loox, and Smile.io for seamless store automation.",
+      },
+      {
+        question: "Is Shopify Plus development supported?",
+        answer: "Yes, we specialize in Shopify Plus custom Liquid section development, checkout extensions, B2B wholesale portals, and multi-currency international stores.",
+      },
+      {
+        question: "How long does it take to build a custom Shopify store?",
+        answer: "A full custom Shopify store design and launch typically takes between 2 to 4 weeks depending on catalog size, custom sections, and app setups.",
+      },
+      {
+        question: "Will my Shopify store load fast on mobile devices?",
+        answer: "Yes, we optimize image compression, Liquid code structure, lazy loading, and script execution to achieve 90+ Lighthouse mobile performance scores.",
+      },
     ],
     detailedSeoContent: {
       overview:
@@ -850,7 +970,7 @@ export const servicesDataMap: Record<string, ServiceData> = {
     tagline: "Scalable E-Commerce Platforms & Digital Storefronts",
     heroDescription:
       "End-to-end e-commerce development tailored for high growth — featuring secure checkout, automated inventory sync, custom cart logic, and multi-currency support.",
-    heroImage: getAssetPath("/images/services/web-development.jpg"),
+    heroImage: getAssetPath("/images/services/ecommerce-development.jpg"),
     metaTitle: "Custom Ecommerce Development Services | Headless & Platform Solutions | Larkspire",
     metaDescription:
       "Build high-revenue online stores with custom e-commerce development by Larkspire. Secure payment gateways, headless architecture, and inventory automation.",
@@ -947,6 +1067,26 @@ export const servicesDataMap: Record<string, ServiceData> = {
         question: "Can you build subscription or recurring billing options?",
         answer: "Yes, we integrate recurring subscription gateways (Stripe Billing, Recharge, etc.) for subscription boxes and digital memberships.",
       },
+      {
+        question: "Can you integrate multiple payment gateways and currencies?",
+        answer: "Yes, we integrate Stripe, PayPal, Razorpay, Apple Pay, Klarna, and multi-currency converters with localized tax and shipping rules.",
+      },
+      {
+        question: "What is Headless E-commerce and do I need it?",
+        answer: "Headless E-commerce separates your Next.js/React frontend from the backend (Shopify or custom API). It delivers sub-second page loads, limitless design customization, and superior SEO.",
+      },
+      {
+        question: "How do you handle inventory synchronization across multiple sales channels?",
+        answer: "We connect your store to ERPs, CRMs, and warehouse management tools (like Inventory Source, ShipStation, or custom APIs) for real-time stock sync.",
+      },
+      {
+        question: "How do you secure e-commerce payment transactions?",
+        answer: "All checkout architecture follows strict PCI-DSS compliance standards, SSL encryption, tokenized payments, and fraud detection protocols.",
+      },
+      {
+        question: "What post-launch support is included for e-commerce sites?",
+        answer: "We provide store monitoring, checkout performance testing, payment gateway health checks, and ongoing conversion rate optimization (CRO).",
+      },
     ],
     detailedSeoContent: {
       overview:
@@ -983,7 +1123,7 @@ export const servicesDataMap: Record<string, ServiceData> = {
     tagline: "Tailored Sales & Client Relationship Management Systems",
     heroDescription:
       "Empower your sales and operations with custom CRM software built specifically around your workflow, pipeline automation, analytics, and team collaboration.",
-    heroImage: getAssetPath("/images/services/web-development.jpg"),
+    heroImage: getAssetPath("/images/services/crm-software-development.jpg"),
     metaTitle: "Custom CRM Software Development Services | Larkspire",
     metaDescription:
       "Streamline sales pipelines and client management with bespoke CRM software development by Larkspire. Custom dashboards, workflow automation, and API sync.",
@@ -1080,6 +1220,26 @@ export const servicesDataMap: Record<string, ServiceData> = {
         question: "Can you integrate our CRM with WhatsApp and Email?",
         answer: "Yes, we integrate Twilio, WhatsApp Business API, Gmail, Outlook, and custom Webhooks directly into your CRM dashboard.",
       },
+      {
+        question: "Will our team be able to use the custom CRM easily?",
+        answer: "Yes, we design clean, intuitive UI dashboards tailored to your sales reps and managers, complete with video training and user role controls.",
+      },
+      {
+        question: "How do you handle legacy data migration into the new CRM?",
+        answer: "We sanitize, map, and import customer records, deal history, contacts, and invoices from Excel, CSV, or old CRM databases with zero data loss.",
+      },
+      {
+        question: "Is remote access and mobile access supported?",
+        answer: "Yes, our custom CRMs are progressive cloud web applications accessible securely from smartphones, tablets, and desktop browsers.",
+      },
+      {
+        question: "What security measures protect our client database?",
+        answer: "We implement database encryption at rest and in transit, role-based access control (RBAC), multi-factor authentication (MFA), and audit logs.",
+      },
+      {
+        question: "How long does it take to develop a custom CRM system?",
+        answer: "Custom CRM development typically takes 4 to 8 weeks depending on pipeline complexity, automation workflows, and API integrations.",
+      },
     ],
     detailedSeoContent: {
       overview:
@@ -1112,7 +1272,7 @@ export const servicesDataMap: Record<string, ServiceData> = {
     tagline: "Native & Cross-Platform iOS & Android Applications",
     heroDescription:
       "Engineered for top app store rankings and high user retention — we build fast, scalable, and intuitive mobile applications for iOS and Android using React Native & Flutter.",
-    heroImage: getAssetPath("/images/services/web-development.jpg"),
+    heroImage: getAssetPath("/images/services/mobile-app-development.jpg"),
     metaTitle: "Custom Mobile App Development Services | iOS & Android | Larkspire",
     metaDescription:
       "Turn your idea into a high-performance mobile app. Larkspire crafts iOS and Android applications with React Native, sleek UI/UX, and cloud backends.",
@@ -1209,6 +1369,26 @@ export const servicesDataMap: Record<string, ServiceData> = {
         question: "Will you publish the app to the App Store and Google Play?",
         answer: "Yes, we handle the entire submission, app listing setup, ASO graphics, and approval workflow.",
       },
+      {
+        question: "Can the mobile app work offline without internet?",
+        answer: "Yes, we implement local SQLite/AsyncStorage databases and background data synchronization so users can access key app features offline.",
+      },
+      {
+        question: "How do push notifications work in the app?",
+        answer: "We integrate Firebase Cloud Messaging (FCM) and OneSignal for automated transactional, promotional, and geo-targeted push notifications.",
+      },
+      {
+        question: "Can you integrate in-app purchases and subscriptions?",
+        answer: "Yes, we integrate Apple In-App Purchases, Google Play Billing, Stripe, and RevenueCat for seamless digital subscriptions and paywalls.",
+      },
+      {
+        question: "How long does it take to build a custom mobile app?",
+        answer: "A typical MVP mobile app takes 6 to 10 weeks from UI/UX wireframing to beta testing and app store deployment.",
+      },
+      {
+        question: "What post-launch support do you provide for mobile apps?",
+        answer: "We provide ongoing OS update compatibility checks, bug fixes, performance monitoring, and new feature additions.",
+      },
     ],
     detailedSeoContent: {
       overview:
@@ -1241,7 +1421,7 @@ export const servicesDataMap: Record<string, ServiceData> = {
     tagline: "Scalable Cloud SaaS Platforms & Custom Web Software",
     heroDescription:
       "Turn your product vision into a market-ready SaaS platform with multi-tenant architecture, subscription billing, dashboard analytics, and robust API infrastructure.",
-    heroImage: getAssetPath("/images/services/web-development.jpg"),
+    heroImage: getAssetPath("/images/services/web-apps-saas.jpg"),
     metaTitle: "Custom SaaS Development Services | Web Applications | Larkspire",
     metaDescription:
       "Build scalable Software-as-a-Service platforms with Larkspire. Multi-tenant architecture, Stripe billing, Next.js, and cloud backend engineering.",
@@ -1338,6 +1518,26 @@ export const servicesDataMap: Record<string, ServiceData> = {
         question: "Do you integrate Stripe subscription payments?",
         answer: "Yes! We set up Stripe Billing, customer portals, plan upgrades/downgrades, and automated dunning emails.",
       },
+      {
+        question: "What cloud infrastructure do you use for hosting SaaS platforms?",
+        answer: "We deploy SaaS platforms on AWS, Vercel, Supabase, or Google Cloud Platform with auto-scaling database setups and CDN edge caching.",
+      },
+      {
+        question: "How do you ensure multi-tenant SaaS data isolation?",
+        answer: "We architect multi-tenant database isolation models using tenant ID scoping or separate schema spaces to guarantee customer data privacy.",
+      },
+      {
+        question: "Can you build developer APIs and Webhooks for third-party integrations?",
+        answer: "Yes, we design secure RESTful and GraphQL API endpoints along with webhook triggers for developer ecosystems.",
+      },
+      {
+        question: "Who owns the source code and SaaS IP rights?",
+        answer: "You retain 100% full intellectual property ownership of all custom source code, cloud databases, domain assets, and accounts.",
+      },
+      {
+        question: "Do you provide ongoing SaaS DevOps and security monitoring?",
+        answer: "Yes, we offer ongoing DevOps support, CI/CD automated deployments, security patch updates, and uptime monitoring.",
+      },
     ],
     detailedSeoContent: {
       overview:
@@ -1370,7 +1570,7 @@ export const servicesDataMap: Record<string, ServiceData> = {
     tagline: "Local SEO & Google Maps Optimization",
     heroDescription:
       "Dominate local search results and attract nearby customers with complete Google Business Profile setup, local SEO optimization, review management, and Map Pack ranking strategies.",
-    heroImage: getAssetPath("/images/services/seo-optimization.jpg"),
+    heroImage: getAssetPath("/images/services/google-business-profile.jpg"),
     metaTitle: "Google Business Profile Optimization Services | Local SEO | Larkspire",
     metaDescription:
       "Get found in your local area with Google Business Profile optimization by Larkspire. Top Google Maps rankings, local keywords, and review management.",
@@ -1466,6 +1666,26 @@ export const servicesDataMap: Record<string, ServiceData> = {
       {
         question: "How long does it take to rank in Google Maps?",
         answer: "Profile optimizations often yield initial traffic improvements within 2 to 4 weeks, with top Map Pack rankings consolidating over 2 to 3 months.",
+      },
+      {
+        question: "How do you optimize a Google Business Profile listing?",
+        answer: "We optimize business categories, local service descriptions, geo-tagged photos, business hours, Q&A sections, and Google Posts updates.",
+      },
+      {
+        question: "Can you help remove or manage fake/negative Google reviews?",
+        answer: "We implement systematic review acquisition campaigns to generate authentic 5-star reviews and handle official Google dispute filings for policy-violating reviews.",
+      },
+      {
+        question: "Do you fix NAP (Name, Address, Phone) inconsistencies across local directories?",
+        answer: "Yes, we audit and synchronize your business NAP details across major citations, Apple Maps, Bing Places, and local directories.",
+      },
+      {
+        question: "What monthly reports will I receive for Google Business Profile?",
+        answer: "We provide monthly performance insights showing phone calls generated, website clicks, map direction requests, and search view impressions.",
+      },
+      {
+        question: "Can you assist with suspended or unverified Google Business Profiles?",
+        answer: "Yes, we resolve suspension issues, prepare official reinstatement documentation, and complete verification video submission requirements.",
       },
     ],
     detailedSeoContent: {
@@ -1596,6 +1816,26 @@ export const servicesDataMap: Record<string, ServiceData> = {
         question: "How quickly can a custom poster design be completed?",
         answer: "Initial poster concepts are typically delivered within 3 to 5 business days.",
       },
+      {
+        question: "What sizes and dimensions can you design posters for?",
+        answer: "We design for all standard formats: A4, A3, A2, A1, A0, billboard scale, as well as digital ratios like 1:1, 4:5, and 9:16 vertical stories.",
+      },
+      {
+        question: "Do you create custom illustrations and typography for posters?",
+        answer: "Yes, every poster artwork is custom designed with bespoke typography, digital composite artwork, and visual effects.",
+      },
+      {
+        question: "How many revision rounds are included in poster design?",
+        answer: "We offer unlimited minor tweaks during the review stage until the composition and typography align perfectly with your vision.",
+      },
+      {
+        question: "Can you design event poster suites for concerts and conferences?",
+        answer: "Yes! We create complete promo suites including main posters, speaker banners, schedule flyers, badges, and social media tickets.",
+      },
+      {
+        question: "What file formats will I receive upon final handover?",
+        answer: "You receive high-resolution vector PDF, TIFF, PNG, JPG, and layered source files (AI/PSD/Figma).",
+      },
     ],
     detailedSeoContent: {
       overview:
@@ -1723,6 +1963,26 @@ export const servicesDataMap: Record<string, ServiceData> = {
       {
         question: "Do you create the ad images and videos?",
         answer: "Yes! We handle full ad creative design, copywriting, motion graphics, and variation testing.",
+      },
+      {
+        question: "What is Meta Conversions API (CAPI) and why is it important?",
+        answer: "Meta CAPI tracks web conversions server-to-server, overcoming iOS 14+ ad blocker limitations to feed accurate conversion data back to Meta's AI algorithm.",
+      },
+      {
+        question: "How long before we see positive ROAS from Meta Ad campaigns?",
+        answer: "Initial testing data is gathered in the first 7 to 14 days. Profitable scaling and ROAS optimization occur in weeks 3 through 6.",
+      },
+      {
+        question: "Do I retain ownership of my Facebook Ad Account and Pixel?",
+        answer: "Yes, all campaigns are run inside your own Meta Business Manager. You retain 100% ownership of accounts, pixels, and customer data.",
+      },
+      {
+        question: "How do retargeting campaigns work on Facebook & Instagram?",
+        answer: "We build custom audience segments to re-engage past website visitors, cart abandoners, and Instagram engagers with tailored special offers.",
+      },
+      {
+        question: "What analytics reports do you provide for Meta Ads?",
+        answer: "We provide weekly and monthly performance reports detailing Spend, Impressions, CTR, Cost Per Lead (CPL), ROAS, and customer acquisition costs.",
       },
     ],
     detailedSeoContent: {
@@ -1852,6 +2112,26 @@ export const servicesDataMap: Record<string, ServiceData> = {
       {
         question: "How do you measure marketing ROI?",
         answer: "We set up clear attribution tracking through GA4, custom dashboards, and conversion metrics to measure direct cost per acquisition and ROAS.",
+      },
+      {
+        question: "What is a Conversion Funnel and why does my business need one?",
+        answer: "A conversion funnel guides cold prospects into paying customers through targeted ads, high-converting landing pages, lead magnets, and automated email nurture flows.",
+      },
+      {
+        question: "Can you build automated email marketing sequences?",
+        answer: "Yes! We build automated welcome series, abandoned cart recovery sequences, customer onboarding flows, and monthly newsletter campaigns in Klaviyo or Mailchimp.",
+      },
+      {
+        question: "How do you optimize landing page conversion rates?",
+        answer: "We optimize headline messaging, CTA buttons, social proof reviews, page load speed, and user flow friction using scientific A/B testing.",
+      },
+      {
+        question: "Do you offer custom monthly growth retainers?",
+        answer: "Yes, we design custom monthly growth packages combining paid ad management, SEO, content creation, and analytics under one dedicated team.",
+      },
+      {
+        question: "How quickly can we launch a full digital marketing campaign?",
+        answer: "Campaign setup, landing page development, tracking pixel installation, and ad creative approval typically take 7 to 10 business days.",
       },
     ],
     detailedSeoContent: {

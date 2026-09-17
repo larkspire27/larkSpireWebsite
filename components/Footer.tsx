@@ -84,7 +84,7 @@ export default function Footer() {
           </Link>
 
           <p className="text-slate-600 text-sm leading-relaxed font-light">
-            Larkspire is a boutique digital agency crafting high-impact web experiences, visual identities, and performance marketing.
+            Larkspire is a creative digital agency crafting high-impact web experiences, visual identities, and performance marketing.
           </p>
 
           <div className="flex items-center gap-3">

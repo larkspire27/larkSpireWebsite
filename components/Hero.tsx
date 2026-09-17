@@ -69,7 +69,7 @@ export default function Hero() {
             <div className="inline-flex items-center gap-2 max-w-full px-3.5 py-1.5 rounded-full bg-teal-50 border border-teal-200/80 shadow-xs text-xs font-semibold uppercase tracking-wider text-teal-800">
               <span className="w-2 h-2 rounded-full bg-teal-600 animate-pulse shrink-0" />
               <Sparkles className="w-3.5 h-3.5 text-teal-700 shrink-0" />
-              <span>BOUTIQUE CREATIVE &amp; DIGITAL STUDIO</span>
+              <span>CREATIVE DIGITAL STUDIO</span>
             </div>
           </div>
 

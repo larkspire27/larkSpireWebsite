@@ -3,6 +3,7 @@
 import React, { useRef, useState } from "react";
 
 import Link from "next/link";
+import Image from "next/image";
 import {
   Code,
   Palette,
@@ -225,22 +226,27 @@ export default function ServicePageLayout({ service }: ServicePageLayoutProps) {
 
             {/* Right Graphic Banner */}
             <div className="lg:col-span-5 relative flex items-center justify-center">
-              <div className="w-full aspect-4/3 rounded-3xl bg-gradient-to-br from-teal-700 via-teal-800 to-slate-900 p-8 text-white shadow-floating relative overflow-hidden flex flex-col justify-between">
-                <div className="absolute top-0 right-0 w-64 h-64 bg-teal-500/20 rounded-full blur-3xl pointer-events-none" />
-                <div className="space-y-4 relative z-10">
-                  <div className="w-14 h-14 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center">
-                    <ServiceIcon className="w-7 h-7 text-teal-300" />
+              <div className="w-full rounded-2xl border border-slate-200/80 shadow-2xl relative overflow-hidden group bg-slate-950">
+                {service.heroImage ? (
+                  <Image
+                    src={service.heroImage}
+                    alt={service.title}
+                    width={1200}
+                    height={800}
+                    unoptimized
+                    className="w-full h-auto object-cover rounded-2xl group-hover:scale-102 transition-transform duration-500"
+                  />
+                ) : (
+                  <div className="p-8 space-y-4 text-white">
+                    <div className="w-14 h-14 rounded-2xl bg-teal-500/20 backdrop-blur-md border border-teal-400/30 flex items-center justify-center shadow-inner">
+                      <ServiceIcon className="w-7 h-7 text-teal-300" />
+                    </div>
+                    <h2 className="text-2xl font-bold text-white">{service.title} Excellence</h2>
+                    <p className="text-slate-200 text-xs sm:text-sm leading-relaxed font-light">
+                      Custom solutions engineered for maximum commercial impact, speed, and conversion.
+                    </p>
                   </div>
-                  <h2 className="text-2xl font-bold">{service.title} Excellence</h2>
-                  <p className="text-teal-100/80 text-xs sm:text-sm leading-relaxed">
-                    Custom solutions engineered for maximum commercial impact, speed, and conversion.
-                  </p>
-                </div>
-
-                <div className="pt-6 border-t border-white/15 flex items-center justify-between text-xs font-mono text-teal-200 relative z-10">
-                  <span>LARKSPIRE CAPABILITY</span>
-                  <Sparkles className="w-4 h-4 text-teal-300 animate-pulse" />
-                </div>
+                )}
               </div>
             </div>
           </div>

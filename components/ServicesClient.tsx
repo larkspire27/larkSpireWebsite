@@ -2,6 +2,7 @@
 
 import React, { useRef, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import {
   Code,
   Palette,
@@ -25,6 +26,7 @@ import {
 } from "lucide-react";
 import { useGSAP } from "@gsap/react";
 import { gsap, prefersReducedMotion } from "@/lib/gsap";
+import { getAssetPath } from "@/lib/basePath";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import CTASection from "@/components/CTASection";
@@ -37,6 +39,7 @@ const servicesList = [
       "Bespoke UI/UX wireframes, interactive Figma prototypes, and responsive landing pages crafted to captivate visitors.",
     icon: Layout,
     href: "/services/website-design",
+    bgImage: getAssetPath("/images/services/website-design.jpg"),
   },
   {
     slug: "web-development",
@@ -45,6 +48,7 @@ const servicesList = [
       "Bespoke, high-speed custom websites engineered for seamless performance, accessibility, and high conversion rates.",
     icon: Code,
     href: "/services/web-development",
+    bgImage: getAssetPath("/images/services/web-development.jpg"),
   },
   {
     slug: "search-engine-optimization",
@@ -53,6 +57,7 @@ const servicesList = [
       "Comprehensive technical & content SEO strategies to rank at the top of search results and capture high-intent organic traffic.",
     icon: Search,
     href: "/services/search-engine-optimization",
+    bgImage: getAssetPath("/images/services/seo-optimization.jpg"),
   },
   {
     slug: "wordpress-development",
@@ -61,6 +66,7 @@ const servicesList = [
       "Custom WordPress theme coding, WooCommerce integration, and custom Gutenberg blocks without template bloat.",
     icon: Globe,
     href: "/services/wordpress-development",
+    bgImage: getAssetPath("/images/services/wordpress-development.jpg"),
   },
   {
     slug: "shopify-website-design",
@@ -69,6 +75,7 @@ const servicesList = [
       "Conversion-driven Liquid themes, mobile shopping UX, and automated shop app integrations for D2C brands.",
     icon: ShoppingBag,
     href: "/services/shopify-website-design",
+    bgImage: getAssetPath("/images/services/shopify-website-design.jpg"),
   },
   {
     slug: "ecommerce-development",
@@ -77,6 +84,7 @@ const servicesList = [
       "Scalable e-commerce platforms featuring custom checkout flows, payment gateways, and inventory automation.",
     icon: ShoppingCart,
     href: "/services/ecommerce-development",
+    bgImage: getAssetPath("/images/services/ecommerce-development.jpg"),
   },
   {
     slug: "graphic-design",
@@ -85,6 +93,7 @@ const servicesList = [
       "Modern brand identities, visual language systems, typography, and design tokens that distinguish your business.",
     icon: Palette,
     href: "/services/graphic-design",
+    bgImage: getAssetPath("/images/services/graphic-design.jpg"),
   },
   {
     slug: "crm-software-development",
@@ -93,6 +102,7 @@ const servicesList = [
       "Tailored sales pipelines, lead scoring, client communication hubs, and WhatsApp/Email automation.",
     icon: Database,
     href: "/services/crm-software-development",
+    bgImage: getAssetPath("/images/services/crm-software-development.jpg"),
   },
   {
     slug: "mobile-app-development",
@@ -101,6 +111,7 @@ const servicesList = [
       "Cross-platform iOS and Android mobile apps engineered with React Native, smooth UX, and App Store submission.",
     icon: Smartphone,
     href: "/services/mobile-app-development",
+    bgImage: getAssetPath("/images/services/mobile-app-development.jpg"),
   },
   {
     slug: "web-apps-saas",
@@ -109,6 +120,7 @@ const servicesList = [
       "Multi-tenant SaaS cloud applications featuring Stripe subscription billing, dashboards, and scalable APIs.",
     icon: Cloud,
     href: "/services/web-apps-saas",
+    bgImage: getAssetPath("/images/services/web-apps-saas.jpg"),
   },
   {
     slug: "google-business-profile",
@@ -117,6 +129,7 @@ const servicesList = [
       "Dominating local Google Map Pack rankings, profile verification, review management, and local lead generation.",
     icon: MapPin,
     href: "/services/google-business-profile",
+    bgImage: getAssetPath("/images/services/google-business-profile.jpg"),
   },
   {
     slug: "digital-marketing",
@@ -125,6 +138,7 @@ const servicesList = [
       "Data-driven growth strategies, omnichannel marketing campaigns, and funnel optimization to drive sustainable ROI.",
     icon: TrendingUp,
     href: "/services/digital-marketing",
+    bgImage: getAssetPath("/images/services/digital-marketing.jpg"),
   },
   {
     slug: "poster-design",
@@ -133,6 +147,7 @@ const servicesList = [
       "Striking promotional graphics, event posters, and visual editorial assets crafted to capture attention instantly.",
     icon: ImageIcon,
     href: "/services/poster-design",
+    bgImage: getAssetPath("/images/services/poster-design.jpg"),
   },
   {
     slug: "meta-ads",
@@ -141,6 +156,7 @@ const servicesList = [
       "Precision-targeted Facebook & Instagram ad campaigns with high-converting creative, A/B testing, and audience analytics.",
     icon: Target,
     href: "/services/meta-ads",
+    bgImage: getAssetPath("/images/services/meta-ads.jpg"),
   },
 ];
 
@@ -245,7 +261,7 @@ export default function ServicesClient() {
         </section>
 
         {/* All Service Cards Grid */}
-        <section className="py-24 px-6 bg-white">
+        <section className="py-24 px-6 bg-slate-50/50">
           <div className="max-w-7xl mx-auto space-y-12">
             <div
               ref={cardsRef}
@@ -258,26 +274,40 @@ export default function ServicesClient() {
                     key={service.slug}
                     href={service.href}
                     prefetch={true}
-                    className="group relative p-8 rounded-2xl bg-teal-50/40 border border-teal-100/80 hover:border-teal-300 hover:bg-white shadow-subtle hover:shadow-card transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between"
+                    className="group relative rounded-2xl overflow-hidden border border-slate-200/80 bg-white shadow-md hover:shadow-2xl hover:border-teal-500/50 transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between"
                   >
-                    <div className="space-y-6">
-                      <div className="w-12 h-12 rounded-xl bg-teal-100 flex items-center justify-center group-hover:scale-110 group-hover:bg-teal-700 group-hover:text-white transition-all duration-300">
-                        <Icon className="w-6 h-6 text-teal-700 group-hover:text-white transition-colors duration-300" />
-                      </div>
+                    {/* Top Service Image Banner Frame */}
+                    <div className="relative w-full aspect-[16/10] overflow-hidden bg-slate-950 border-b border-slate-100">
+                      <Image
+                        src={service.bgImage}
+                        alt={service.title}
+                        fill
+                        unoptimized
+                        className="object-cover object-center group-hover:scale-105 transition-transform duration-500 ease-out"
+                      />
+                      <div className="absolute inset-0 bg-slate-950/10 group-hover:bg-transparent transition-colors duration-300" />
+                    </div>
 
+                    {/* Bottom Card Content Body */}
+                    <div className="p-6 flex flex-col justify-between flex-grow space-y-5 bg-white">
                       <div className="space-y-3">
-                        <h2 className="text-xl font-bold text-slate-900 group-hover:text-teal-700 transition-colors">
-                          {service.title}
-                        </h2>
-                        <p className="text-slate-600 text-sm leading-relaxed">
+                        <div className="flex items-center gap-3">
+                          <div className="w-10 h-10 rounded-xl bg-teal-50 border border-teal-200/60 flex items-center justify-center group-hover:bg-teal-700 transition-colors duration-300 shrink-0">
+                            <Icon className="w-5 h-5 text-teal-700 group-hover:text-white transition-colors duration-300" />
+                          </div>
+                          <h2 className="text-lg font-bold text-slate-900 group-hover:text-teal-700 transition-colors">
+                            {service.title}
+                          </h2>
+                        </div>
+                        <p className="text-sm text-slate-600 leading-relaxed font-light line-clamp-3">
                           {service.description}
                         </p>
                       </div>
-                    </div>
 
-                    <div className="pt-6 mt-6 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-teal-700">
-                      <span>EXPLORE SERVICE</span>
-                      <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                      <div className="pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-teal-700 uppercase tracking-wider group-hover:text-teal-800">
+                        <span>EXPLORE SERVICE</span>
+                        <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                      </div>
                     </div>
                   </Link>
                 );
@@ -297,7 +327,7 @@ export default function ServicesClient() {
               Why Ambitious Brands Partner with <span className="text-teal-700">Larkspire</span>
             </h2>
             <p className="text-slate-600 text-base sm:text-lg max-w-3xl mx-auto leading-relaxed">
-              Larkspire is a boutique digital agency combining elite technical engineering with commercial design strategy. From high-speed Next.js web applications to profitable Meta Ad funnels and dominant organic search rankings, we build digital assets engineered for market leadership.
+              Larkspire is a creative digital agency combining elite technical engineering with commercial design strategy. From high-speed Next.js web applications to profitable Meta Ad funnels and dominant organic search rankings, we build digital assets engineered for market leadership.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-4 text-left">
               <div className="p-6 rounded-2xl bg-white border border-teal-100 shadow-sm space-y-2">

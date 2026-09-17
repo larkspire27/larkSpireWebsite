@@ -4,7 +4,7 @@ import AboutClient from "@/components/AboutClient";
 export const metadata: Metadata = {
   title: "About Us | Larkspire Creative Studio",
   description:
-    "Learn about Larkspire — a boutique digital agency combining elite web engineering, commercial design psychology, and sub-second performance.",
+    "Learn about Larkspire — a creative digital agency combining elite web engineering, commercial design psychology, and sub-second performance.",
   alternates: {
     canonical: "https://larkspire.in/about",
   },

@@ -58,6 +58,8 @@ export const metadata: Metadata = {
 };
 
 import LeadPopup from "@/components/LeadPopup";
+import ArcadeGameWidget from "@/components/ArcadeGameWidget";
+import CustomCursor from "@/components/CustomCursor";
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -170,8 +172,10 @@ export default function RootLayout({
         />
       </head>
       <body className="bg-background text-foreground antialiased selection:bg-teal-700 selection:text-white font-sans">
+        <CustomCursor />
         {children}
         <LeadPopup />
+        <ArcadeGameWidget />
       </body>
     </html>
   );

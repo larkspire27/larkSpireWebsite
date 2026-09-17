@@ -53,16 +53,16 @@ export default function Hero() {
   return (
     <section
       ref={containerRef}
-      className="relative min-h-[90vh] flex items-end justify-center pt-24 sm:pt-28 pb-0 px-4 sm:px-6 overflow-hidden bg-background"
+      className="relative min-h-[85vh] lg:min-h-[90vh] flex items-center justify-center pt-20 sm:pt-24 pb-4 sm:pb-8 px-4 sm:px-6 overflow-hidden bg-background"
     >
       {/* Background Soft Glow Blobs */}
       <div className="absolute top-1/4 -left-20 w-72 sm:w-96 h-72 sm:h-96 rounded-full bg-teal-100/60 blur-3xl pointer-events-none z-0" />
       <div className="absolute bottom-10 right-10 w-[20rem] sm:w-[30rem] h-[20rem] sm:h-[30rem] rounded-full bg-teal-200/40 blur-3xl pointer-events-none z-0" />
 
-      <div className="relative z-10 max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-end">
+      <div className="relative z-10 max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">
 
         {/* Left Column: Interactive Intro & Headline */}
-        <div ref={leftColRef} className="lg:col-span-7 space-y-5 text-left pb-10 sm:pb-12">
+        <div ref={leftColRef} className="lg:col-span-7 space-y-6 text-left py-2 sm:py-4">
 
           {/* Blurred Intro Label */}
           <div className="space-y-1">

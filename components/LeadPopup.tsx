@@ -33,6 +33,9 @@ export default function LeadPopup() {
   const handleClose = () => {
     setIsOpen(false);
     sessionStorage.setItem("larkspire_popup_dismissed", "true");
+    if (typeof window !== "undefined") {
+      window.dispatchEvent(new Event("larkspire_lead_popup_closed"));
+    }
   };
 
   // Close on ESC key press

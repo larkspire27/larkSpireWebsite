@@ -178,7 +178,7 @@ export default function IndustriesWeServeSection() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
           
           {/* Left Column: Heading & Active Industry Details */}
-          <div className="lg:col-span-5 space-y-7 ind-fade">
+          <div className="lg:col-span-5 space-y-7 ind-fade self-center">
             {/* Category Tag */}
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-teal-500/10 border border-teal-600/20 text-teal-800 text-xs font-bold tracking-wider uppercase">
               <Layers className="w-3.5 h-3.5 text-teal-700" />
@@ -289,10 +289,10 @@ export default function IndustriesWeServeSection() {
                 <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-teal-700 text-white flex items-center justify-center shadow-md mb-1">
                   <Sparkles className="w-4 h-4 text-teal-200" />
                 </div>
-                <span className="text-[10px] sm:text-xs font-black tracking-wider text-slate-900 uppercase leading-none">
+                <span className="text-xs font-black tracking-wider text-slate-900 uppercase leading-none">
                   Larkspire
                 </span>
-                <span className="text-[8px] font-bold text-teal-700 uppercase mt-0.5 tracking-widest">
+                <span className="text-xs font-bold text-teal-700 uppercase mt-0.5 tracking-widest">
                   HUB
                 </span>
               </div>
@@ -335,7 +335,7 @@ export default function IndustriesWeServeSection() {
 
                     {/* Clean Pill Label under Node */}
                     <div
-                      className={`mt-1 px-2.5 py-0.5 rounded-full text-[10px] font-bold whitespace-nowrap transition-all duration-300 ${
+                      className={`mt-1 px-2.5 py-0.5 rounded-full text-xs font-bold whitespace-nowrap transition-all duration-300 ${
                         isActive
                           ? "bg-slate-900 text-white shadow-md scale-105"
                           : "bg-white/95 text-slate-700 border border-slate-200/80 group-hover:bg-teal-50 group-hover:text-teal-800"

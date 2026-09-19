@@ -66,10 +66,10 @@ export default function Hero() {
 
           {/* Blurred Intro Label */}
           <div className="space-y-1">
-            <div className="inline-flex items-center gap-2 max-w-full px-3.5 py-1.5 rounded-full bg-teal-50 border border-teal-200/80 shadow-xs text-xs font-semibold uppercase tracking-wider text-teal-800">
+            <div className="inline-flex items-center gap-2 max-w-full px-3.5 py-1.5 rounded-full bg-teal-50 border border-teal-200/80 shadow-xs text-xs font-semibold tracking-wider text-teal-800">
               <span className="w-2 h-2 rounded-full bg-teal-600 animate-pulse shrink-0" />
               <Sparkles className="w-3.5 h-3.5 text-teal-700 shrink-0" />
-              <span>CREATIVE DIGITAL STUDIO</span>
+              <span>Creative Digital Studio</span>
             </div>
           </div>
 
@@ -92,7 +92,7 @@ export default function Hero() {
 
           {/* Action Pill Prompt Buttons */}
           <div className="pt-2 space-y-2">
-            <p className="text-xs font-bold text-slate-500 uppercase tracking-widest">
+            <p className="text-xs font-bold text-slate-500 tracking-wider">
               Quick Actions / Prompts:
             </p>
             <div className="flex flex-wrap items-center gap-2">

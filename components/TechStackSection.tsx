@@ -305,7 +305,7 @@ export default function TechStackSection() {
                   <div>
                     <h4 className="text-sm font-bold text-slate-900 flex items-center gap-2">
                       {hoveredTech.name}
-                      <span className="text-[10px] px-2 py-0.5 rounded-full uppercase tracking-wider bg-teal-100 text-teal-800 font-mono">
+                      <span className="text-xs px-2 py-0.5 rounded-full uppercase tracking-wider bg-teal-100 text-teal-800 font-mono">
                         {hoveredTech.category}
                       </span>
                     </h4>
@@ -348,10 +348,10 @@ export default function TechStackSection() {
                 <div className="w-7 h-7 rounded-full bg-teal-700 text-white flex items-center justify-center shadow-md mb-1">
                   <Code className="w-3.5 h-3.5 text-teal-200" />
                 </div>
-                <span className="text-[10px] font-extrabold tracking-wider text-slate-900 uppercase leading-none">
+                <span className="text-xs font-extrabold tracking-wider text-slate-900 uppercase leading-none">
                   LarkSpire
                 </span>
-                <span className="text-[8px] font-bold text-teal-700 uppercase mt-0.5">
+                <span className="text-xs font-bold text-teal-700 uppercase mt-0.5">
                   CORE STACK
                 </span>
               </div>
@@ -400,7 +400,7 @@ export default function TechStackSection() {
                     </div>
 
                     <div
-                      className={`mt-1 px-2 py-0.5 rounded-full text-[10px] font-bold whitespace-nowrap transition-all duration-300 ${
+                      className={`mt-1 px-2 py-0.5 rounded-full text-xs font-bold whitespace-nowrap transition-all duration-300 ${
                         isHovered
                           ? "bg-slate-900 text-white shadow-md scale-105"
                           : "bg-white/95 text-slate-700 border border-slate-200/80"
@@ -434,14 +434,14 @@ export default function TechStackSection() {
                       >
                         {tech.iconSvg}
                       </div>
-                      <span className="text-[9px] font-mono uppercase px-2 py-0.5 rounded-full bg-slate-100 text-slate-600">
+                      <span className="text-xs font-mono uppercase px-2 py-0.5 rounded-full bg-slate-100 text-slate-600">
                         {tech.category}
                       </span>
                     </div>
 
                     <div>
                       <p className="text-xs font-bold text-slate-900">{tech.name}</p>
-                      <p className="text-[10px] text-slate-500 line-clamp-1 mt-0.5 font-light">
+                      <p className="text-xs text-slate-500 line-clamp-1 mt-0.5 font-light">
                         {tech.description}
                       </p>
                     </div>

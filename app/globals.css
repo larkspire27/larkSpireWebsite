@@ -103,4 +103,13 @@ body {
   .border-text-stroke {
     -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.35);
   }
+
+  /* Hide administrative edit links and third-party watermarks injected by widgets */
+  a[href*="elfsight.com"],
+  a[href*="edit-widget"] {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+  }
 }

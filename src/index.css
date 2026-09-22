@@ -1,0 +1,271 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: #F3EBDD;
+    background-image: 
+      radial-gradient(ellipse at top, #FAF5EA 0%, #F0E5D3 100%),
+      radial-gradient(rgba(184, 134, 11, 0.12) 1px, transparent 1px);
+    background-size: 100% 100%, 28px 28px;
+    color: #2D0204;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F3EBDD;
+}
+::-webkit-scrollbar-thumb {
+  background: #C5A059;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #99781B;
+}
+
+/* Marquee Keyframes */
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 25s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Rich Gold Gradient Text for Light Theme */
+.gold-text-gradient {
+  background: linear-gradient(135deg, #7A0C1A 0%, #B8860B 40%, #7A0C1A 80%, #5E0613 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 1px 3px rgba(184, 134, 11, 0.3));
+}
+
+/* Light Theme Parchment Card */
+.bg-ivory-card {
+  background-color: #FFFDF7;
+  background-image: radial-gradient(#F5EFE3 1px, transparent 1px);
+  background-size: 20px 20px;
+  color: #2D0204;
+  border: 2px solid #C5A059;
+  box-shadow: 0 10px 30px rgba(184, 134, 11, 0.12);
+}
+
+/* Light Royal Maroon Card */
+.bg-maroon-card {
+  background: linear-gradient(180deg, #FFFDF7 0%, #FAF5EA 100%);
+  border: 2px solid #D4AF37;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+}
+
+/* Gold Foil Border */
+.border-gold-antique {
+  border-color: #C5A059;
+}
+
+/* Crimson Primary CTA Button */
+.btn-crimson {
+  background: linear-gradient(135deg, #7A0C1A 0%, #5E0613 100%);
+  color: #FFFDF0;
+  border: 1.5px solid #FFD700;
+  box-shadow: 0 6px 20px rgba(122, 12, 26, 0.3);
+  transition: all 0.3s ease;
+  font-weight: 800;
+}
+
+.btn-crimson:hover {
+  background: linear-gradient(135deg, #941122 0%, #7A0C1A 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(122, 12, 26, 0.4);
+}
+
+/* Gold Shimmer Button for Light Theme */
+@keyframes goldShimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.gold-shimmer-btn {
+  background: linear-gradient(90deg, #D4AF37 0%, #FFF5D6 50%, #D4AF37 100%);
+  background-size: 200% 100%;
+  animation: goldShimmer 3.5s infinite;
+  color: #2D0204;
+  font-weight: 900;
+  border: 1.5px solid #99781B;
+}
+
+/* 3D Envelope Component */
+.envelope-overlay-bg {
+  background-color: #F3EBDD;
+  background-image: 
+    radial-gradient(circle at center, #FAF5EA 0%, #F0E5D3 80%),
+    radial-gradient(rgba(184, 134, 11, 0.15) 1px, transparent 1px);
+  background-size: 100% 100%, 24px 24px;
+}
+
+.perspective-container {
+  perspective: 1200px;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.env-curtain-transition {
+  transition: transform 0.9s cubic-bezier(0.65, 0, 0.35, 1), opacity 0.85s ease;
+}
+
+.env-curtain-slide-up {
+  transform: translateY(-100%);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.env-v-flap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 48%;
+  background-color: #FAF7F2;
+  background-image: url('/images/ivory_embossed_paper.png');
+  background-size: cover;
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+  filter: drop-shadow(0 12px 20px rgba(0, 0, 0, 0.2));
+  transform-origin: top center;
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-style: preserve-3d;
+  z-index: 30;
+}
+
+.env-v-flap-open {
+  transform: rotateX(180deg);
+  z-index: 1 !important;
+}
+
+.env-wax-seal-container {
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 40;
+  cursor: pointer;
+  transition: transform 0.35s ease;
+}
+
+.env-wax-seal-container:hover {
+  transform: translate(-50%, -50%) scale(1.08);
+}
+
+.env-wax-seal-disk {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, #D4AF37 0%, #99781B 60%, #4D3C0C 100%);
+  border: 3px solid #FFF5D6;
+  box-shadow: 0 10px 30px rgba(184, 134, 11, 0.4), 0 0 20px rgba(212, 175, 55, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+}
+
+.env-wax-seal-inner {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, #7A0C1A 0%, #4A040E 70%, #290207 100%);
+  border: 1.5px solid #D4AF37;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #FFF5D6;
+  box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.8);
+}
+
+@keyframes sealPulse {
+  0%, 100% {
+    box-shadow: 0 0 18px rgba(212, 175, 55, 0.5);
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    box-shadow: 0 0 35px rgba(255, 215, 0, 0.8);
+    transform: translate(-50%, -50%) scale(1.06);
+  }
+}
+
+.animate-seal-pulse {
+  animation: sealPulse 2.5s infinite ease-in-out;
+}
+
+/* Animated Background Ornaments Utility Classes */
+@keyframes rotateSlow {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes floatSlow {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-12px) rotate(2deg); }
+}
+
+@keyframes floatReverse {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(12px) rotate(-2deg); }
+}
+
+@keyframes wavePulse {
+  0%, 100% { transform: scale(1) translateX(0); opacity: 0.12; }
+  50% { transform: scale(1.04) translateX(8px); opacity: 0.22; }
+}
+
+@keyframes faintGlow {
+  0%, 100% { opacity: 0.08; filter: drop-shadow(0 0 5px rgba(212, 175, 55, 0.2)); }
+  50% { opacity: 0.22; filter: drop-shadow(0 0 15px rgba(212, 175, 55, 0.5)); }
+}
+
+.animate-rotate-slow {
+  animation: rotateSlow 40s linear infinite;
+}
+
+.animate-float-slow {
+  animation: floatSlow 7s ease-in-out infinite;
+}
+
+.animate-float-reverse {
+  animation: floatReverse 8s ease-in-out infinite;
+}
+
+.animate-wave-pulse {
+  animation: wavePulse 10s ease-in-out infinite;
+}
+
+.animate-faint-glow {
+  animation: faintGlow 5s ease-in-out infinite;
+}
+
+/* Light Theme Text Helpers */
+.text-crimson-head {
+  color: #6B050E !important;
+}
+
+.text-gold-head {
+  color: #8C6711 !important;
+}
+
+.text-dark-body {
+  color: #2D0204 !important;
+  font-weight: 600;
+}
+

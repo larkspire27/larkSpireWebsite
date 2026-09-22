@@ -202,6 +202,11 @@ export default function Footer() {
                 Meta &amp; Paid Ads
               </Link>
             </li>
+            <li>
+              <Link href="/services/digital-wedding-invitation" prefetch={true} className="hover:text-teal-700 transition-colors">
+                Digital Wedding Cards
+              </Link>
+            </li>
           </ul>
         </div>
 

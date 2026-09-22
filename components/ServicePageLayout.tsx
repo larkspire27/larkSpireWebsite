@@ -19,6 +19,7 @@ import {
   Smartphone,
   Cloud,
   MapPin,
+  Heart,
   ArrowRight,
   CheckCircle2,
   Sparkles,
@@ -50,6 +51,7 @@ const iconMap = {
   Smartphone,
   Cloud,
   MapPin,
+  Heart,
 };
 
 interface ServicePageLayoutProps {

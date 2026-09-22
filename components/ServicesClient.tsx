@@ -18,6 +18,7 @@ import {
   Smartphone,
   Cloud,
   MapPin,
+  Heart,
   ArrowUpRight,
   ChevronDown,
   HelpCircle,
@@ -157,6 +158,15 @@ const servicesList = [
     icon: Target,
     href: "/services/meta-ads",
     bgImage: getAssetPath("/images/services/meta-ads.jpg"),
+  },
+  {
+    slug: "digital-wedding-invitation",
+    title: "Digital Wedding Invitation Card",
+    description:
+      "Animated digital wedding cards & online wedding invitations in Jaipur with WhatsApp RSVP, background music, photo gallery, and Google Maps venue navigation.",
+    icon: Heart,
+    href: "/services/digital-wedding-invitation",
+    bgImage: getAssetPath("/images/services/digital-wedding-invitation.jpg"),
   },
 ];
 

@@ -16,6 +16,7 @@ import {
   Smartphone,
   Cloud,
   MapPin,
+  Heart,
   ArrowUpRight,
 } from "lucide-react";
 import { getAssetPath } from "@/lib/basePath";
@@ -139,6 +140,15 @@ const servicesData: ServiceItem[] = [
       "Data-driven growth strategies, omnichannel marketing campaigns, and funnel optimization to drive sustainable ROI.",
     icon: <TrendingUp className="w-6 h-6 text-teal-400" />,
     bgImage: getAssetPath("/images/services/digital-marketing.jpg"),
+  },
+  {
+    id: "digital-wedding-invitation",
+    title: "Digital Wedding Invitation",
+    href: "/services/digital-wedding-invitation",
+    description:
+      "Animated digital wedding cards & online wedding invitations in Jaipur with WhatsApp RSVP, background music & Google Maps navigation.",
+    icon: <Heart className="w-6 h-6 text-teal-400" />,
+    bgImage: getAssetPath("/images/services/digital-wedding-invitation.jpg"),
   },
 ];
 

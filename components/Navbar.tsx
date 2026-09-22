@@ -21,6 +21,7 @@ import {
   Smartphone,
   Cloud,
   MapPin,
+  Heart,
 } from "lucide-react";
 import { clsx } from "clsx";
 
@@ -90,6 +91,12 @@ const servicesList = [
     href: "/services/google-business-profile",
     description: "Local SEO & Google Maps pack",
     icon: MapPin,
+  },
+  {
+    name: "Digital Wedding Invitation",
+    href: "/services/digital-wedding-invitation",
+    description: "Online wedding cards & WhatsApp RSVP in Jaipur",
+    icon: Heart,
   },
 ];
 

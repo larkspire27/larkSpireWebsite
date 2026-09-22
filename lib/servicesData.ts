@@ -53,7 +53,8 @@ export interface ServiceData {
     | "Database"
     | "Smartphone"
     | "Cloud"
-    | "MapPin";
+    | "MapPin"
+    | "Heart";
   tagline: string;
   heroDescription: string;
   heroImage?: string;
@@ -2153,6 +2154,184 @@ export const servicesDataMap: Record<string, ServiceData> = {
         "Growing brands needing a unified digital marketing partner",
         "Businesses wanting to scale customer acquisition channels",
         "Companies looking to optimize marketing funnel conversion rates",
+      ],
+    },
+  },
+
+  // 15. Digital Wedding Invitation Card
+  "digital-wedding-invitation": {
+    slug: "digital-wedding-invitation",
+    title: "Digital Wedding Invitation Card",
+    iconName: "Heart",
+    tagline: "Invite, Impress & Celebrate Digitally – Interactive Wedding Cards in Jaipur",
+    heroDescription:
+      "Make your special day extra memorable with custom animated and interactive digital wedding invitations designed with love in Jaipur. Featuring romantic background music, instant WhatsApp RSVP forms, multi-day event schedules, photo galleries, and direct Google Maps venue navigation.",
+    heroImage: getAssetPath("/images/services/digital-wedding-invitation.jpg"),
+    metaTitle: "Digital Wedding Card & Wedding Invitation Online Jaipur | Larkspire",
+    metaDescription:
+      "Looking for digital wedding card design or wedding invitation online in Jaipur? Larkspire creates animated, interactive digital wedding invitations with WhatsApp RSVP, music, photo gallery & Google Maps venue navigation.",
+    featuresList: [
+      {
+        title: "Custom Royal & Modern Designs",
+        description:
+          "Bespoke digital wedding invitation card themes tailored for your love story — from Royal Rajasthani heritage palace motifs to modern minimalist luxury and floral pastel aesthetics.",
+      },
+      {
+        title: "Smooth Animations & Motion Transitions",
+        description:
+          "Captivate your guests with elegant motion graphics, animated floral blooms, glowing typography, and interactive page scroll transitions built for smooth viewing.",
+      },
+      {
+        title: "Instant WhatsApp RSVP & Headcount Form",
+        description:
+          "Streamline your wedding planning with one-click WhatsApp RSVP integration and automated guest response tracking for Haldi, Mehendi, Sangeet, Wedding & Reception.",
+      },
+      {
+        title: "Interactive Multi-Event Schedule with Google Maps",
+        description:
+          "Keep guests informed with dedicated event schedules for Haldi, Mehendi, Sangeet, Wedding, and Reception — featuring direct Google Maps GPS venue navigation links.",
+      },
+      {
+        title: "Background Music & Couple Photo Gallery",
+        description:
+          "Set the romantic mood with auto-playing background instrumental music, pre-wedding shoot photo galleries, and an interactive couple love story timeline.",
+      },
+      {
+        title: "Easy WhatsApp & Social Media One-Click Sharing",
+        description:
+          "Share your digital wedding card effortlessly via WhatsApp messages, Instagram DMs, email, and social media with personalized message templates.",
+      },
+    ],
+    processSteps: [
+      {
+        number: "01",
+        title: "Design Theme & Concept Selection",
+        description:
+          "Choose from our royal Jaipur wedding invitation card designs or request a completely bespoke theme reflecting your wedding decor and color palette.",
+      },
+      {
+        number: "02",
+        title: "Content, Media & Event Details Collection",
+        description:
+          "Share your event dates, venue details, couple photos, love story narrative, background song choice, and custom RSVP preferences.",
+      },
+      {
+        number: "03",
+        title: "Interactive Feature & Animation Build",
+        description:
+          "We craft your interactive wedding web page with animations, Google Maps venue links, WhatsApp RSVP form, and smartphone responsiveness.",
+      },
+      {
+        number: "04",
+        title: "Review, Instant Delivery & Sharing Link",
+        description:
+          "Preview your digital wedding card, request final tweaks, and receive a fast-loading custom web link ready for instant WhatsApp sharing to your guest list.",
+      },
+    ],
+    whyUsPoints: [
+      {
+        title: "Jaipur's Premier Digital Wedding Card Creator",
+        description:
+          "Deep understanding of Jaipur's rich royal wedding culture combined with cutting-edge web design and interactive motion graphics.",
+      },
+      {
+        title: "Express 24 to 48-Hour Fast Delivery",
+        description:
+          "Get your complete, interactive digital wedding invitation online ready in just 24 to 48 hours with dedicated support for edit requests.",
+      },
+      {
+        title: "100% Mobile & WhatsApp Optimized",
+        description:
+          "Flawless loading on all smartphones, tablets, and laptops with zero app downloads required for your invited guests.",
+      },
+    ],
+    relatedProjects: [
+      {
+        id: "wedding-1",
+        title: "Rahul & Priya - Royal Jaipur Palace Wedding E-Invite",
+        category: "Digital Wedding Card",
+        description:
+          "Luxury Rajasthani royal palace themed digital wedding invitation website with WhatsApp RSVP, background flute music, and Google Maps venue guide.",
+        gradient: "from-amber-600 to-rose-600",
+      },
+      {
+        id: "wedding-2",
+        title: "Ananya & Vikram - Modern Floral Interactive E-Card",
+        category: "Wedding Invitation Online",
+        description:
+          "Modern animated pastel floral wedding invitation online featuring multi-day event timelines for Sangeet, Haldi & Reception.",
+        gradient: "from-pink-600 to-rose-500",
+      },
+      {
+        id: "wedding-3",
+        title: "Siddharth & Meera - Heritage Destination Wedding Card",
+        category: "Digital Wedding Invitation",
+        description:
+          "Interactive destination wedding web card with couple love story timeline, photo gallery, and instant guest headcount tracking.",
+        gradient: "from-purple-600 to-pink-600",
+      },
+    ],
+    faqs: [
+      {
+        question: "What is a digital wedding invitation card and why choose it over paper invitations?",
+        answer:
+          "A digital wedding invitation card (or wedding web page) is an interactive, animated online invitation accessed via a simple web link. Unlike traditional paper invitations, digital wedding cards feature auto-playing background music, instant WhatsApp RSVP responses, live Google Maps venue navigation, photo galleries, and zero printing delays. It allows you to invite guests instantly across Jaipur, India, or worldwide at a fraction of the cost.",
+      },
+      {
+        question: "How does the WhatsApp RSVP feature work in the digital wedding card?",
+        answer:
+          "When guests open your wedding invitation online, they click the 'RSVP Now' button. A sleek form allows them to select attending events (Haldi, Mehendi, Sangeet, Wedding, Reception) and submit guest count. The confirmation is sent directly to your WhatsApp or centralized spreadsheet in real time.",
+      },
+      {
+        question: "Can we include background music, video clips, and Google Maps venue links?",
+        answer:
+          "Yes! You can add your favorite romantic song or instrumental track that plays as guests browse your card. Each multi-day wedding event (Haldi, Sangeet, Shaadi, Reception) includes a direct Google Maps button so guests can navigate to your wedding venue in Jaipur with one tap.",
+      },
+      {
+        question: "How quickly can Larkspire deliver our digital wedding card in Jaipur?",
+        answer:
+          "We offer express fast delivery in 24 to 48 hours! Once you share your couple photos, event dates, venue details, and song choice, our creative design team crafts and delivers your live digital wedding invitation link.",
+      },
+      {
+        question: "Do guests need to download any app to view our wedding invitation online?",
+        answer:
+          "Not at all! Your digital wedding invitation opens instantly in any web browser (Safari, Chrome, WhatsApp built-in browser) on mobile phones, tablets, or computers with zero app downloads required.",
+      },
+      {
+        question: "Can we customize the digital wedding card for Jaipur royal themes or modern styles?",
+        answer:
+          "Absolutely. We offer customizable design templates including Royal Rajasthani Palace & Elephant themes, Golden Luxury Vintage, Floral Pastel Romantic, Modern Minimalist, and Royal Caricature styles to match your Jaipur wedding aesthetic.",
+      },
+      {
+        question: "How do we share the online digital wedding invitation card with our guests?",
+        answer:
+          "We provide a custom web link along with tailored WhatsApp text messages and PDF visual cards. You can broadcast or forward the link directly on WhatsApp groups, individual chats, or social media.",
+      },
+    ],
+    detailedSeoContent: {
+      overview:
+        "Larkspire is Jaipur's top digital wedding invitation card agency, delivering high-impact online wedding invitations, interactive e-cards, and wedding website designs for couples in Jaipur and worldwide. We blend royal Rajasthani design aesthetics with modern web technologies to create digital wedding cards featuring custom background music, WhatsApp RSVP, interactive photo galleries, multi-event schedules (Haldi, Mehendi, Sangeet, Wedding, Reception), and live Google Maps location navigation. Ranking top for wedding invitation online and digital wedding card services in Jaipur, Larkspire makes sending invitations effortless, eco-friendly, and truly unforgettable.",
+      keyBenefits: [
+        "Ranked top choice for digital wedding card design & wedding invitation online in Jaipur",
+        "Save thousands on paper printing with eco-friendly animated e-cards",
+        "Collect instant guest RSVPs and headcount via WhatsApp integration",
+        "Direct Google Maps GPS venue navigation buttons for hassle-free guest arrivals",
+        "Auto-playing romantic background music & interactive couple photo galleries",
+        "Express 24-48 hour delivery with dedicated support for last-minute date or venue edits",
+      ],
+      deliverables: [
+        "Custom Animated Digital Wedding Invitation Web Page",
+        "Instant WhatsApp RSVP Integration & Guest Tracker",
+        "Google Maps Venue Location Navigation Buttons",
+        "Background Music Auto-Player & Photo Gallery Setup",
+        "WhatsApp Ready Sharing Message & Digital Teaser Graphic",
+        "Post-Launch Event Edit Support",
+      ],
+      idealFor: [
+        "Couples searching for wedding invitation online or digital wedding card services in Jaipur",
+        "Families planning royal Rajasthani palace, resort, or heritage destination weddings",
+        "NRIs and tech-savvy couples wanting modern, interactive digital invitation cards",
+        "Couples needing fast, 24-48 hour express wedding invitation delivery",
       ],
     },
   },

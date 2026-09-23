@@ -297,7 +297,7 @@ function CompletedProjectCard({ project }: { project: CompletedProject }) {
           href={project.liveUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-3 w-full inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-teal-700 to-teal-800 hover:from-teal-800 hover:to-teal-900 text-white text-xs font-bold uppercase tracking-wider shadow-md hover:shadow-lg transition-all duration-300 group/btn"
+          className="mt-3 w-full inline-flex items-center justify-center gap-2 px-5 py-3 min-h-[44px] rounded-full bg-gradient-to-r from-teal-700 to-teal-800 hover:from-teal-800 hover:to-teal-900 text-white text-xs font-bold uppercase tracking-wider shadow-md hover:shadow-lg transition-all duration-300 group/btn apple-focus-ring"
         >
           <Globe className="w-3.5 h-3.5" />
           <span>Visit Live Website</span>
@@ -549,7 +549,7 @@ export default function Portfolio() {
             <div className={`p-6 sm:p-8 bg-gradient-to-br ${activeProject.gradient} text-white relative shrink-0`}>
               <button
                 onClick={() => setActiveProject(null)}
-                className="absolute top-4 right-4 p-2 rounded-full bg-white/10 hover:bg-white/20 text-white transition-colors"
+                className="absolute top-4 right-4 w-9 h-9 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 text-white transition-colors apple-focus-ring"
                 aria-label="Close modal"
               >
                 <X className="w-5 h-5" />
@@ -633,7 +633,7 @@ export default function Portfolio() {
                 <a
                   href="#contact"
                   onClick={() => setActiveProject(null)}
-                  className="w-full sm:w-auto px-6 py-3 rounded-full bg-teal-700 hover:bg-teal-800 text-white font-bold text-xs uppercase tracking-wider inline-flex items-center justify-center gap-2 shadow-md transition-all"
+                  className="w-full sm:w-auto px-6 py-3.5 min-h-[44px] rounded-full bg-teal-700 hover:bg-teal-800 text-white font-bold text-xs uppercase tracking-wider inline-flex items-center justify-center gap-2 shadow-md transition-all apple-focus-ring"
                 >
                   <span>Start Your Project</span>
                   <ArrowRight className="w-3.5 h-3.5" />

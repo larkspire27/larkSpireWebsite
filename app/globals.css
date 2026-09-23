@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --background: #d6ebe6;
-  --foreground: #1A1A1A;
+  --background: #F8FAFC;
+  --foreground: #0F172A;
   --primary-teal: #0A4B51;
   --secondary-tint: #E4EEEC;
 }
@@ -17,11 +17,11 @@ html {
 }
 
 body {
-  background-color: #d6ebe6;
+  background-color: #F8FAFC;
   background-image: 
-    radial-gradient(circle at 10% 20%, rgba(10, 75, 81, 0.15) 0%, transparent 40%),
-    radial-gradient(circle at 90% 15%, rgba(20, 120, 130, 0.12) 0%, transparent 45%),
-    linear-gradient(135deg, #dceee9 0%, #c4e5de 40%, #d8ebd7 70%, #bce0d8 100%);
+    radial-gradient(circle at 10% 15%, rgba(10, 75, 81, 0.06) 0%, transparent 45%),
+    radial-gradient(circle at 90% 10%, rgba(20, 120, 130, 0.05) 0%, transparent 50%),
+    linear-gradient(180deg, #F8FAFC 0%, #F1F5F9 50%, #F8FAFC 100%);
   color: var(--foreground);
   font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
   min-height: 100vh;
@@ -37,10 +37,10 @@ body {
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #EFEFEF;
+  background: #F1F5F9;
 }
 ::-webkit-scrollbar-thumb {
-  background: #C4DBD7;
+  background: #CBD5E1;
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
@@ -82,18 +82,22 @@ body {
 
   /* Light mode glass navbar / card styles */
   .glass-nav {
-    background: rgba(220, 238, 233, 0.85);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+    background: rgba(248, 250, 252, 0.85);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
     border-bottom: 1px solid rgba(10, 75, 81, 0.08);
   }
   
   .glass-card {
-    background: rgba(255, 255, 255, 0.75);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(10, 75, 81, 0.12);
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(10, 75, 81, 0.1);
     box-shadow: 0 10px 30px -10px rgba(10, 75, 81, 0.05);
+  }
+
+  .apple-focus-ring {
+    @apply focus:outline-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-700 focus-visible:ring-offset-2;
   }
 
   .text-brand-gradient {

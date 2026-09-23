@@ -98,7 +98,7 @@ export default function Hero() {
             <div className="flex flex-wrap items-center gap-2">
               <Link
                 href="#contact"
-                className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-teal-700 text-white font-medium text-xs sm:text-sm hover:bg-teal-800 transition-all duration-200 shadow-sm hover:scale-105"
+                className="inline-flex items-center gap-1.5 px-4 py-2.5 min-h-[44px] rounded-full bg-teal-700 text-white font-medium text-xs sm:text-sm hover:bg-teal-800 transition-all duration-200 shadow-sm hover:scale-105 apple-focus-ring"
               >
                 <Send className="w-3.5 h-3.5" />
                 <span>Pitch us an idea</span>
@@ -106,7 +106,7 @@ export default function Hero() {
 
               <Link
                 href="/services"
-                className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-white text-slate-800 border border-teal-200 font-medium text-xs sm:text-sm hover:bg-teal-50 hover:border-teal-400 transition-all duration-200 shadow-xs"
+                className="inline-flex items-center gap-1.5 px-4 py-2.5 min-h-[44px] rounded-full bg-white text-slate-800 border border-teal-200 font-medium text-xs sm:text-sm hover:bg-teal-50 hover:border-teal-400 transition-all duration-200 shadow-xs apple-focus-ring"
               >
                 <Compass className="w-3.5 h-3.5 text-teal-700" />
                 <span>See how we operate</span>
@@ -114,7 +114,7 @@ export default function Hero() {
 
               <Link
                 href="#portfolio"
-                className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-white text-slate-800 border border-teal-200 font-medium text-xs sm:text-sm hover:bg-teal-50 hover:border-teal-400 transition-all duration-200 shadow-xs"
+                className="inline-flex items-center gap-1.5 px-4 py-2.5 min-h-[44px] rounded-full bg-white text-slate-800 border border-teal-200 font-medium text-xs sm:text-sm hover:bg-teal-50 hover:border-teal-400 transition-all duration-200 shadow-xs apple-focus-ring"
               >
                 <Briefcase className="w-3.5 h-3.5 text-teal-700" />
                 <span>Explore client work</span>
@@ -123,7 +123,7 @@ export default function Hero() {
               {/* Copy Email Pill Button */}
               <button
                 onClick={handleCopyEmail}
-                className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900 text-white border border-slate-800 font-medium text-xs sm:text-sm hover:bg-teal-900 transition-all duration-200 shadow-xs group"
+                className="inline-flex items-center gap-2 px-4 py-2.5 min-h-[44px] rounded-full bg-slate-900 text-white border border-slate-800 font-medium text-xs sm:text-sm hover:bg-teal-900 transition-all duration-200 shadow-xs group apple-focus-ring"
               >
                 <span>Reach us: <span className="underline underline-offset-2 text-teal-300">spirelark@gmail.com</span></span>
                 {copiedEmail ? (

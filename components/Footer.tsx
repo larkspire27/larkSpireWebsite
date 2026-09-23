@@ -87,12 +87,12 @@ export default function Footer() {
             Larkspire is a creative digital agency crafting high-impact web experiences, visual identities, and performance marketing.
           </p>
 
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2.5">
             <a
               href="https://www.linkedin.com/company/larkspire-services/"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-9 h-9 rounded-full bg-teal-50 border border-teal-100 flex items-center justify-center text-teal-700 hover:bg-teal-700 hover:text-white transition-colors duration-200"
+              className="w-11 h-11 rounded-full bg-teal-50 border border-teal-100 flex items-center justify-center text-teal-700 hover:bg-teal-700 hover:text-white transition-colors duration-200 apple-focus-ring"
               aria-label="LinkedIn"
             >
               <LinkedinIcon className="w-4 h-4" />
@@ -101,7 +101,7 @@ export default function Footer() {
               href="https://www.facebook.com/profile.php?id=61593659866731"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-9 h-9 rounded-full bg-teal-50 border border-teal-100 flex items-center justify-center text-teal-700 hover:bg-teal-700 hover:text-white transition-colors duration-200"
+              className="w-11 h-11 rounded-full bg-teal-50 border border-teal-100 flex items-center justify-center text-teal-700 hover:bg-teal-700 hover:text-white transition-colors duration-200 apple-focus-ring"
               aria-label="Facebook"
             >
               <FacebookIcon className="w-4 h-4" />
@@ -110,21 +110,21 @@ export default function Footer() {
               href="https://www.instagram.com/larkspireservices/"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-9 h-9 rounded-full bg-teal-50 border border-teal-100 flex items-center justify-center text-teal-700 hover:bg-teal-700 hover:text-white transition-colors duration-200"
+              className="w-11 h-11 rounded-full bg-teal-50 border border-teal-100 flex items-center justify-center text-teal-700 hover:bg-teal-700 hover:text-white transition-colors duration-200 apple-focus-ring"
               aria-label="Instagram"
             >
               <InstagramIcon className="w-4 h-4" />
             </a>
             <a
               href="mailto:spirelark@gmail.com"
-              className="w-9 h-9 rounded-full bg-teal-50 border border-teal-100 flex items-center justify-center text-teal-700 hover:bg-teal-700 hover:text-white transition-colors duration-200"
+              className="w-11 h-11 rounded-full bg-teal-50 border border-teal-100 flex items-center justify-center text-teal-700 hover:bg-teal-700 hover:text-white transition-colors duration-200 apple-focus-ring"
               aria-label="Email"
             >
               <Mail className="w-4 h-4" />
             </a>
             <a
               href="tel:+919928196424"
-              className="w-9 h-9 rounded-full bg-teal-50 border border-teal-100 flex items-center justify-center text-teal-700 hover:bg-teal-700 hover:text-white transition-colors duration-200"
+              className="w-11 h-11 rounded-full bg-teal-50 border border-teal-100 flex items-center justify-center text-teal-700 hover:bg-teal-700 hover:text-white transition-colors duration-200 apple-focus-ring"
               aria-label="Phone"
             >
               <Phone className="w-4 h-4" />

@@ -25,7 +25,7 @@ export default function LeadPopup() {
     if (!hasSeenPopup) {
       const timer = setTimeout(() => {
         setIsOpen(true);
-      }, 1200);
+      }, 8500);
       return () => clearTimeout(timer);
     }
   }, []);
@@ -100,7 +100,7 @@ export default function LeadPopup() {
         <div className="bg-gradient-to-r from-teal-900 via-teal-800 to-slate-900 text-white p-4 sm:p-5 relative shrink-0">
           <button
             onClick={handleClose}
-            className="absolute top-3 right-3 p-1.5 rounded-full bg-white/10 hover:bg-white/20 text-white transition-colors focus:outline-none"
+            className="absolute top-3 right-3 w-9 h-9 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 text-white transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-white min-h-[36px]"
             aria-label="Close modal"
           >
             <X className="w-4 h-4" />
@@ -135,7 +135,7 @@ export default function LeadPopup() {
               <div className="pt-2">
                 <button
                   onClick={handleClose}
-                  className="px-6 py-2 rounded-full bg-teal-700 text-white font-bold text-xs uppercase tracking-wider hover:bg-teal-800 transition-colors shadow-sm"
+                  className="px-6 py-3 min-h-[44px] rounded-full bg-teal-700 text-white font-bold text-xs uppercase tracking-wider hover:bg-teal-800 transition-colors shadow-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-700 focus-visible:ring-offset-2"
                 >
                   Close Window
                 </button>
@@ -171,7 +171,7 @@ export default function LeadPopup() {
                     setFormData({ ...formData, name: e.target.value })
                   }
                   placeholder="e.g. Alex Morgan"
-                  className="w-full px-3 py-2 rounded-lg bg-teal-50/40 border border-slate-200 text-slate-900 text-xs sm:text-sm focus:border-teal-700 focus:bg-white focus:outline-none transition-all"
+                  className="w-full px-3 py-2.5 min-h-[44px] rounded-lg bg-teal-50/40 border border-slate-200 text-slate-900 text-xs sm:text-sm focus:border-teal-700 focus:bg-white focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-700 transition-all"
                 />
                 {errors.name && (
                   <p className="text-[10px] text-red-500">{errors.name}</p>
@@ -196,7 +196,7 @@ export default function LeadPopup() {
                       setFormData({ ...formData, email: e.target.value })
                     }
                     placeholder="alex@company.com"
-                    className="w-full px-3 py-2 rounded-lg bg-teal-50/40 border border-slate-200 text-slate-900 text-xs sm:text-sm focus:border-teal-700 focus:bg-white focus:outline-none transition-all"
+                    className="w-full px-3 py-2.5 min-h-[44px] rounded-lg bg-teal-50/40 border border-slate-200 text-slate-900 text-xs sm:text-sm focus:border-teal-700 focus:bg-white focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-700 transition-all"
                   />
                   {errors.email && (
                     <p className="text-[10px] text-red-500">{errors.email}</p>
@@ -218,7 +218,7 @@ export default function LeadPopup() {
                       setFormData({ ...formData, phone: e.target.value })
                     }
                     placeholder="+91 9928196424"
-                    className="w-full px-3 py-2 rounded-lg bg-teal-50/40 border border-slate-200 text-slate-900 text-xs sm:text-sm focus:border-teal-700 focus:bg-white focus:outline-none transition-all"
+                    className="w-full px-3 py-2.5 min-h-[44px] rounded-lg bg-teal-50/40 border border-slate-200 text-slate-900 text-xs sm:text-sm focus:border-teal-700 focus:bg-white focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-700 transition-all"
                   />
                 </div>
               </div>
@@ -237,7 +237,7 @@ export default function LeadPopup() {
                   onChange={(e) =>
                     setFormData({ ...formData, service: e.target.value })
                   }
-                  className="w-full px-3 py-2 rounded-lg bg-teal-50/40 border border-slate-200 text-slate-900 text-xs sm:text-sm focus:border-teal-700 focus:bg-white focus:outline-none transition-all"
+                  className="w-full px-3 py-2.5 min-h-[44px] rounded-lg bg-teal-50/40 border border-slate-200 text-slate-900 text-xs sm:text-sm focus:border-teal-700 focus:bg-white focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-700 transition-all"
                 >
                   <option value="Web Development">Web Development</option>
                   <option value="Graphic Design">Graphic &amp; Brand Design</option>
@@ -265,7 +265,7 @@ export default function LeadPopup() {
                     setFormData({ ...formData, message: e.target.value })
                   }
                   placeholder="Brief project details or requirements..."
-                  className="w-full px-3 py-2 rounded-lg bg-teal-50/40 border border-slate-200 text-slate-900 text-xs sm:text-sm focus:border-teal-700 focus:bg-white focus:outline-none transition-all resize-none"
+                  className="w-full px-3 py-2 rounded-lg bg-teal-50/40 border border-slate-200 text-slate-900 text-xs sm:text-sm focus:border-teal-700 focus:bg-white focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-700 transition-all resize-none"
                 />
               </div>
 
@@ -285,7 +285,7 @@ export default function LeadPopup() {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full py-3 rounded-xl bg-teal-700 text-white font-bold text-xs uppercase tracking-wider shadow-md hover:bg-teal-800 transition-all flex items-center justify-center gap-2 disabled:opacity-50 mt-1"
+                className="w-full min-h-[44px] py-3 rounded-xl bg-teal-700 text-white font-bold text-xs uppercase tracking-wider shadow-md hover:bg-teal-800 transition-all flex items-center justify-center gap-2 disabled:opacity-50 mt-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-700 focus-visible:ring-offset-2"
               >
                 {isSubmitting ? (
                   <span>Sending Inquiry...</span>

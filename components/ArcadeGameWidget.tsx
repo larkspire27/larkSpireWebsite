@@ -287,9 +287,9 @@ export default function ArcadeGameWidget() {
             setIsOpen(true);
             if (seriesFinished) resetEntireSeries();
           }}
-          className="group relative flex items-center gap-3 px-4 py-2.5 rounded-full bg-slate-900 border border-slate-700/80 text-white shadow-lg hover:scale-105 hover:bg-slate-800 transition-all duration-300 overflow-hidden"
+          className="group relative flex items-center gap-3 px-4.5 py-3 min-h-[44px] rounded-full bg-slate-900 border border-slate-700/80 text-white shadow-lg hover:scale-105 hover:bg-slate-800 transition-all duration-300 overflow-hidden apple-focus-ring"
         >
-          <div className="w-7 h-7 rounded-full bg-teal-600 flex items-center justify-center text-white font-bold shadow-md shrink-0 group-hover:rotate-12 transition-transform">
+          <div className="w-8 h-8 rounded-full bg-teal-600 flex items-center justify-center text-white font-bold shadow-md shrink-0 group-hover:rotate-12 transition-transform">
             <Gamepad2 className="w-4 h-4" />
           </div>
 

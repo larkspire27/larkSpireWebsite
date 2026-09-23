@@ -154,7 +154,7 @@ export default function ContactForm() {
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                     placeholder="e.g. Alex Morgan"
-                    className="w-full px-4 py-3.5 rounded-xl bg-teal-50/50 border border-slate-200 focus:border-teal-700 focus:bg-white focus:outline-none transition-all text-slate-900 text-sm"
+                    className="w-full px-4 py-3.5 min-h-[44px] rounded-xl bg-teal-50/50 border border-slate-200 focus:border-teal-700 focus:bg-white transition-all text-slate-900 text-sm apple-focus-ring"
                   />
                   {errors.name && (
                     <p className="text-xs text-red-500 flex items-center gap-1">
@@ -177,7 +177,7 @@ export default function ContactForm() {
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                     placeholder="alex@company.com"
-                    className="w-full px-4 py-3.5 rounded-xl bg-teal-50/50 border border-slate-200 focus:border-teal-700 focus:bg-white focus:outline-none transition-all text-slate-900 text-sm"
+                    className="w-full px-4 py-3.5 min-h-[44px] rounded-xl bg-teal-50/50 border border-slate-200 focus:border-teal-700 focus:bg-white transition-all text-slate-900 text-sm apple-focus-ring"
                   />
                   {errors.email && (
                     <p className="text-xs text-red-500 flex items-center gap-1">
@@ -199,7 +199,7 @@ export default function ContactForm() {
                   aria-label="Service Needed"
                   value={formData.service}
                   onChange={(e) => setFormData({ ...formData, service: e.target.value })}
-                  className="w-full px-4 py-3.5 rounded-xl bg-teal-50/50 border border-slate-200 focus:border-teal-700 focus:bg-white focus:outline-none transition-all text-slate-900 text-sm"
+                  className="w-full px-4 py-3.5 min-h-[44px] rounded-xl bg-teal-50/50 border border-slate-200 focus:border-teal-700 focus:bg-white transition-all text-slate-900 text-sm apple-focus-ring"
                 >
                   <option value="Web Development">Web Development</option>
                   <option value="Graphic Design">Graphic Design</option>
@@ -224,7 +224,7 @@ export default function ContactForm() {
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   placeholder="Tell us about your project timeline, goals, or requirements..."
-                  className="w-full px-4 py-3.5 rounded-xl bg-teal-50/50 border border-slate-200 focus:border-teal-700 focus:bg-white focus:outline-none transition-all text-slate-900 text-sm resize-none"
+                  className="w-full px-4 py-3.5 rounded-xl bg-teal-50/50 border border-slate-200 focus:border-teal-700 focus:bg-white transition-all text-slate-900 text-sm resize-none apple-focus-ring"
                 />
                 {errors.message && (
                   <p className="text-xs text-red-500 flex items-center gap-1">
@@ -238,7 +238,7 @@ export default function ContactForm() {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full py-4 rounded-full bg-teal-700 text-white font-bold text-sm tracking-wide uppercase shadow-card hover:bg-teal-800 transition-all duration-300 flex items-center justify-center gap-2 hover:scale-[1.01] active:scale-95 disabled:opacity-50"
+                className="w-full py-4 min-h-[44px] rounded-full bg-teal-700 text-white font-bold text-sm tracking-wide uppercase shadow-card hover:bg-teal-800 transition-all duration-300 flex items-center justify-center gap-2 hover:scale-[1.01] active:scale-95 disabled:opacity-50 apple-focus-ring"
               >
                 {isSubmitting ? (
                   <span>Sending Message...</span>

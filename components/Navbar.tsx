@@ -178,7 +178,7 @@ export default function Navbar() {
               href="/services"
               prefetch={true}
               className={clsx(
-                "inline-flex items-center gap-1 text-sm font-medium transition-colors duration-200 py-1",
+                "inline-flex items-center gap-1 text-sm font-medium transition-colors duration-200 py-2.5 min-h-[44px] rounded-lg px-2 apple-focus-ring",
                 pathname.startsWith("/services")
                   ? "text-teal-700 font-semibold"
                   : "text-slate-700 hover:text-teal-700"
@@ -206,7 +206,7 @@ export default function Navbar() {
                       prefetch={true}
                       onClick={() => setServicesDropdownOpen(false)}
                       className={clsx(
-                        "group p-2.5 rounded-xl transition-all duration-200 flex items-start gap-3 hover:bg-teal-50",
+                        "group p-3 rounded-xl transition-all duration-200 flex items-start gap-3 hover:bg-teal-50 min-h-[44px] apple-focus-ring",
                         isServiceActive ? "bg-teal-50/80 border border-teal-200/60" : ""
                       )}
                     >
@@ -229,7 +229,7 @@ export default function Navbar() {
                     href="/services"
                     prefetch={true}
                     onClick={() => setServicesDropdownOpen(false)}
-                    className="text-teal-700 hover:underline flex items-center gap-1"
+                    className="text-teal-700 hover:underline flex items-center gap-1 py-2 min-h-[44px] apple-focus-ring"
                   >
                     <span>View All Services Landing Page &rarr;</span>
                   </Link>
@@ -243,9 +243,9 @@ export default function Navbar() {
             href="/about"
             prefetch={true}
             className={clsx(
-              "text-sm font-medium transition-colors duration-200",
+              "text-sm font-medium transition-colors duration-200 py-2.5 px-2 min-h-[44px] inline-flex items-center rounded-lg apple-focus-ring",
               pathname === "/about"
-                ? "text-teal-700 font-semibold border-b-2 border-teal-700 pb-0.5"
+                ? "text-teal-700 font-semibold border-b-2 border-teal-700"
                 : "text-slate-700 hover:text-teal-700"
             )}
           >
@@ -257,9 +257,9 @@ export default function Navbar() {
             href="/portfolio"
             prefetch={true}
             className={clsx(
-              "text-sm font-medium transition-colors duration-200",
+              "text-sm font-medium transition-colors duration-200 py-2.5 px-2 min-h-[44px] inline-flex items-center rounded-lg apple-focus-ring",
               pathname === "/portfolio"
-                ? "text-teal-700 font-semibold border-b-2 border-teal-700 pb-0.5"
+                ? "text-teal-700 font-semibold border-b-2 border-teal-700"
                 : "text-slate-700 hover:text-teal-700"
             )}
           >
@@ -271,9 +271,9 @@ export default function Navbar() {
             href="/contact"
             prefetch={true}
             className={clsx(
-              "text-sm font-medium transition-colors duration-200",
+              "text-sm font-medium transition-colors duration-200 py-2.5 px-2 min-h-[44px] inline-flex items-center rounded-lg apple-focus-ring",
               pathname === "/contact"
-                ? "text-teal-700 font-semibold border-b-2 border-teal-700 pb-0.5"
+                ? "text-teal-700 font-semibold border-b-2 border-teal-700"
                 : "text-slate-700 hover:text-teal-700"
             )}
           >
@@ -284,7 +284,7 @@ export default function Navbar() {
           <Link
             href="/contact"
             prefetch={true}
-            className="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-full bg-teal-700 text-white text-xs font-semibold tracking-wide uppercase shadow-sm hover:bg-teal-800 transition-all duration-300 hover:shadow-card hover:scale-[1.02]"
+            className="inline-flex items-center gap-1.5 px-5 py-2.5 min-h-[44px] rounded-full bg-teal-700 text-white text-xs font-semibold tracking-wide uppercase shadow-sm hover:bg-teal-800 transition-all duration-300 hover:shadow-card hover:scale-[1.02] apple-focus-ring"
           >
             <span>Start a Project</span>
             <ArrowUpRight className="w-4 h-4" />
@@ -294,7 +294,7 @@ export default function Navbar() {
         {/* Mobile Hamburger Toggle Button */}
         <button
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          className="md:hidden p-2 rounded-lg text-teal-700 hover:bg-teal-100/50 transition-colors"
+          className="md:hidden p-2.5 min-w-[44px] min-h-[44px] flex items-center justify-center rounded-xl text-teal-700 hover:bg-teal-100/50 transition-colors apple-focus-ring"
           aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
         >
           {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -308,7 +308,7 @@ export default function Navbar() {
           <div className="border-b border-slate-200/50 pb-2">
             <button
               onClick={() => setMobileServicesAccordion(!mobileServicesAccordion)}
-              className="w-full flex items-center justify-between text-lg font-medium text-slate-800 py-2"
+              className="w-full min-h-[44px] flex items-center justify-between text-lg font-medium text-slate-800 py-2.5 apple-focus-ring rounded-lg px-1"
             >
               <span className={pathname.startsWith("/services") ? "text-teal-700 font-bold" : ""}>
                 Services ({servicesList.length})
@@ -327,7 +327,7 @@ export default function Navbar() {
                   href="/services"
                   prefetch={true}
                   onClick={() => setMobileMenuOpen(false)}
-                  className="block text-xs font-bold text-teal-700 uppercase tracking-wider mb-3"
+                  className="block text-xs font-bold text-teal-700 uppercase tracking-wider mb-3 py-2 min-h-[44px] flex items-center apple-focus-ring rounded-lg"
                 >
                   &rarr; All Services Overview
                 </Link>
@@ -337,7 +337,7 @@ export default function Navbar() {
                     href={service.href}
                     prefetch={true}
                     onClick={() => setMobileMenuOpen(false)}
-                    className="flex items-center gap-2.5 text-sm text-slate-700 hover:text-teal-700 py-1"
+                    className="flex items-center gap-2.5 text-sm text-slate-700 hover:text-teal-700 py-2 min-h-[44px] apple-focus-ring rounded-lg px-1"
                   >
                     <service.icon className="w-4 h-4 text-teal-600 shrink-0" />
                     <span>{service.name}</span>
@@ -352,7 +352,7 @@ export default function Navbar() {
             prefetch={true}
             onClick={() => setMobileMenuOpen(false)}
             className={clsx(
-              "text-lg font-medium py-2 border-b border-slate-200/50",
+              "text-lg font-medium py-3 min-h-[44px] flex items-center border-b border-slate-200/50 apple-focus-ring rounded-lg px-1",
               pathname === "/about" ? "text-teal-700 font-bold" : "text-slate-800"
             )}
           >
@@ -364,7 +364,7 @@ export default function Navbar() {
             prefetch={true}
             onClick={() => setMobileMenuOpen(false)}
             className={clsx(
-              "text-lg font-medium py-2 border-b border-slate-200/50",
+              "text-lg font-medium py-3 min-h-[44px] flex items-center border-b border-slate-200/50 apple-focus-ring rounded-lg px-1",
               pathname === "/portfolio" ? "text-teal-700 font-bold" : "text-slate-800"
             )}
           >
@@ -376,7 +376,7 @@ export default function Navbar() {
             prefetch={true}
             onClick={() => setMobileMenuOpen(false)}
             className={clsx(
-              "text-lg font-medium py-2 border-b border-slate-200/50",
+              "text-lg font-medium py-3 min-h-[44px] flex items-center border-b border-slate-200/50 apple-focus-ring rounded-lg px-1",
               pathname === "/contact" ? "text-teal-700 font-bold" : "text-slate-800"
             )}
           >
@@ -387,7 +387,7 @@ export default function Navbar() {
             href="/contact"
             prefetch={true}
             onClick={() => setMobileMenuOpen(false)}
-            className="mt-2 w-full py-3 rounded-xl bg-teal-700 text-white text-center text-sm font-semibold uppercase tracking-wider shadow-md hover:bg-teal-800"
+            className="mt-2 w-full py-3 min-h-[44px] flex items-center justify-center rounded-xl bg-teal-700 text-white text-center text-sm font-semibold uppercase tracking-wider shadow-md hover:bg-teal-800 apple-focus-ring"
           >
             Start a Project
           </Link>

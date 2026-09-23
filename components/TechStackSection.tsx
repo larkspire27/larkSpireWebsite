@@ -281,7 +281,7 @@ export default function TechStackSection() {
                 <button
                   key={tab.value}
                   onClick={() => setActiveTab(tab.value as TechCategory)}
-                  className={`px-3 py-1.5 rounded-xl text-xs font-semibold transition-all duration-300 border ${
+                  className={`px-3.5 py-2.5 min-h-[44px] inline-flex items-center justify-center rounded-xl text-xs font-semibold transition-all duration-300 border apple-focus-ring ${
                     activeTab === tab.value
                       ? "bg-teal-700 text-white border-teal-700 shadow-md shadow-teal-700/20 scale-105"
                       : "bg-slate-50 text-slate-700 border-slate-200 hover:border-teal-400 hover:text-teal-800"
@@ -324,7 +324,7 @@ export default function TechStackSection() {
             <div className="pt-2">
               <Link
                 href="/services"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-xl bg-teal-800 hover:bg-teal-900 text-white font-bold text-sm shadow-md shadow-teal-900/15 hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 group"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-6 py-3.5 min-h-[44px] rounded-xl bg-teal-800 hover:bg-teal-900 text-white font-bold text-sm shadow-md shadow-teal-900/15 hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 group apple-focus-ring"
               >
                 <span>Explore Full Capabilities</span>
                 <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />

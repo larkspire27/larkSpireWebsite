@@ -73,22 +73,26 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Main Title */}
+          {/* Main Title - Keyword Targeted H1 */}
           <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.12]">
-            We build digital experiences that{" "}
+            Digital Agency in Jaipur for{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-700 via-teal-600 to-emerald-600">
-              rank
+              Web Development
             </span>
             ,{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-600 via-teal-700 to-emerald-700 underline decoration-teal-300 decoration-wavy decoration-2 underline-offset-4">
-              convert
+              SEO
             </span>{" "}
             &amp;{" "}
             <span className="text-teal-800">
-              scale
-            </span>{" "}
-            your business
+              Marketing
+            </span>
           </h1>
+
+          {/* Subtext Tagline */}
+          <h2 className="text-lg sm:text-xl font-medium text-slate-600 leading-relaxed">
+            We build fast Next.js websites, Shopify stores, and run ROI-driven SEO &amp; Meta ads campaigns to scale Jaipur businesses.
+          </h2>
 
           {/* Action Pill Prompt Buttons */}
           <div className="pt-2 space-y-2">

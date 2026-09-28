@@ -2,24 +2,22 @@ import type { Metadata } from "next";
 import ContactClient from "@/components/ContactClient";
 
 export const metadata: Metadata = {
-  title: "Contact Us | Start Your Project | Larkspire",
+  title: "Contact Larkspire – Get a Free Quote in Jaipur",
   description:
-    "Get in touch with Larkspire. Submit a project inquiry for web development, graphic design, SEO, or digital growth marketing.",
+    "Tell us about your website, SEO or marketing project. Larkspire's Jaipur team replies within 24 hours.",
   alternates: {
     canonical: "https://larkspire.in/contact",
   },
   keywords: [
-    "Contact Larkspire",
-    "Hire Web Developers",
-    "Project Inquiry",
-    "Digital Agency Quote",
-    "Contact Creative Studio",
-    "Larkspire Phone Email",
+    "larkspire contact",
+    "hire web developer jaipur",
+    "website development quote jaipur",
+    "contact digital agency jaipur",
   ],
   openGraph: {
-    title: "Contact Us | Start Your Project with Larkspire",
+    title: "Contact Larkspire – Get a Free Quote in Jaipur",
     description:
-      "Have a project in mind? Let's build something great together. Get direct access to senior web engineers & designers.",
+      "Tell us about your website, SEO or marketing project. Larkspire's Jaipur team replies within 24 hours.",
     url: "https://larkspire.in/contact",
     siteName: "Larkspire",
     locale: "en_US",
@@ -27,8 +25,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Contact Us | Larkspire Digital Agency",
-    description: "Submit a project inquiry or reach our senior engineering & creative team directly.",
+    title: "Contact Larkspire – Get a Free Quote in Jaipur",
+    description: "Tell us about your website, SEO or marketing project. Larkspire's Jaipur team replies within 24 hours.",
   },
 };
 

@@ -2,25 +2,23 @@ import type { Metadata } from "next";
 import ServicesClient from "@/components/ServicesClient";
 
 export const metadata: Metadata = {
-  title: "Our Services | Larkspire Digital Agency",
+  title: "Web, SEO & Marketing Services in Jaipur | Larkspire",
   description:
-    "Discover Larkspire's 14+ specialized digital agency capabilities: Custom Web Engineering, SEO, Graphic Design, Mobile Apps, SaaS & Performance Marketing.",
+    "Website design, development, SEO, Shopify, Google Business Profile, digital marketing and more, all under one roof at Larkspire, Jaipur.",
   alternates: {
     canonical: "https://larkspire.in/services",
   },
   keywords: [
-    "Digital Agency Services",
-    "Web Development Capabilities",
-    "Graphic Design Agency",
-    "SEO Services",
-    "Shopify Store Design",
-    "Meta Ads Management",
-    "Custom CRM Software",
+    "digital agency services jaipur",
+    "website and digital marketing services jaipur",
+    "web design seo and marketing services jaipur",
+    "SEO services in jaipur",
+    "web development in jaipur",
   ],
   openGraph: {
-    title: "Our Services | Full-Spectrum Digital Agency Solutions",
+    title: "Web, SEO & Marketing Services in Jaipur | Larkspire",
     description:
-      "Bridging high-end digital design with cutting-edge web engineering and performance marketing to scale ambitious companies.",
+      "Website design, development, SEO, Shopify, Google Business Profile, digital marketing and more, all under one roof at Larkspire, Jaipur.",
     url: "https://larkspire.in/services",
     siteName: "Larkspire",
     locale: "en_US",
@@ -28,9 +26,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Our Services | Larkspire Digital Agency",
+    title: "Web, SEO & Marketing Services in Jaipur | Larkspire",
     description:
-      "Explore full-spectrum web development, graphic design, SEO, and paid growth services.",
+      "Website design, development, SEO, Shopify, Google Business Profile, digital marketing and more, all under one roof at Larkspire, Jaipur.",
   },
 };
 

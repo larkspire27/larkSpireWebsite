@@ -2,24 +2,23 @@ import type { Metadata } from "next";
 import PortfolioClient from "@/components/PortfolioClient";
 
 export const metadata: Metadata = {
-  title: "Portfolio & Works | Larkspire Agency",
+  title: "Portfolio – Websites Built in Jaipur | Larkspire",
   description:
-    "Explore Larkspire's portfolio of custom web platforms, brand identity systems, digital growth campaigns, poster designs, and e-commerce solutions.",
+    "Live websites by Larkspire: CCTV, granite & marble and more. See our Next.js projects and what we built.",
   alternates: {
     canonical: "https://larkspire.in/portfolio",
   },
   keywords: [
-    "Larkspire Portfolio",
-    "Web Development Case Studies",
-    "Brand Identity Examples",
-    "Digital Marketing Results",
-    "Graphic Design Showcase",
-    "Selected Agency Works",
+    "website for cctv installation company",
+    "granite and marble showroom website design",
+    "website design portfolio jaipur",
+    "next.js website examples india",
+    "Larkspire portfolio",
   ],
   openGraph: {
-    title: "Portfolio & Case Studies | Larkspire Selected Works",
+    title: "Portfolio – Websites Built in Jaipur | Larkspire",
     description:
-      "Transforming ambitious brand visions into high-performing digital realities. Explore our web engineering, brand identity, and marketing case studies.",
+      "Live websites by Larkspire: CCTV, granite & marble and more. See our Next.js projects and what we built.",
     url: "https://larkspire.in/portfolio",
     siteName: "Larkspire",
     locale: "en_US",
@@ -27,8 +26,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Portfolio & Case Studies | Larkspire Digital Agency",
-    description: "Browse selected web development, design, and growth marketing case studies.",
+    title: "Portfolio – Websites Built in Jaipur | Larkspire",
+    description: "Live websites by Larkspire: CCTV, granite & marble and more. See our Next.js projects and what we built.",
   },
 };
 

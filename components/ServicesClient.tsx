@@ -262,10 +262,10 @@ export default function ServicesClient() {
               Capabilities &amp; Solutions
             </span>
             <h1 className="text-4xl sm:text-6xl font-bold tracking-tight text-slate-900 leading-tight">
-              What We Do Best At <span className="text-teal-700">Larkspire</span>
+              Digital Services for <span className="text-teal-700">Jaipur Businesses</span>
             </h1>
             <p className="max-w-2xl mx-auto text-lg text-slate-600 font-light leading-relaxed">
-              We bridge high-end digital design with cutting-edge engineering and performance marketing to scale ambitious companies.
+              Website design, development, SEO, Shopify, Google Business Profile, digital marketing and more, all under one roof at Larkspire, Jaipur.
             </p>
           </div>
         </section>

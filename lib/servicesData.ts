@@ -70,15 +70,15 @@ export interface ServiceData {
 
 const graphicDesignData: ServiceData = {
   slug: "graphic-design",
-  title: "Logo & Graphic Design",
+  title: "Logo & Brand Identity Design for Startups in Jaipur",
   iconName: "Palette",
-  tagline: "Distinctive Branding, Logos & Visual Design Systems",
+  tagline: "Logo Design, Brand Guidelines & Marketing Creatives in Jaipur",
   heroDescription:
-    "We create iconic logo marks, cohesive brand design systems, and stunning graphic marketing assets that position your business ahead of competitors.",
+    "Logo design, brand guidelines and marketing creatives for Jaipur startups and small businesses. Get a memorable brand with Larkspire.",
   heroImage: getAssetPath("/images/services/graphic-design.jpg"),
-  metaTitle: "Logo & Graphic Design Services | Branding & Visual Identity | Larkspire",
+  metaTitle: "Logo & Brand Identity Design in Jaipur | Larkspire",
   metaDescription:
-    "Distinguish your brand with custom logo design, visual identity systems, brand guidelines, and creative marketing collateral crafted by Larkspire.",
+    "Logo design, brand guidelines and marketing creatives for Jaipur startups and small businesses. Get a memorable brand with Larkspire.",
   featuresList: [
     {
       title: "Custom Logo Design & Vector Marks",
@@ -221,15 +221,15 @@ export const servicesDataMap: Record<string, ServiceData> = {
   // 1. Website Design
   "website-design": {
     slug: "website-design",
-    title: "Website Design",
+    title: "Website Design for Small Businesses & Startups in Jaipur",
     iconName: "Layout",
-    tagline: "Bespoke UI/UX & High-Converting Web Design",
+    tagline: "Custom Figma Prototypes, Mobile-First Layouts & Affordable Startup Plans",
     heroDescription:
-      "We craft visually stunning, user-centered website designs that captivate visitors, elevate your brand identity, and maximize conversions across every screen size.",
+      "Custom website design in Jaipur with Figma prototypes, mobile-first layouts and fast loading. Affordable plans for startups. Get a free quote.",
     heroImage: getAssetPath("/images/services/website-design.jpg"),
-    metaTitle: "Professional Website Design Services | UI/UX & Wireframing | Larkspire",
+    metaTitle: "Website Design in Jaipur for Small Businesses | Larkspire",
     metaDescription:
-      "Elevate your online presence with bespoke website design by Larkspire. Custom Figma UI/UX design, mobile responsiveness, and conversion-optimized layouts.",
+      "Custom website design in Jaipur with Figma prototypes, mobile-first layouts and fast loading. Affordable plans for startups. Get a free quote.",
     featuresList: [
       {
         title: "Custom UI/UX Wireframing & Prototyping",
@@ -370,15 +370,15 @@ export const servicesDataMap: Record<string, ServiceData> = {
   // 2. Web Development
   "web-development": {
     slug: "web-development",
-    title: "Web Development",
+    title: "Web Development Services in Jaipur (Next.js & React)",
     iconName: "Code",
-    tagline: "High-Performance Custom Web Experiences",
+    tagline: "Fast, SEO-Ready Next.js & React Websites — 100% Custom Built",
     heroDescription:
-      "We design and engineer bespoke, lightning-fast web applications built with clean, high-performance architecture. Optimized for sub-second page loads, conversion, and seamless user experiences.",
+      "Web development services in Jaipur: fast, SEO-ready Next.js and React websites, 100% custom. Talk to the Larkspire team.",
     heroImage: getAssetPath("/images/services/web-development.jpg"),
-    metaTitle: "Custom Web Development Services | Next.js & React Solutions | Larkspire",
+    metaTitle: "Web Development Services in Jaipur | Next.js – Larkspire",
     metaDescription:
-      "Engineered for sub-second speed, high conversion, and scalability. Larkspire crafts bespoke web applications with Next.js, React, and serverless technology.",
+      "Web development services in Jaipur: fast, SEO-ready Next.js and React websites, 100% custom. Talk to the Larkspire team.",
     featuresList: [
       {
         title: "Custom Modern Web Applications",
@@ -519,15 +519,15 @@ export const servicesDataMap: Record<string, ServiceData> = {
   // 3. Search Engine Optimization (SEO)
   "search-engine-optimization": {
     slug: "search-engine-optimization",
-    title: "Search Engine Optimization (SEO)",
+    title: "SEO Services in Jaipur for Small Businesses & Startups",
     iconName: "Search",
-    tagline: "Organic Dominance, High Intent Traffic & Higher Rankings",
+    tagline: "Technical, Local & Content SEO Audits to Rank Top on Google",
     heroDescription:
-      "Dominate search engine results and drive targeted organic traffic with technical SEO audits, strategic keyword positioning, and authoritative content optimization.",
+      "Technical, local and content SEO for Jaipur businesses. Get a website audit and a clear plan to rank on Google. Talk to Larkspire.",
     heroImage: getAssetPath("/images/services/seo-optimization.jpg"),
-    metaTitle: "Search Engine Optimization (SEO) Services | Organic Growth | Larkspire",
+    metaTitle: "SEO Services in Jaipur for Small Business | Larkspire",
     metaDescription:
-      "Drive sustainable organic traffic and reach top Google rankings with Larkspire's technical SEO audits, on-page optimization, and keyword strategies.",
+      "Technical, local and content SEO for Jaipur businesses. Get a website audit and a clear plan to rank on Google. Talk to Larkspire.",
     featuresList: [
       {
         title: "Comprehensive Technical SEO Audits",
@@ -668,15 +668,15 @@ export const servicesDataMap: Record<string, ServiceData> = {
   // 4. WordPress Development
   "wordpress-development": {
     slug: "wordpress-development",
-    title: "WordPress Development",
+    title: "Custom WordPress & WooCommerce Development in Jaipur",
     iconName: "Globe",
-    tagline: "Custom, Fast & Secure WordPress Solutions",
+    tagline: "Fast, Secure WordPress Themes, Gutenberg & WooCommerce Without Template Bloat",
     heroDescription:
-      "Custom WordPress website development with bespoke themes, plugin integration, Gutenberg/Elementor support, and bulletproof security for easy content management.",
+      "Custom WordPress themes, WooCommerce stores and Gutenberg blocks without template bloat. Fast, secure sites for Jaipur businesses.",
     heroImage: getAssetPath("/images/services/wordpress-development.jpg"),
-    metaTitle: "Custom WordPress Development Services | Bespoke Themes | Larkspire",
+    metaTitle: "WordPress & WooCommerce Development in Jaipur | Larkspire",
     metaDescription:
-      "Tailor-made WordPress websites engineered for speed, custom Gutenberg blocks, WooCommerce, and robust security by Larkspire.",
+      "Custom WordPress themes, WooCommerce stores and Gutenberg blocks without template bloat. Fast, secure sites for Jaipur businesses.",
     featuresList: [
       {
         title: "Custom WordPress Theme Engineering",
@@ -817,15 +817,15 @@ export const servicesDataMap: Record<string, ServiceData> = {
   // 5. Shopify Website Design
   "shopify-website-design": {
     slug: "shopify-website-design",
-    title: "Shopify Website Design",
+    title: "Shopify Store Design & Development in Jaipur",
     iconName: "ShoppingBag",
-    tagline: "High-Converting Shopify & Liquid Stores",
+    tagline: "Conversion-Focused Shopify Stores for Jaipur Jewellery, Textile & D2C Brands",
     heroDescription:
-      "Build and scale your e-commerce brand with custom Shopify theme design, conversion-driven storefronts, seamless app integrations, and mobile shopping optimization.",
+      "Conversion-focused Shopify stores for Jaipur jewellery, textile and D2C brands. Custom themes, apps and payment setup. Get a free quote.",
     heroImage: getAssetPath("/images/services/shopify-website-design.jpg"),
-    metaTitle: "Custom Shopify Website Design Services | E-commerce Store Builds | Larkspire",
+    metaTitle: "Shopify Website Design & Developer in Jaipur | Larkspire",
     metaDescription:
-      "Scale your store with bespoke Shopify theme design by Larkspire. Fast checkout, custom Liquid templates, and conversion rate optimization.",
+      "Conversion-focused Shopify stores for Jaipur jewellery, textile and D2C brands. Custom themes, apps and payment setup. Get a free quote.",
     featuresList: [
       {
         title: "Custom Shopify 2.0 Theme Design",
@@ -966,15 +966,15 @@ export const servicesDataMap: Record<string, ServiceData> = {
   // 6. Ecommerce Development
   "ecommerce-development": {
     slug: "ecommerce-development",
-    title: "Ecommerce Development",
+    title: "Ecommerce Website Development for Jaipur Brands",
     iconName: "ShoppingCart",
-    tagline: "Scalable E-Commerce Platforms & Digital Storefronts",
+    tagline: "Custom Online Stores with Secure Checkout, Payment Gateways & Inventory Automation",
     heroDescription:
-      "End-to-end e-commerce development tailored for high growth — featuring secure checkout, automated inventory sync, custom cart logic, and multi-currency support.",
+      "Custom online stores with secure checkout, payment gateways and inventory automation for Jaipur sellers. Launch and sell online with Larkspire.",
     heroImage: getAssetPath("/images/services/ecommerce-development.jpg"),
-    metaTitle: "Custom Ecommerce Development Services | Headless & Platform Solutions | Larkspire",
+    metaTitle: "Ecommerce Website Development in Jaipur | Larkspire",
     metaDescription:
-      "Build high-revenue online stores with custom e-commerce development by Larkspire. Secure payment gateways, headless architecture, and inventory automation.",
+      "Custom online stores with secure checkout, payment gateways and inventory automation for Jaipur sellers. Launch and sell online with Larkspire.",
     featuresList: [
       {
         title: "Custom & Headless E-Commerce Builds",
@@ -1119,15 +1119,15 @@ export const servicesDataMap: Record<string, ServiceData> = {
   // 8. CRM Software Development
   "crm-software-development": {
     slug: "crm-software-development",
-    title: "CRM Software Development",
+    title: "Custom CRM Software Development in Jaipur",
     iconName: "Database",
-    tagline: "Tailored Sales & Client Relationship Management Systems",
+    tagline: "Lead Tracking, Sales Pipeline & WhatsApp/Email Automation for Jaipur Businesses",
     heroDescription:
-      "Empower your sales and operations with custom CRM software built specifically around your workflow, pipeline automation, analytics, and team collaboration.",
+      "Custom CRM with lead tracking, sales pipeline and WhatsApp/email automation for Jaipur businesses. Book a free demo call.",
     heroImage: getAssetPath("/images/services/crm-software-development.jpg"),
-    metaTitle: "Custom CRM Software Development Services | Larkspire",
+    metaTitle: "Custom CRM Software Development in Jaipur | Larkspire",
     metaDescription:
-      "Streamline sales pipelines and client management with bespoke CRM software development by Larkspire. Custom dashboards, workflow automation, and API sync.",
+      "Custom CRM with lead tracking, sales pipeline and WhatsApp/email automation for Jaipur businesses. Book a free demo call.",
     featuresList: [
       {
         title: "Custom Sales Pipeline & Deal Tracker",
@@ -1268,15 +1268,15 @@ export const servicesDataMap: Record<string, ServiceData> = {
   // 9. Mobile App Development
   "mobile-app-development": {
     slug: "mobile-app-development",
-    title: "Mobile App Development",
+    title: "React Native Mobile App Development in Jaipur",
     iconName: "Smartphone",
-    tagline: "Native & Cross-Platform iOS & Android Applications",
+    tagline: "iOS & Android Apps for Jaipur Startups: UX Design, React Native & App Store Launch",
     heroDescription:
-      "Engineered for top app store rankings and high user retention — we build fast, scalable, and intuitive mobile applications for iOS and Android using React Native & Flutter.",
+      "iOS and Android apps built with React Native for Jaipur startups: UX design, development and App Store launch. Share your app idea.",
     heroImage: getAssetPath("/images/services/mobile-app-development.jpg"),
-    metaTitle: "Custom Mobile App Development Services | iOS & Android | Larkspire",
+    metaTitle: "React Native App Development in Jaipur | Larkspire",
     metaDescription:
-      "Turn your idea into a high-performance mobile app. Larkspire crafts iOS and Android applications with React Native, sleek UI/UX, and cloud backends.",
+      "iOS and Android apps built with React Native for Jaipur startups: UX design, development and App Store launch. Share your app idea.",
     featuresList: [
       {
         title: "iOS & Android Cross-Platform Apps",
@@ -1417,15 +1417,15 @@ export const servicesDataMap: Record<string, ServiceData> = {
   // 10. Web Apps & SaaS
   "web-apps-saas": {
     slug: "web-apps-saas",
-    title: "Web Apps & SaaS",
+    title: "Web Application & SaaS Development Company in Jaipur",
     iconName: "Cloud",
-    tagline: "Scalable Cloud SaaS Platforms & Custom Web Software",
+    tagline: "Multi-Tenant SaaS, Dashboards, APIs & Stripe/Razorpay Billing for Startups",
     heroDescription:
-      "Turn your product vision into a market-ready SaaS platform with multi-tenant architecture, subscription billing, dashboard analytics, and robust API infrastructure.",
+      "Multi-tenant SaaS, dashboards and APIs with Stripe billing, built for startups. Turn your MVP idea into a live product with Larkspire.",
     heroImage: getAssetPath("/images/services/web-apps-saas.jpg"),
-    metaTitle: "Custom SaaS Development Services | Web Applications | Larkspire",
+    metaTitle: "Web Application Development Company in Jaipur | Larkspire",
     metaDescription:
-      "Build scalable Software-as-a-Service platforms with Larkspire. Multi-tenant architecture, Stripe billing, Next.js, and cloud backend engineering.",
+      "Multi-tenant SaaS, dashboards and APIs with Stripe billing, built for startups. Turn your MVP idea into a live product with Larkspire.",
     featuresList: [
       {
         title: "Multi-Tenant SaaS Architecture",
@@ -1566,15 +1566,15 @@ export const servicesDataMap: Record<string, ServiceData> = {
   // 11. Google Business Profile
   "google-business-profile": {
     slug: "google-business-profile",
-    title: "Google Business Profile",
+    title: "Google Business Profile Optimization & Management in Jaipur",
     iconName: "MapPin",
-    tagline: "Local SEO & Google Maps Optimization",
+    tagline: "Rank Top on Google Maps in Jaipur — Profile Setup, Verification & Local SEO",
     heroDescription:
-      "Dominate local search results and attract nearby customers with complete Google Business Profile setup, local SEO optimization, review management, and Map Pack ranking strategies.",
+      "Rank on Google Maps in Jaipur. Profile setup, verification, review management and local SEO to bring more calls and walk-ins.",
     heroImage: getAssetPath("/images/services/google-business-profile.jpg"),
-    metaTitle: "Google Business Profile Optimization Services | Local SEO | Larkspire",
+    metaTitle: "Google Business Profile Optimization in Jaipur | Larkspire",
     metaDescription:
-      "Get found in your local area with Google Business Profile optimization by Larkspire. Top Google Maps rankings, local keywords, and review management.",
+      "Rank on Google Maps in Jaipur. Profile setup, verification, review management and local SEO to bring more calls and walk-ins.",
     featuresList: [
       {
         title: "Complete Profile Verification & Setup",
@@ -1715,15 +1715,15 @@ export const servicesDataMap: Record<string, ServiceData> = {
   // 12. Poster Design
   "poster-design": {
     slug: "poster-design",
-    title: "Poster Design",
+    title: "Poster & Event Creative Design in Jaipur",
     iconName: "ImageIcon",
-    tagline: "Striking Promotional Graphics & Visual Editorial Assets",
+    tagline: "Eye-Catching Posters for Events, Festivals, Offers & Social Media",
     heroDescription:
-      "Captivate your audience with high-impact poster designs, event banners, and visual editorial graphics crafted to demand attention both online and in print.",
+      "Eye-catching posters for events, festivals, offers and social media. Print-ready and digital files from Larkspire, Jaipur.",
     heroImage: getAssetPath("/images/services/poster-design.jpg"),
-    metaTitle: "Custom Poster & Promotional Graphic Design | Larkspire",
+    metaTitle: "Poster Design Services in Jaipur | Larkspire",
     metaDescription:
-      "Create high-impact event posters, promotional graphics, and digital artwork with Larkspire's creative poster design services.",
+      "Eye-catching posters for events, festivals, offers and social media. Print-ready and digital files from Larkspire, Jaipur.",
     featuresList: [
       {
         title: "Event & Concert Poster Artwork",
@@ -1863,15 +1863,15 @@ export const servicesDataMap: Record<string, ServiceData> = {
   // 13. Meta Ads
   "meta-ads": {
     slug: "meta-ads",
-    title: "Meta Ads & Paid Growth",
+    title: "Meta Ads (Facebook & Instagram) Agency in Jaipur",
     iconName: "Target",
-    tagline: "High-ROI Facebook & Instagram Ad Campaigns",
+    tagline: "Lead Generation & Sales Campaigns for Jaipur Businesses",
     heroDescription:
-      "Drive targeted leads and sales with high-converting Meta (Facebook & Instagram) ad campaigns — featuring high-performing ad creatives, audience targeting, and funnel optimization.",
+      "Lead-generation and sales campaigns on Facebook & Instagram for Jaipur businesses. A/B testing, tracking and clear reporting.",
     heroImage: getAssetPath("/images/services/meta-ads.jpg"),
-    metaTitle: "Meta Ads & Facebook Advertising Services | Paid Growth | Larkspire",
+    metaTitle: "Meta Ads & Facebook Ads Agency in Jaipur | Larkspire",
     metaDescription:
-      "Scale revenue with targeted Facebook and Instagram ad campaigns engineered by Larkspire. Custom creative, A/B testing, and ROI tracking.",
+      "Lead-generation and sales campaigns on Facebook & Instagram for Jaipur businesses. A/B testing, tracking and clear reporting.",
     featuresList: [
       {
         title: "Custom Ad Creative & Copywriting",
@@ -2012,15 +2012,15 @@ export const servicesDataMap: Record<string, ServiceData> = {
   // 14. Digital Marketing (Existing key)
   "digital-marketing": {
     slug: "digital-marketing",
-    title: "Digital Marketing",
+    title: "Digital Marketing Services for Startups & Small Businesses in Jaipur",
     iconName: "TrendingUp",
-    tagline: "Omnichannel Growth & Strategic Customer Acquisition",
+    tagline: "Performance Marketing, SEO & Funnel Optimization for Jaipur Businesses",
     heroDescription:
-      "Scale your revenue with comprehensive digital marketing campaigns — combining PPC ad management, social media strategy, content marketing, and conversion funnels.",
+      "Performance marketing, SEO and funnel optimization for Jaipur startups and D2C brands. Get more leads with data-driven campaigns.",
     heroImage: getAssetPath("/images/services/digital-marketing.jpg"),
-    metaTitle: "Digital Marketing Agency Services | Growth & PPC | Larkspire",
+    metaTitle: "Digital Marketing Services in Jaipur | Larkspire",
     metaDescription:
-      "Drive sustainable business growth with Larkspire's digital marketing services. PPC campaigns, content marketing, funnel optimization, and social media growth.",
+      "Performance marketing, SEO and funnel optimization for Jaipur startups and D2C brands. Get more leads with data-driven campaigns.",
     featuresList: [
       {
         title: "Omnichannel Paid Ad Campaigns",
@@ -2161,15 +2161,15 @@ export const servicesDataMap: Record<string, ServiceData> = {
   // 15. Digital Wedding Invitation Card
   "digital-wedding-invitation": {
     slug: "digital-wedding-invitation",
-    title: "Digital Wedding Invitation Card",
+    title: "Digital Wedding Invitation & E-Invite Cards in Jaipur",
     iconName: "Heart",
-    tagline: "Invite, Impress & Celebrate Digitally – Interactive Wedding Cards in Jaipur",
+    tagline: "Animated Online Wedding Invitations with WhatsApp RSVP, Music & Google Maps",
     heroDescription:
-      "Make your special day extra memorable with custom animated and interactive digital wedding invitations designed with love in Jaipur. Featuring romantic background music, instant WhatsApp RSVP forms, multi-day event schedules, photo galleries, and direct Google Maps venue navigation.",
+      "Animated online wedding invitations with WhatsApp RSVP, music and Google Maps. Royal Rajasthani themes. Order your e-invite in Jaipur.",
     heroImage: getAssetPath("/images/services/digital-wedding-invitation.jpg"),
-    metaTitle: "Digital Wedding Card & Wedding Invitation Online Jaipur | Larkspire",
+    metaTitle: "Digital Wedding Invitation in Jaipur | E-Invite | Larkspire",
     metaDescription:
-      "Looking for digital wedding card design or wedding invitation online in Jaipur? Larkspire creates animated, interactive digital wedding invitations with WhatsApp RSVP, music, photo gallery & Google Maps venue navigation.",
+      "Animated online wedding invitations with WhatsApp RSVP, music and Google Maps. Royal Rajasthani themes. Order your e-invite in Jaipur.",
     featuresList: [
       {
         title: "Custom Royal & Modern Designs",

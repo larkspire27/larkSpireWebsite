@@ -2,24 +2,23 @@ import type { Metadata } from "next";
 import AboutClient from "@/components/AboutClient";
 
 export const metadata: Metadata = {
-  title: "About Us | Larkspire Creative Studio",
+  title: "About Larkspire – Digital Agency in Jaipur",
   description:
-    "Learn about Larkspire — a creative digital agency combining elite web engineering, commercial design psychology, and sub-second performance.",
+    "Meet Larkspire, a Jaipur digital agency for web development, SEO, design and marketing. See our process and live projects.",
   alternates: {
     canonical: "https://larkspire.in/about",
   },
   keywords: [
     "About Larkspire",
-    "Digital Agency Team",
-    "Web Engineering Studio",
-    "Client ROI Design",
-    "Senior Web Developers",
-    "Creative Digital Agency",
+    "larkspire agency",
+    "larkspire jaipur",
+    "digital agency jaipur team",
+    "web development agency jaipur",
   ],
   openGraph: {
-    title: "About Us | Larkspire Digital Agency",
+    title: "About Larkspire – Digital Agency in Jaipur",
     description:
-      "Direct senior engineering & design partnership for forward-thinking brands. Delivering sub-second speed, custom web apps, and commercial ROI.",
+      "Meet Larkspire, a Jaipur digital agency for web development, SEO, design and marketing. See our process and live projects.",
     url: "https://larkspire.in/about",
     siteName: "Larkspire",
     locale: "en_US",
@@ -27,8 +26,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "About Us | Larkspire Digital Agency",
-    description: "Crafting digital legacies for ambitious brands with sub-second performance.",
+    title: "About Larkspire – Digital Agency in Jaipur",
+    description: "Meet Larkspire, a Jaipur digital agency for web development, SEO, design and marketing. See our process and live projects.",
   },
 };
 

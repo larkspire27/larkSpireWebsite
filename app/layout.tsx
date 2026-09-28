@@ -13,26 +13,25 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL("https://larkspire.in"),
   title: {
-    default: "Larkspire | Digital & Creative Agency",
+    default: "Larkspire – Digital Agency in Jaipur: Web, SEO & Marketing",
     template: "%s | Larkspire",
   },
   alternates: {
     canonical: "https://larkspire.in",
   },
   description:
-    "Larkspire is the best website development and digital marketing company in jaipur. We offer web design, SEO, graphic design, and online marketing to help your business grow online.",
+    "Larkspire builds fast Next.js websites, Shopify stores and runs SEO & Meta ads for Jaipur businesses. See live projects and get a free quote.",
   keywords: [
-    "best website development and digital marketing company in jaipur",
+    "digital agency in jaipur",
+    "web development services in jaipur",
+    "website design in jaipur",
+    "seo services in jaipur",
+    "digital wedding invitation jaipur",
+    "shopify store design jaipur",
+    "meta ads agency jaipur",
     "Larkspire",
-    "Larkspire Services",
     "Larkspire Agency",
     "Larkspire Digital Agency",
-    "Digital Agency Jaipur",
-    "Web Development Jaipur",
-    "Graphic Design",
-    "Digital Marketing Jaipur",
-    "SEO Jaipur",
-    "Meta Ads",
   ],
   icons: {
     icon: "/favicon.ico",
@@ -41,19 +40,19 @@ export const metadata: Metadata = {
   },
   authors: [{ name: "Larkspire Agency" }],
   openGraph: {
-    title: "Larkspire Services | Best Website Development & Digital Marketing Company in Jaipur",
+    title: "Larkspire – Digital Agency in Jaipur: Web, SEO & Marketing",
     description:
-      "Larkspire is the best website development and digital marketing company in jaipur. We offer web design, SEO, graphic design, and online marketing to help your business grow online.",
+      "Larkspire builds fast Next.js websites, Shopify stores and runs SEO & Meta ads for Jaipur businesses. See live projects and get a free quote.",
     url: "https://larkspire.in",
-    siteName: "Larkspire Services",
+    siteName: "Larkspire",
     locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Larkspire Services | Best Website Development & Digital Marketing Company in Jaipur",
+    title: "Larkspire – Digital Agency in Jaipur: Web, SEO & Marketing",
     description:
-      "Larkspire is the best website development and digital marketing company in jaipur. We offer web design, SEO, graphic design, and online marketing to help your business grow online.",
+      "Larkspire builds fast Next.js websites, Shopify stores and runs SEO & Meta ads for Jaipur businesses. See live projects and get a free quote.",
   },
 };
 

@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import React, { useRef } from "react";
 import Link from "next/link";
@@ -42,7 +42,7 @@ const servicesData: ServiceItem[] = [
     description:
       "Animated digital wedding cards in Jaipur with WhatsApp RSVP, music, royal Rajasthani themes & Google Maps navigation.",
     icon: <Heart className="w-6 h-6 text-teal-400" />,
-    bgImage: getAssetPath("/images/services/digital-wedding-invitation.jpg"),
+    bgImage: getAssetPath("/images/services/digital-wedding-invitation.webp"),
   },
   {
     id: "website-design",
@@ -51,7 +51,7 @@ const servicesData: ServiceItem[] = [
     description:
       "Custom Figma UI/UX prototypes, responsive layouts & affordable plans for Jaipur small businesses and startups.",
     icon: <Layout className="w-6 h-6 text-teal-400" />,
-    bgImage: getAssetPath("/images/services/website-design.jpg"),
+    bgImage: getAssetPath("/images/services/website-design.webp"),
   },
   {
     id: "web-dev",
@@ -60,7 +60,7 @@ const servicesData: ServiceItem[] = [
     description:
       "Bespoke, fast Next.js & React websites in Jaipur engineered for sub-second performance and 100% custom builds.",
     icon: <Code className="w-6 h-6 text-teal-400" />,
-    bgImage: getAssetPath("/images/services/web-development.jpg"),
+    bgImage: getAssetPath("/images/services/web-development.webp"),
   },
   {
     id: "seo",
@@ -69,7 +69,7 @@ const servicesData: ServiceItem[] = [
     description:
       "Technical, local and content SEO for Jaipur businesses. Free SEO audits & keyword positioning to rank on Google.",
     icon: <Search className="w-6 h-6 text-teal-400" />,
-    bgImage: getAssetPath("/images/services/seo-optimization.jpg"),
+    bgImage: getAssetPath("/images/services/seo-optimization.webp"),
   },
   {
     id: "shopify",
@@ -78,7 +78,7 @@ const servicesData: ServiceItem[] = [
     description:
       "Conversion-focused Shopify stores for Jaipur jewellery, gemstone, textile and D2C brands. Custom Liquid themes & apps.",
     icon: <ShoppingBag className="w-6 h-6 text-teal-400" />,
-    bgImage: getAssetPath("/images/services/shopify-website-design.jpg"),
+    bgImage: getAssetPath("/images/services/shopify-website-design.webp"),
   },
   {
     id: "google-business",
@@ -87,7 +87,7 @@ const servicesData: ServiceItem[] = [
     description:
       "Google Business Profile setup, verification, review management & Google Maps ranking in Jaipur.",
     icon: <MapPin className="w-6 h-6 text-teal-400" />,
-    bgImage: getAssetPath("/images/services/google-business-profile.jpg"),
+    bgImage: getAssetPath("/images/services/google-business-profile.webp"),
   },
   {
     id: "wordpress",
@@ -96,7 +96,7 @@ const servicesData: ServiceItem[] = [
     description:
       "Custom WordPress themes, WooCommerce online stores and Gutenberg blocks without template bloat.",
     icon: <Globe className="w-6 h-6 text-teal-400" />,
-    bgImage: getAssetPath("/images/services/wordpress-development.jpg"),
+    bgImage: getAssetPath("/images/services/wordpress-development.webp"),
   },
   {
     id: "ecommerce",
@@ -105,7 +105,7 @@ const servicesData: ServiceItem[] = [
     description:
       "Custom online stores with secure checkout, payment gateways (Razorpay/PayU), and inventory automation.",
     icon: <ShoppingCart className="w-6 h-6 text-teal-400" />,
-    bgImage: getAssetPath("/images/services/ecommerce-development.jpg"),
+    bgImage: getAssetPath("/images/services/ecommerce-development.webp"),
   },
   {
     id: "graphic-design",
@@ -114,7 +114,7 @@ const servicesData: ServiceItem[] = [
     description:
       "Logo design, brand guidelines and marketing creatives for Jaipur startups and small businesses.",
     icon: <Palette className="w-6 h-6 text-teal-400" />,
-    bgImage: getAssetPath("/images/services/graphic-design.jpg"),
+    bgImage: getAssetPath("/images/services/graphic-design.webp"),
   },
   {
     id: "crm",
@@ -123,7 +123,7 @@ const servicesData: ServiceItem[] = [
     description:
       "Custom CRM software with lead tracking, sales pipeline and WhatsApp/email automation for Jaipur businesses.",
     icon: <Database className="w-6 h-6 text-teal-400" />,
-    bgImage: getAssetPath("/images/services/crm-software-development.jpg"),
+    bgImage: getAssetPath("/images/services/crm-software-development.webp"),
   },
   {
     id: "mobile-app",
@@ -132,7 +132,7 @@ const servicesData: ServiceItem[] = [
     description:
       "React Native mobile app development for Jaipur startups: iOS & Android apps with App Store launch.",
     icon: <Smartphone className="w-6 h-6 text-teal-400" />,
-    bgImage: getAssetPath("/images/services/mobile-app-development.jpg"),
+    bgImage: getAssetPath("/images/services/mobile-app-development.webp"),
   },
   {
     id: "web-apps-saas",
@@ -141,7 +141,7 @@ const servicesData: ServiceItem[] = [
     description:
       "Multi-tenant SaaS, dashboards and APIs with Stripe/Razorpay billing built for startups.",
     icon: <Cloud className="w-6 h-6 text-teal-400" />,
-    bgImage: getAssetPath("/images/services/web-apps-saas.jpg"),
+    bgImage: getAssetPath("/images/services/web-apps-saas.webp"),
   },
   {
     id: "digital-marketing",
@@ -150,7 +150,7 @@ const servicesData: ServiceItem[] = [
     description:
       "Performance marketing, SEO and funnel optimization for Jaipur startups and D2C brands.",
     icon: <TrendingUp className="w-6 h-6 text-teal-400" />,
-    bgImage: getAssetPath("/images/services/digital-marketing.jpg"),
+    bgImage: getAssetPath("/images/services/digital-marketing.webp"),
   },
   {
     id: "meta-ads",
@@ -159,7 +159,7 @@ const servicesData: ServiceItem[] = [
     description:
       "Facebook & Instagram ad campaigns for Jaipur businesses: lead-generation, A/B testing & sales funnels.",
     icon: <Target className="w-6 h-6 text-teal-400" />,
-    bgImage: getAssetPath("/images/services/meta-ads.jpg"),
+    bgImage: getAssetPath("/images/services/meta-ads.webp"),
   },
   {
     id: "poster-design",
@@ -168,7 +168,7 @@ const servicesData: ServiceItem[] = [
     description:
       "Eye-catching posters for events, festivals, social offers & print-ready digital creative files.",
     icon: <ImageIcon className="w-6 h-6 text-teal-400" />,
-    bgImage: getAssetPath("/images/services/poster-design.jpg"),
+    bgImage: getAssetPath("/images/services/poster-design.webp"),
   },
 ];
 
@@ -215,7 +215,7 @@ export default function Services() {
             End-to-End Digital Services Designed to Scale
           </h2>
           <p className="text-slate-600 text-base sm:text-lg">
-            Whether you need custom web applications, e-commerce stores, branding, or target local growth — we provide complete engineering and design services under one roof.
+            Whether you need custom web applications, e-commerce stores, branding, or target local growth â€” we provide complete engineering and design services under one roof.
           </p>
         </div>
 
@@ -233,6 +233,7 @@ export default function Services() {
                   src={service.bgImage}
                   alt={service.title}
                   fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   unoptimized
                   className="object-cover object-center group-hover:scale-105 transition-transform duration-500 ease-out"
                 />

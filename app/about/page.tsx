@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "Meet Larkspire, a Jaipur digital agency for web development, SEO, design and marketing. See our process and live projects.",
   alternates: {
-    canonical: "https://larkspire.in/about",
+    canonical: "https://www.larkspire.in/about",
   },
   keywords: [
     "About Larkspire",
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     title: "About Larkspire – Digital Agency in Jaipur",
     description:
       "Meet Larkspire, a Jaipur digital agency for web development, SEO, design and marketing. See our process and live projects.",
-    url: "https://larkspire.in/about",
+    url: "https://www.larkspire.in/about",
     siteName: "Larkspire",
     locale: "en_US",
     type: "website",

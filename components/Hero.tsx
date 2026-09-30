@@ -15,6 +15,7 @@ import {
 } from "lucide-react";
 import { useGSAP } from "@gsap/react";
 import { gsap, prefersReducedMotion } from "@/lib/gsap";
+import { trackEmailCopy, trackCTAClick } from "@/lib/fbpixel";
 import InteractiveMascot from "./InteractiveMascot";
 
 export default function Hero() {
@@ -47,6 +48,8 @@ export default function Hero() {
   const handleCopyEmail = () => {
     navigator.clipboard.writeText("spirelark@gmail.com");
     setCopiedEmail(true);
+    // 🔥 Track email copy in Meta Pixel
+    trackEmailCopy();
     setTimeout(() => setCopiedEmail(false), 2500);
   };
 
@@ -90,9 +93,9 @@ export default function Hero() {
           </h1>
 
           {/* Subtext Tagline */}
-          <h2 className="text-lg sm:text-xl font-medium text-slate-600 leading-relaxed">
+          <p className="text-lg sm:text-xl font-medium text-slate-600 leading-relaxed">
             We build fast Next.js websites, Shopify stores, and run ROI-driven SEO &amp; Meta ads campaigns to scale Jaipur businesses.
-          </h2>
+          </p>
 
           {/* Action Pill Prompt Buttons */}
           <div className="pt-2 space-y-2">
@@ -102,6 +105,7 @@ export default function Hero() {
             <div className="flex flex-wrap items-center gap-2">
               <Link
                 href="#contact"
+                onClick={() => trackCTAClick("Pitch us an idea", "Hero")}
                 className="inline-flex items-center gap-1.5 px-4 py-2.5 min-h-[44px] rounded-full bg-teal-700 text-white font-medium text-xs sm:text-sm hover:bg-teal-800 transition-all duration-200 shadow-sm hover:scale-105 apple-focus-ring"
               >
                 <Send className="w-3.5 h-3.5" />

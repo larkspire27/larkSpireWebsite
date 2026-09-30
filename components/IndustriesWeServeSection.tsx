@@ -186,9 +186,9 @@ export default function IndustriesWeServeSection() {
             </div>
 
             {/* Title */}
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-[1.15]">
+            <h3 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-[1.15]">
               Industries <span className="text-teal-700">We Serve</span>
-            </h2>
+            </h3>
 
             {/* Sub-description */}
             <p className="text-slate-600 text-base leading-relaxed font-light">

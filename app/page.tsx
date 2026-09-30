@@ -14,11 +14,13 @@ import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Larkspire – Digital Agency in Jaipur: Web, SEO & Marketing",
+  title: {
+    absolute: "Larkspire – Digital Agency in Jaipur: Web, SEO & Marketing",
+  },
   description:
     "Larkspire builds fast Next.js websites, Shopify stores and runs SEO & Meta ads for Jaipur businesses. See live projects and get a free quote.",
   alternates: {
-    canonical: "https://larkspire.in",
+    canonical: "https://www.larkspire.in",
   },
   keywords: [
     "Larkspire",
@@ -32,7 +34,7 @@ export const metadata: Metadata = {
     title: "Larkspire – Digital Agency in Jaipur: Web, SEO & Marketing",
     description:
       "Larkspire builds fast Next.js websites, Shopify stores and runs SEO & Meta ads for Jaipur businesses. See live projects and get a free quote.",
-    url: "https://larkspire.in",
+    url: "https://www.larkspire.in",
     siteName: "Larkspire",
     locale: "en_US",
     type: "website",

@@ -170,10 +170,10 @@ export default function ContactClient() {
               ref={formBoxRef}
               className="lg:col-span-7 bg-background p-8 sm:p-12 rounded-3xl border border-teal-100 shadow-subtle space-y-6"
             >
-              <h2 className="text-2xl font-bold text-slate-900 flex items-center gap-2">
+              <h3 className="text-2xl font-bold text-slate-900 flex items-center gap-2">
                 <MessageSquare className="w-5 h-5 text-teal-700" />
                 <span>Send Us a Message</span>
-              </h2>
+              </h3>
 
               {isSubmitted ? (
                 <div className="p-8 rounded-2xl bg-teal-50 border border-teal-200 text-teal-900 space-y-4 text-center animate-in fade-in duration-300">

@@ -28,12 +28,12 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title: service.metaTitle,
     description: service.metaDescription,
     alternates: {
-      canonical: `https://larkspire.in/services/${service.slug}`,
+      canonical: `https://www.larkspire.in/services/${service.slug}`,
     },
     openGraph: {
       title: service.metaTitle,
       description: service.metaDescription,
-      url: `https://larkspire.in/services/${service.slug}`,
+      url: `https://www.larkspire.in/services/${service.slug}`,
       siteName: "Larkspire",
       locale: "en_US",
       type: "website",

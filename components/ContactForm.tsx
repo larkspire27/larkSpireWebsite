@@ -2,6 +2,7 @@
 
 import React, { useState, useRef } from "react";
 import { Send, CheckCircle2, AlertCircle } from "lucide-react";
+import { trackLead } from "@/lib/fbpixel";
 import { useGSAP } from "@gsap/react";
 import { gsap, prefersReducedMotion } from "@/lib/gsap";
 
@@ -78,6 +79,10 @@ export default function ContactForm() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
       });
+
+      // 🔥 Fire Meta Pixel Lead event
+      trackLead("ContactForm", formData.service);
+
       setSubmitted(true);
       setFormData({ name: "", email: "", service: "Web Development", message: "", honeypot: "" });
     } catch (err) {
@@ -100,9 +105,9 @@ export default function ContactForm() {
           <span className="text-xs font-semibold uppercase tracking-widest text-teal-700">
             Get In Touch
           </span>
-          <h2 className="text-3xl sm:text-5xl font-bold tracking-tight text-slate-900">
+          <h3 className="text-3xl sm:text-5xl font-bold tracking-tight text-slate-900">
             Start Your Project with <span className="text-teal-700">Larkspire</span>
-          </h2>
+          </h3>
           <p className="text-slate-600 text-base sm:text-lg">
             Have a project in mind? Fill out the form below and our strategy team will reach out within 24 hours.
           </p>

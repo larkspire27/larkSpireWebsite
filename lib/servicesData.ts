@@ -1,4 +1,4 @@
-import { getAssetPath } from "./basePath";
+﻿import { getAssetPath } from "./basePath";
 
 export interface ServiceFeature {
   title: string;
@@ -75,8 +75,8 @@ const graphicDesignData: ServiceData = {
   tagline: "Logo Design, Brand Guidelines & Marketing Creatives in Jaipur",
   heroDescription:
     "Logo design, brand guidelines and marketing creatives for Jaipur startups and small businesses. Get a memorable brand with Larkspire.",
-  heroImage: getAssetPath("/images/services/graphic-design.jpg"),
-  metaTitle: "Logo & Brand Identity Design in Jaipur | Larkspire",
+  heroImage: getAssetPath("/images/services/graphic-design.webp"),
+  metaTitle: "Logo & Brand Identity Design in Jaipur",
   metaDescription:
     "Logo design, brand guidelines and marketing creatives for Jaipur startups and small businesses. Get a memorable brand with Larkspire.",
   featuresList: [
@@ -136,11 +136,11 @@ const graphicDesignData: ServiceData = {
   whyUsPoints: [
     {
       title: "Strategic Design Focus",
-      description: "We don't just make pretty pictures — every element is designed to drive recall and trust.",
+      description: "We don't just make pretty pictures â€” every element is designed to drive recall and trust.",
     },
     {
       title: "100% Vector & Original",
-      description: "No generic clip art or stock templates — 100% custom crafted artwork.",
+      description: "No generic clip art or stock templates â€” 100% custom crafted artwork.",
     },
     {
       title: "Full Commercial Ownership",
@@ -226,8 +226,8 @@ export const servicesDataMap: Record<string, ServiceData> = {
     tagline: "Custom Figma Prototypes, Mobile-First Layouts & Affordable Startup Plans",
     heroDescription:
       "Custom website design in Jaipur with Figma prototypes, mobile-first layouts and fast loading. Affordable plans for startups. Get a free quote.",
-    heroImage: getAssetPath("/images/services/website-design.jpg"),
-    metaTitle: "Website Design in Jaipur for Small Businesses | Larkspire",
+    heroImage: getAssetPath("/images/services/website-design.webp"),
+    metaTitle: "Website Design in Jaipur for Small Business",
     metaDescription:
       "Custom website design in Jaipur with Figma prototypes, mobile-first layouts and fast loading. Affordable plans for startups. Get a free quote.",
     featuresList: [
@@ -372,11 +372,11 @@ export const servicesDataMap: Record<string, ServiceData> = {
     slug: "web-development",
     title: "Web Development Services in Jaipur (Next.js & React)",
     iconName: "Code",
-    tagline: "Fast, SEO-Ready Next.js & React Websites — 100% Custom Built",
+    tagline: "Fast, SEO-Ready Next.js & React Websites â€” 100% Custom Built",
     heroDescription:
       "Web development services in Jaipur: fast, SEO-ready Next.js and React websites, 100% custom. Talk to the Larkspire team.",
-    heroImage: getAssetPath("/images/services/web-development.jpg"),
-    metaTitle: "Web Development Services in Jaipur | Next.js – Larkspire",
+    heroImage: getAssetPath("/images/services/web-development.webp"),
+    metaTitle: "Next.js Web Development Services in Jaipur",
     metaDescription:
       "Web development services in Jaipur: fast, SEO-ready Next.js and React websites, 100% custom. Talk to the Larkspire team.",
     featuresList: [
@@ -436,7 +436,7 @@ export const servicesDataMap: Record<string, ServiceData> = {
     whyUsPoints: [
       {
         title: "Clean Modern Stack",
-        description: "We use Next.js, React, and TypeScript — avoiding bloated plugins and slow code.",
+        description: "We use Next.js, React, and TypeScript â€” avoiding bloated plugins and slow code.",
       },
       {
         title: "Lighthouse 95+ Performance",
@@ -478,7 +478,7 @@ export const servicesDataMap: Record<string, ServiceData> = {
       },
       {
         question: "Is technical SEO included in web development?",
-        answer: "Yes, technical SEO is baked into our development process — including semantic HTML5, dynamic XML sitemaps, structured JSON-LD schemas, and meta tag optimization.",
+        answer: "Yes, technical SEO is baked into our development process â€” including semantic HTML5, dynamic XML sitemaps, structured JSON-LD schemas, and meta tag optimization.",
       },
       {
         question: "What support and maintenance do you offer after launch?",
@@ -524,8 +524,8 @@ export const servicesDataMap: Record<string, ServiceData> = {
     tagline: "Technical, Local & Content SEO Audits to Rank Top on Google",
     heroDescription:
       "Technical, local and content SEO for Jaipur businesses. Get a website audit and a clear plan to rank on Google. Talk to Larkspire.",
-    heroImage: getAssetPath("/images/services/seo-optimization.jpg"),
-    metaTitle: "SEO Services in Jaipur for Small Business | Larkspire",
+    heroImage: getAssetPath("/images/services/seo-optimization.webp"),
+    metaTitle: "SEO Services in Jaipur for Small Business",
     metaDescription:
       "Technical, local and content SEO for Jaipur businesses. Get a website audit and a clear plan to rank on Google. Talk to Larkspire.",
     featuresList: [
@@ -673,8 +673,8 @@ export const servicesDataMap: Record<string, ServiceData> = {
     tagline: "Fast, Secure WordPress Themes, Gutenberg & WooCommerce Without Template Bloat",
     heroDescription:
       "Custom WordPress themes, WooCommerce stores and Gutenberg blocks without template bloat. Fast, secure sites for Jaipur businesses.",
-    heroImage: getAssetPath("/images/services/wordpress-development.jpg"),
-    metaTitle: "WordPress & WooCommerce Development in Jaipur | Larkspire",
+    heroImage: getAssetPath("/images/services/wordpress-development.webp"),
+    metaTitle: "WordPress & WooCommerce Development in Jaipur",
     metaDescription:
       "Custom WordPress themes, WooCommerce stores and Gutenberg blocks without template bloat. Fast, secure sites for Jaipur businesses.",
     featuresList: [
@@ -822,8 +822,8 @@ export const servicesDataMap: Record<string, ServiceData> = {
     tagline: "Conversion-Focused Shopify Stores for Jaipur Jewellery, Textile & D2C Brands",
     heroDescription:
       "Conversion-focused Shopify stores for Jaipur jewellery, textile and D2C brands. Custom themes, apps and payment setup. Get a free quote.",
-    heroImage: getAssetPath("/images/services/shopify-website-design.jpg"),
-    metaTitle: "Shopify Website Design & Developer in Jaipur | Larkspire",
+    heroImage: getAssetPath("/images/services/shopify-website-design.webp"),
+    metaTitle: "Shopify Website Design & Store Setup Jaipur",
     metaDescription:
       "Conversion-focused Shopify stores for Jaipur jewellery, textile and D2C brands. Custom themes, apps and payment setup. Get a free quote.",
     featuresList: [
@@ -971,8 +971,8 @@ export const servicesDataMap: Record<string, ServiceData> = {
     tagline: "Custom Online Stores with Secure Checkout, Payment Gateways & Inventory Automation",
     heroDescription:
       "Custom online stores with secure checkout, payment gateways and inventory automation for Jaipur sellers. Launch and sell online with Larkspire.",
-    heroImage: getAssetPath("/images/services/ecommerce-development.jpg"),
-    metaTitle: "Ecommerce Website Development in Jaipur | Larkspire",
+    heroImage: getAssetPath("/images/services/ecommerce-development.webp"),
+    metaTitle: "Ecommerce Website Development in Jaipur",
     metaDescription:
       "Custom online stores with secure checkout, payment gateways and inventory automation for Jaipur sellers. Launch and sell online with Larkspire.",
     featuresList: [
@@ -1124,8 +1124,8 @@ export const servicesDataMap: Record<string, ServiceData> = {
     tagline: "Lead Tracking, Sales Pipeline & WhatsApp/Email Automation for Jaipur Businesses",
     heroDescription:
       "Custom CRM with lead tracking, sales pipeline and WhatsApp/email automation for Jaipur businesses. Book a free demo call.",
-    heroImage: getAssetPath("/images/services/crm-software-development.jpg"),
-    metaTitle: "Custom CRM Software Development in Jaipur | Larkspire",
+    heroImage: getAssetPath("/images/services/crm-software-development.webp"),
+    metaTitle: "Custom CRM Software Development in Jaipur",
     metaDescription:
       "Custom CRM with lead tracking, sales pipeline and WhatsApp/email automation for Jaipur businesses. Book a free demo call.",
     featuresList: [
@@ -1273,8 +1273,8 @@ export const servicesDataMap: Record<string, ServiceData> = {
     tagline: "iOS & Android Apps for Jaipur Startups: UX Design, React Native & App Store Launch",
     heroDescription:
       "iOS and Android apps built with React Native for Jaipur startups: UX design, development and App Store launch. Share your app idea.",
-    heroImage: getAssetPath("/images/services/mobile-app-development.jpg"),
-    metaTitle: "React Native App Development in Jaipur | Larkspire",
+    heroImage: getAssetPath("/images/services/mobile-app-development.webp"),
+    metaTitle: "React Native App Development in Jaipur",
     metaDescription:
       "iOS and Android apps built with React Native for Jaipur startups: UX design, development and App Store launch. Share your app idea.",
     featuresList: [
@@ -1422,8 +1422,8 @@ export const servicesDataMap: Record<string, ServiceData> = {
     tagline: "Multi-Tenant SaaS, Dashboards, APIs & Stripe/Razorpay Billing for Startups",
     heroDescription:
       "Multi-tenant SaaS, dashboards and APIs with Stripe billing, built for startups. Turn your MVP idea into a live product with Larkspire.",
-    heroImage: getAssetPath("/images/services/web-apps-saas.jpg"),
-    metaTitle: "Web Application Development Company in Jaipur | Larkspire",
+    heroImage: getAssetPath("/images/services/web-apps-saas.webp"),
+    metaTitle: "Web App Development Company in Jaipur",
     metaDescription:
       "Multi-tenant SaaS, dashboards and APIs with Stripe billing, built for startups. Turn your MVP idea into a live product with Larkspire.",
     featuresList: [
@@ -1491,7 +1491,7 @@ export const servicesDataMap: Record<string, ServiceData> = {
       },
       {
         title: "Full Product Ownership",
-        description: "100% IP ownership — all custom code and cloud accounts belong entirely to you.",
+        description: "100% IP ownership â€” all custom code and cloud accounts belong entirely to you.",
       },
     ],
     relatedProjects: [
@@ -1568,11 +1568,11 @@ export const servicesDataMap: Record<string, ServiceData> = {
     slug: "google-business-profile",
     title: "Google Business Profile Optimization & Management in Jaipur",
     iconName: "MapPin",
-    tagline: "Rank Top on Google Maps in Jaipur — Profile Setup, Verification & Local SEO",
+    tagline: "Rank Top on Google Maps in Jaipur â€” Profile Setup, Verification & Local SEO",
     heroDescription:
       "Rank on Google Maps in Jaipur. Profile setup, verification, review management and local SEO to bring more calls and walk-ins.",
-    heroImage: getAssetPath("/images/services/google-business-profile.jpg"),
-    metaTitle: "Google Business Profile Optimization in Jaipur | Larkspire",
+    heroImage: getAssetPath("/images/services/google-business-profile.webp"),
+    metaTitle: "Google Business Profile Setup in Jaipur",
     metaDescription:
       "Rank on Google Maps in Jaipur. Profile setup, verification, review management and local SEO to bring more calls and walk-ins.",
     featuresList: [
@@ -1720,8 +1720,8 @@ export const servicesDataMap: Record<string, ServiceData> = {
     tagline: "Eye-Catching Posters for Events, Festivals, Offers & Social Media",
     heroDescription:
       "Eye-catching posters for events, festivals, offers and social media. Print-ready and digital files from Larkspire, Jaipur.",
-    heroImage: getAssetPath("/images/services/poster-design.jpg"),
-    metaTitle: "Poster Design Services in Jaipur | Larkspire",
+    heroImage: getAssetPath("/images/services/poster-design.webp"),
+    metaTitle: "Poster Design Services in Jaipur",
     metaDescription:
       "Eye-catching posters for events, festivals, offers and social media. Print-ready and digital files from Larkspire, Jaipur.",
     featuresList: [
@@ -1868,8 +1868,8 @@ export const servicesDataMap: Record<string, ServiceData> = {
     tagline: "Lead Generation & Sales Campaigns for Jaipur Businesses",
     heroDescription:
       "Lead-generation and sales campaigns on Facebook & Instagram for Jaipur businesses. A/B testing, tracking and clear reporting.",
-    heroImage: getAssetPath("/images/services/meta-ads.jpg"),
-    metaTitle: "Meta Ads & Facebook Ads Agency in Jaipur | Larkspire",
+    heroImage: getAssetPath("/images/services/meta-ads.webp"),
+    metaTitle: "Meta & Facebook Ads Agency in Jaipur",
     metaDescription:
       "Lead-generation and sales campaigns on Facebook & Instagram for Jaipur businesses. A/B testing, tracking and clear reporting.",
     featuresList: [
@@ -1937,7 +1937,7 @@ export const servicesDataMap: Record<string, ServiceData> = {
       },
       {
         title: "Transparent Ad Spend",
-        description: "You retain 100% ownership of your Meta ad accounts — no hidden markups.",
+        description: "You retain 100% ownership of your Meta ad accounts â€” no hidden markups.",
       },
     ],
     relatedProjects: [
@@ -2017,8 +2017,8 @@ export const servicesDataMap: Record<string, ServiceData> = {
     tagline: "Performance Marketing, SEO & Funnel Optimization for Jaipur Businesses",
     heroDescription:
       "Performance marketing, SEO and funnel optimization for Jaipur startups and D2C brands. Get more leads with data-driven campaigns.",
-    heroImage: getAssetPath("/images/services/digital-marketing.jpg"),
-    metaTitle: "Digital Marketing Services in Jaipur | Larkspire",
+    heroImage: getAssetPath("/images/services/digital-marketing.webp"),
+    metaTitle: "Digital Marketing Services in Jaipur",
     metaDescription:
       "Performance marketing, SEO and funnel optimization for Jaipur startups and D2C brands. Get more leads with data-driven campaigns.",
     featuresList: [
@@ -2166,15 +2166,15 @@ export const servicesDataMap: Record<string, ServiceData> = {
     tagline: "Animated Online Wedding Invitations with WhatsApp RSVP, Music & Google Maps",
     heroDescription:
       "Animated online wedding invitations with WhatsApp RSVP, music and Google Maps. Royal Rajasthani themes. Order your e-invite in Jaipur.",
-    heroImage: getAssetPath("/images/services/digital-wedding-invitation.jpg"),
-    metaTitle: "Digital Wedding Invitation in Jaipur | E-Invite | Larkspire",
+    heroImage: getAssetPath("/images/services/digital-wedding-invitation.webp"),
+    metaTitle: "Digital Wedding Invitation in Jaipur",
     metaDescription:
       "Animated online wedding invitations with WhatsApp RSVP, music and Google Maps. Royal Rajasthani themes. Order your e-invite in Jaipur.",
     featuresList: [
       {
         title: "Custom Royal & Modern Designs",
         description:
-          "Bespoke digital wedding invitation card themes tailored for your love story — from Royal Rajasthani heritage palace motifs to modern minimalist luxury and floral pastel aesthetics.",
+          "Bespoke digital wedding invitation card themes tailored for your love story â€” from Royal Rajasthani heritage palace motifs to modern minimalist luxury and floral pastel aesthetics.",
       },
       {
         title: "Smooth Animations & Motion Transitions",
@@ -2189,7 +2189,7 @@ export const servicesDataMap: Record<string, ServiceData> = {
       {
         title: "Interactive Multi-Event Schedule with Google Maps",
         description:
-          "Keep guests informed with dedicated event schedules for Haldi, Mehendi, Sangeet, Wedding, and Reception — featuring direct Google Maps GPS venue navigation links.",
+          "Keep guests informed with dedicated event schedules for Haldi, Mehendi, Sangeet, Wedding, and Reception â€” featuring direct Google Maps GPS venue navigation links.",
       },
       {
         title: "Background Music & Couple Photo Gallery",

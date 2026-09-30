@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
+import crypto from "crypto";
 
 // In-memory IP rate limiter map
 const ipRateMap = new Map<string, { count: number; expires: number }>();
@@ -147,6 +148,57 @@ export async function POST(request: Request) {
 
       await transporter.sendMail(mailOptions);
       console.log("SUCCESS: Gmail SMTP Email sent directly to spirelark@gmail.com!");
+    }
+
+    // ── Meta Conversions API (Server-Side Lead Event) ──
+    const metaPixelId = process.env.META_PIXEL_ID;
+    const metaAccessToken = process.env.META_CAPI_TOKEN;
+
+    if (metaPixelId && metaAccessToken) {
+      try {
+        // SHA256 hash user data as required by Meta
+        const hashSHA256 = (val: string) =>
+          crypto.createHash("sha256").update(val.trim().toLowerCase()).digest("hex");
+
+        const eventId = `lead_${Date.now()}_${crypto.randomBytes(4).toString("hex")}`;
+
+        const capiPayload = {
+          data: [
+            {
+              event_name: "Lead",
+              event_time: Math.floor(Date.now() / 1000),
+              event_id: eventId,
+              event_source_url: "https://larkspire.in",
+              action_source: "website",
+              user_data: {
+                em: [hashSHA256(cleanEmail)],
+                fn: [hashSHA256(cleanName)],
+                ...(cleanPhone !== "N/A" ? { ph: [hashSHA256(cleanPhone)] } : {}),
+                client_ip_address: clientIp,
+              },
+              custom_data: {
+                content_name: "Lead Form Submission",
+                content_category: cleanService,
+                value: 1,
+                currency: "INR",
+              },
+            },
+          ],
+        };
+
+        await fetch(
+          `https://graph.facebook.com/v21.0/${metaPixelId}/events?access_token=${metaAccessToken}`,
+          {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(capiPayload),
+          }
+        );
+
+        console.log(`SUCCESS: Meta CAPI Lead event sent (event_id: ${eventId})`);
+      } catch (capiError) {
+        console.error("Meta CAPI error (non-blocking):", capiError);
+      }
     }
 
     return NextResponse.json(

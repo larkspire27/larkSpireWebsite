@@ -447,9 +447,9 @@ export default function Portfolio() {
               <Layers className="w-3.5 h-3.5 text-teal-700" />
               <span>Capability Showcase &amp; Concept Studies</span>
             </div>
-            <h2 className="text-3xl sm:text-5xl font-bold tracking-tight text-slate-900">
+            <h3 className="text-3xl sm:text-5xl font-bold tracking-tight text-slate-900">
               Design Explorations &amp; <span className="text-teal-700">Case Studies</span>
-            </h2>
+            </h3>
             <p className="text-slate-600 text-base sm:text-lg">
               A showcase of custom concept case studies and technical design explorations engineered by Larkspire to demonstrate our creative standards.
             </p>

@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { X, Send, CheckCircle2, Sparkles, Phone, Mail } from "lucide-react";
+import { trackLead, trackPopupOpen, trackPopupClose } from "@/lib/fbpixel";
 
 export default function LeadPopup() {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,6 +26,8 @@ export default function LeadPopup() {
     if (!hasSeenPopup) {
       const timer = setTimeout(() => {
         setIsOpen(true);
+        // 🔥 Track popup open
+        trackPopupOpen();
       }, 8500);
       return () => clearTimeout(timer);
     }
@@ -32,6 +35,8 @@ export default function LeadPopup() {
 
   const handleClose = () => {
     setIsOpen(false);
+    // 🔥 Track popup close/dismiss
+    trackPopupClose();
     sessionStorage.setItem("larkspire_popup_dismissed", "true");
     if (typeof window !== "undefined") {
       window.dispatchEvent(new Event("larkspire_lead_popup_closed"));
@@ -73,6 +78,9 @@ export default function LeadPopup() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
       });
+
+      // 🔥 Fire Meta Pixel Lead event from popup
+      trackLead("LeadPopup", formData.service);
 
       setSubmitted(true);
     } catch (err) {

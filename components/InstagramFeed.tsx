@@ -36,9 +36,9 @@ export default function InstagramFeed() {
             <InstagramIcon className="w-3.5 h-3.5" />
             <span>Social Highlights</span>
           </div>
-          <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-white">
+          <h3 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-white">
             Follow Us On <span className="text-teal-400">Instagram</span>
-          </h2>
+          </h3>
           <p className="text-sm sm:text-base text-slate-400">
             Check out our latest design explorations, client highlights, and brand updates on{" "}
             <a

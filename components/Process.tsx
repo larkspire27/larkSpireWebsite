@@ -105,10 +105,10 @@ export default function Process() {
           <span className="text-xs font-semibold uppercase tracking-widest text-teal-700">
             How We Work
           </span>
-          <h2 className="text-3xl sm:text-5xl font-bold tracking-tight text-slate-900">
+          <h3 className="text-3xl sm:text-5xl font-bold tracking-tight text-slate-900">
             A Proven 4-Step <br />
             <span className="text-teal-700">Execution Framework</span>
-          </h2>
+          </h3>
           <p className="text-slate-600 text-base sm:text-lg">
             From initial concept to deployment and scaling, our structured process guarantees clarity and exceptional outcomes.
           </p>

@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 
 import Link from "next/link";
 import Image from "next/image";
@@ -35,6 +35,7 @@ import { ServiceData } from "@/lib/servicesData";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import CTASection from "@/components/CTASection";
+import { trackViewContent } from "@/lib/fbpixel";
 
 const iconMap = {
   Code,
@@ -72,6 +73,11 @@ export default function ServicePageLayout({ service }: ServicePageLayoutProps) {
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(0);
 
   const ServiceIcon = iconMap[service.iconName] || Code;
+
+  // 🔥 Fire Meta Pixel ViewContent when service page loads
+  useEffect(() => {
+    trackViewContent(service.title, "Service");
+  }, [service.title]);
 
   useGSAP(
     () => {
@@ -243,7 +249,7 @@ export default function ServicePageLayout({ service }: ServicePageLayoutProps) {
                     <div className="w-14 h-14 rounded-2xl bg-teal-500/20 backdrop-blur-md border border-teal-400/30 flex items-center justify-center shadow-inner">
                       <ServiceIcon className="w-7 h-7 text-teal-300" />
                     </div>
-                    <h2 className="text-2xl font-bold text-white">{service.title} Excellence</h2>
+                    <h3 className="text-2xl font-bold text-white">{service.title} Excellence</h3>
                     <p className="text-slate-200 text-xs sm:text-sm leading-relaxed font-light">
                       Custom solutions engineered for maximum commercial impact, speed, and conversion.
                     </p>
@@ -262,7 +268,7 @@ export default function ServicePageLayout({ service }: ServicePageLayoutProps) {
                 Capabilities Included
               </span>
               <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-slate-900">
-                Comprehensive Solutions for <span className="text-teal-700">{service.title}</span>
+                Solutions for <span className="text-teal-700">{service.title}</span>
               </h2>
               <p className="text-slate-600 text-base">
                 Everything required to build, optimize, and scale your digital presence under one dedicated team.
@@ -297,9 +303,9 @@ export default function ServicePageLayout({ service }: ServicePageLayoutProps) {
                 <span className="text-xs font-semibold uppercase tracking-widest text-teal-700">
                   Strategic Overview
                 </span>
-                <h2 className="text-3xl sm:text-4xl font-bold text-slate-900">
-                  Why Professional <span className="text-teal-700">{service.title}</span> Matters for Your Growth
-                </h2>
+                <h3 className="text-3xl sm:text-4xl font-bold text-slate-900">
+                  Why <span className="text-teal-700">{service.title}</span> Matters
+                </h3>
                 <p className="text-slate-600 text-base sm:text-lg leading-relaxed font-light">
                   {service.detailedSeoContent.overview}
                 </p>
@@ -371,9 +377,9 @@ export default function ServicePageLayout({ service }: ServicePageLayoutProps) {
               <span className="text-xs font-semibold uppercase tracking-widest text-teal-700">
                 Execution Framework
               </span>
-              <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-slate-900">
+              <h3 className="text-3xl sm:text-4xl font-bold tracking-tight text-slate-900">
                 Our 4-Step <span className="text-teal-700">Delivery Process</span>
-              </h2>
+              </h3>
               <p className="text-slate-600 text-base">
                 Structured milestone execution to guarantee technical quality and fast turnaround.
               </p>
@@ -408,9 +414,9 @@ export default function ServicePageLayout({ service }: ServicePageLayoutProps) {
               <span className="text-xs font-semibold uppercase tracking-widest text-teal-700">
                 The Advantage
               </span>
-              <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-slate-900">
-                Why Work With <span className="text-teal-700">Larkspire</span> for {service.title}
-              </h2>
+              <h3 className="text-3xl sm:text-4xl font-bold tracking-tight text-slate-900">
+                Why Choose <span className="text-teal-700">Larkspire</span>
+              </h3>
             </div>
 
             <div
@@ -442,9 +448,9 @@ export default function ServicePageLayout({ service }: ServicePageLayoutProps) {
                   <HelpCircle className="w-3.5 h-3.5 text-teal-700" />
                   <span>Got Questions?</span>
                 </div>
-                <h2 className="text-3xl sm:text-4xl font-bold text-slate-900">
+                <h3 className="text-3xl sm:text-4xl font-bold text-slate-900">
                   Frequently Asked <span className="text-teal-700">Questions</span>
-                </h2>
+                </h3>
                 <p className="text-slate-600 text-base">
                   Everything you need to know about our {service.title.toLowerCase()} process, deliverables, and pricing.
                 </p>
@@ -502,9 +508,9 @@ export default function ServicePageLayout({ service }: ServicePageLayoutProps) {
                   <span className="text-xs font-semibold uppercase tracking-widest text-teal-700">
                     Proof of Performance
                   </span>
-                  <h2 className="text-3xl font-bold text-slate-900">
+                  <h3 className="text-3xl font-bold text-slate-900">
                     Related <span className="text-teal-700">{service.title}</span> Projects
-                  </h2>
+                  </h3>
                 </div>
                 <Link
                   href="/portfolio"

@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import React, { useRef, useState } from "react";
 import Link from "next/link";
@@ -40,7 +40,7 @@ const servicesList = [
       "Bespoke UI/UX wireframes, interactive Figma prototypes, and responsive landing pages crafted to captivate visitors.",
     icon: Layout,
     href: "/services/website-design",
-    bgImage: getAssetPath("/images/services/website-design.jpg"),
+    bgImage: getAssetPath("/images/services/website-design.webp"),
   },
   {
     slug: "web-development",
@@ -49,7 +49,7 @@ const servicesList = [
       "Bespoke, high-speed custom websites engineered for seamless performance, accessibility, and high conversion rates.",
     icon: Code,
     href: "/services/web-development",
-    bgImage: getAssetPath("/images/services/web-development.jpg"),
+    bgImage: getAssetPath("/images/services/web-development.webp"),
   },
   {
     slug: "search-engine-optimization",
@@ -58,7 +58,7 @@ const servicesList = [
       "Comprehensive technical & content SEO strategies to rank at the top of search results and capture high-intent organic traffic.",
     icon: Search,
     href: "/services/search-engine-optimization",
-    bgImage: getAssetPath("/images/services/seo-optimization.jpg"),
+    bgImage: getAssetPath("/images/services/seo-optimization.webp"),
   },
   {
     slug: "wordpress-development",
@@ -67,7 +67,7 @@ const servicesList = [
       "Custom WordPress theme coding, WooCommerce integration, and custom Gutenberg blocks without template bloat.",
     icon: Globe,
     href: "/services/wordpress-development",
-    bgImage: getAssetPath("/images/services/wordpress-development.jpg"),
+    bgImage: getAssetPath("/images/services/wordpress-development.webp"),
   },
   {
     slug: "shopify-website-design",
@@ -76,7 +76,7 @@ const servicesList = [
       "Conversion-driven Liquid themes, mobile shopping UX, and automated shop app integrations for D2C brands.",
     icon: ShoppingBag,
     href: "/services/shopify-website-design",
-    bgImage: getAssetPath("/images/services/shopify-website-design.jpg"),
+    bgImage: getAssetPath("/images/services/shopify-website-design.webp"),
   },
   {
     slug: "ecommerce-development",
@@ -85,7 +85,7 @@ const servicesList = [
       "Scalable e-commerce platforms featuring custom checkout flows, payment gateways, and inventory automation.",
     icon: ShoppingCart,
     href: "/services/ecommerce-development",
-    bgImage: getAssetPath("/images/services/ecommerce-development.jpg"),
+    bgImage: getAssetPath("/images/services/ecommerce-development.webp"),
   },
   {
     slug: "graphic-design",
@@ -94,7 +94,7 @@ const servicesList = [
       "Modern brand identities, visual language systems, typography, and design tokens that distinguish your business.",
     icon: Palette,
     href: "/services/graphic-design",
-    bgImage: getAssetPath("/images/services/graphic-design.jpg"),
+    bgImage: getAssetPath("/images/services/graphic-design.webp"),
   },
   {
     slug: "crm-software-development",
@@ -103,7 +103,7 @@ const servicesList = [
       "Tailored sales pipelines, lead scoring, client communication hubs, and WhatsApp/Email automation.",
     icon: Database,
     href: "/services/crm-software-development",
-    bgImage: getAssetPath("/images/services/crm-software-development.jpg"),
+    bgImage: getAssetPath("/images/services/crm-software-development.webp"),
   },
   {
     slug: "mobile-app-development",
@@ -112,7 +112,7 @@ const servicesList = [
       "Cross-platform iOS and Android mobile apps engineered with React Native, smooth UX, and App Store submission.",
     icon: Smartphone,
     href: "/services/mobile-app-development",
-    bgImage: getAssetPath("/images/services/mobile-app-development.jpg"),
+    bgImage: getAssetPath("/images/services/mobile-app-development.webp"),
   },
   {
     slug: "web-apps-saas",
@@ -121,7 +121,7 @@ const servicesList = [
       "Multi-tenant SaaS cloud applications featuring Stripe subscription billing, dashboards, and scalable APIs.",
     icon: Cloud,
     href: "/services/web-apps-saas",
-    bgImage: getAssetPath("/images/services/web-apps-saas.jpg"),
+    bgImage: getAssetPath("/images/services/web-apps-saas.webp"),
   },
   {
     slug: "google-business-profile",
@@ -130,7 +130,7 @@ const servicesList = [
       "Dominating local Google Map Pack rankings, profile verification, review management, and local lead generation.",
     icon: MapPin,
     href: "/services/google-business-profile",
-    bgImage: getAssetPath("/images/services/google-business-profile.jpg"),
+    bgImage: getAssetPath("/images/services/google-business-profile.webp"),
   },
   {
     slug: "digital-marketing",
@@ -139,7 +139,7 @@ const servicesList = [
       "Data-driven growth strategies, omnichannel marketing campaigns, and funnel optimization to drive sustainable ROI.",
     icon: TrendingUp,
     href: "/services/digital-marketing",
-    bgImage: getAssetPath("/images/services/digital-marketing.jpg"),
+    bgImage: getAssetPath("/images/services/digital-marketing.webp"),
   },
   {
     slug: "poster-design",
@@ -148,7 +148,7 @@ const servicesList = [
       "Striking promotional graphics, event posters, and visual editorial assets crafted to capture attention instantly.",
     icon: ImageIcon,
     href: "/services/poster-design",
-    bgImage: getAssetPath("/images/services/poster-design.jpg"),
+    bgImage: getAssetPath("/images/services/poster-design.webp"),
   },
   {
     slug: "meta-ads",
@@ -157,7 +157,7 @@ const servicesList = [
       "Precision-targeted Facebook & Instagram ad campaigns with high-converting creative, A/B testing, and audience analytics.",
     icon: Target,
     href: "/services/meta-ads",
-    bgImage: getAssetPath("/images/services/meta-ads.jpg"),
+    bgImage: getAssetPath("/images/services/meta-ads.webp"),
   },
   {
     slug: "digital-wedding-invitation",
@@ -166,7 +166,7 @@ const servicesList = [
       "Animated digital wedding cards & online wedding invitations in Jaipur with WhatsApp RSVP, background music, photo gallery, and Google Maps venue navigation.",
     icon: Heart,
     href: "/services/digital-wedding-invitation",
-    bgImage: getAssetPath("/images/services/digital-wedding-invitation.jpg"),
+    bgImage: getAssetPath("/images/services/digital-wedding-invitation.webp"),
   },
 ];
 
@@ -292,6 +292,7 @@ export default function ServicesClient() {
                         src={service.bgImage}
                         alt={service.title}
                         fill
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                         unoptimized
                         className="object-cover object-center group-hover:scale-105 transition-transform duration-500 ease-out"
                       />
@@ -305,9 +306,9 @@ export default function ServicesClient() {
                           <div className="w-10 h-10 rounded-xl bg-teal-50 border border-teal-200/60 flex items-center justify-center group-hover:bg-teal-700 transition-colors duration-300 shrink-0">
                             <Icon className="w-5 h-5 text-teal-700 group-hover:text-white transition-colors duration-300" />
                           </div>
-                          <h2 className="text-lg font-bold text-slate-900 group-hover:text-teal-700 transition-colors">
+                          <h3 className="text-lg font-bold text-slate-900 group-hover:text-teal-700 transition-colors">
                             {service.title}
-                          </h2>
+                          </h3>
                         </div>
                         <p className="text-sm text-slate-600 leading-relaxed font-light line-clamp-3">
                           {service.description}
@@ -333,9 +334,9 @@ export default function ServicesClient() {
               <Sparkles className="w-3.5 h-3.5 text-teal-700" />
               <span>Full-Spectrum Digital Agency</span>
             </div>
-            <h2 className="text-3xl sm:text-4xl font-bold text-slate-900">
+            <h3 className="text-3xl sm:text-4xl font-bold text-slate-900">
               Why Ambitious Brands Partner with <span className="text-teal-700">Larkspire</span>
-            </h2>
+            </h3>
             <p className="text-slate-600 text-base sm:text-lg max-w-3xl mx-auto leading-relaxed">
               Larkspire is a creative digital agency combining elite technical engineering with commercial design strategy. From high-speed Next.js web applications to profitable Meta Ad funnels and dominant organic search rankings, we build digital assets engineered for market leadership.
             </p>
@@ -373,9 +374,9 @@ export default function ServicesClient() {
                 <HelpCircle className="w-3.5 h-3.5 text-teal-700" />
                 <span>Frequently Asked Questions</span>
               </div>
-              <h2 className="text-3xl sm:text-4xl font-bold text-slate-900">
+              <h3 className="text-3xl sm:text-4xl font-bold text-slate-900">
                 Services <span className="text-teal-700">FAQ</span>
-              </h2>
+              </h3>
               <p className="text-slate-600 text-base">
                 Common questions about our agency capabilities, workflow, and custom service packages.
               </p>

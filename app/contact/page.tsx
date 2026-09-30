@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "Tell us about your website, SEO or marketing project. Larkspire's Jaipur team replies within 24 hours.",
   alternates: {
-    canonical: "https://larkspire.in/contact",
+    canonical: "https://www.larkspire.in/contact",
   },
   keywords: [
     "larkspire contact",
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     title: "Contact Larkspire – Get a Free Quote in Jaipur",
     description:
       "Tell us about your website, SEO or marketing project. Larkspire's Jaipur team replies within 24 hours.",
-    url: "https://larkspire.in/contact",
+    url: "https://www.larkspire.in/contact",
     siteName: "Larkspire",
     locale: "en_US",
     type: "website",

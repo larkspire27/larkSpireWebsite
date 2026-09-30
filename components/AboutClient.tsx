@@ -236,7 +236,7 @@ export default function AboutClient() {
               <div className="w-12 h-12 rounded-2xl bg-teal-700 text-white flex items-center justify-center">
                 <Target className="w-6 h-6" />
               </div>
-              <h2 className="text-2xl font-bold text-slate-900">Our Mission</h2>
+              <h3 className="text-2xl font-bold text-slate-900">Our Mission</h3>
               <p className="text-slate-600 leading-relaxed text-sm sm:text-base">
                 To empower forward-thinking companies by engineering digital products, graphic systems, and marketing campaigns that capture market share and drive scalable revenue.
               </p>
@@ -246,7 +246,7 @@ export default function AboutClient() {
               <div className="w-12 h-12 rounded-2xl bg-teal-700 text-white flex items-center justify-center">
                 <Eye className="w-6 h-6" />
               </div>
-              <h2 className="text-2xl font-bold text-slate-900">Our Vision</h2>
+              <h3 className="text-2xl font-bold text-slate-900">Our Vision</h3>
               <p className="text-slate-600 leading-relaxed text-sm sm:text-base">
                 To set the global benchmark for boutique digital agencies — where design excellence, lightning-fast performance, and client-centric partnership converge.
               </p>
@@ -261,9 +261,9 @@ export default function AboutClient() {
               <span className="text-xs font-semibold uppercase tracking-widest text-teal-700">
                 Guiding Principles
               </span>
-              <h2 className="text-3xl sm:text-4xl font-bold text-slate-900">
+              <h3 className="text-3xl sm:text-4xl font-bold text-slate-900">
                 Our Core <span className="text-teal-700">Values</span>
-              </h2>
+              </h3>
             </div>
 
             <div

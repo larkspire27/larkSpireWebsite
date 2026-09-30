@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
+import { FB_PIXEL_ID } from "@/lib/fbpixel";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -11,13 +12,13 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://larkspire.in"),
+  metadataBase: new URL("https://www.larkspire.in"),
   title: {
     default: "Larkspire – Digital Agency in Jaipur: Web, SEO & Marketing",
     template: "%s | Larkspire",
   },
   alternates: {
-    canonical: "https://larkspire.in",
+    canonical: "https://www.larkspire.in",
   },
   description:
     "Larkspire builds fast Next.js websites, Shopify stores and runs SEO & Meta ads for Jaipur businesses. See live projects and get a free quote.",
@@ -43,7 +44,7 @@ export const metadata: Metadata = {
     title: "Larkspire – Digital Agency in Jaipur: Web, SEO & Marketing",
     description:
       "Larkspire builds fast Next.js websites, Shopify stores and runs SEO & Meta ads for Jaipur businesses. See live projects and get a free quote.",
-    url: "https://larkspire.in",
+    url: "https://www.larkspire.in",
     siteName: "Larkspire",
     locale: "en_US",
     type: "website",
@@ -65,12 +66,12 @@ const jsonLd = {
   "@graph": [
     {
       "@type": ["ProfessionalService", "LocalBusiness", "Organization"],
-      "@id": "https://larkspire.in/#organization",
+      "@id": "https://www.larkspire.in/#organization",
       "name": "LarkSpire Services",
       "alternateName": ["LarkSpire", "Larkspire", "Larkspire Agency", "Larkspire Digital Agency"],
-      "url": "https://larkspire.in",
-      "logo": "https://larkspire.in/logo.webp",
-      "image": "https://larkspire.in/logo.webp",
+      "url": "https://www.larkspire.in",
+      "logo": "https://www.larkspire.in/logo.webp",
+      "image": "https://www.larkspire.in/logo.webp",
       "description":
         "Larkspire is the best website development and digital marketing company in jaipur. We offer web design, SEO, graphic design, and online marketing to help your business grow online.",
       "telephone": "+91 9928196424",
@@ -131,11 +132,11 @@ const jsonLd = {
     },
     {
       "@type": "WebSite",
-      "@id": "https://larkspire.in/#website",
-      "url": "https://larkspire.in",
+      "@id": "https://www.larkspire.in/#website",
+      "url": "https://www.larkspire.in",
       "name": "LarkSpire Services",
       "publisher": {
-        "@id": "https://larkspire.in/#organization"
+        "@id": "https://www.larkspire.in/#organization"
       }
     }
   ]
@@ -162,6 +163,33 @@ export default function RootLayout({
             gtag('config', 'G-Z8K39D3L7C');
           `}
         </Script>
+
+        {/* ── Meta Pixel Code ── */}
+        <Script id="meta-pixel" strategy="afterInteractive">
+          {`
+            !function(f,b,e,v,n,t,s)
+            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '${FB_PIXEL_ID}');
+            fbq('track', 'PageView');
+          `}
+        </Script>
+        <noscript>
+          <img
+            height="1"
+            width="1"
+            style={{ display: "none" }}
+            src={`https://www.facebook.com/tr?id=${FB_PIXEL_ID}&ev=PageView&noscript=1`}
+            alt=""
+          />
+        </noscript>
+        {/* ── End Meta Pixel Code ── */}
+
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="icon" href="/favicon.png" type="image/png" />
         <link rel="apple-touch-icon" href="/favicon.png" />

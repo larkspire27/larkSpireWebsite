@@ -5,6 +5,7 @@ import Link from "next/link";
 import { ArrowRight, Sparkles } from "lucide-react";
 import { useGSAP } from "@gsap/react";
 import { gsap, prefersReducedMotion } from "@/lib/gsap";
+import { trackCTAClick } from "@/lib/fbpixel";
 
 export default function CTASection() {
   const containerRef = useRef<HTMLElement>(null);
@@ -55,9 +56,9 @@ export default function CTASection() {
               <span>Ready for Transformation?</span>
             </div>
 
-            <h2 className="text-3xl sm:text-5xl font-bold tracking-tight text-white leading-tight">
+            <h3 className="text-3xl sm:text-5xl font-bold tracking-tight text-white leading-tight">
               Let&apos;s Build Something Extraordinary Together.
-            </h2>
+            </h3>
 
             <p className="text-teal-100/80 text-base sm:text-lg font-light leading-relaxed max-w-2xl">
               Whether you need a full web redesign, a brand overhaul, or high-performance Meta ad campaigns, Larkspire is ready to bring your vision to life.
@@ -66,6 +67,7 @@ export default function CTASection() {
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 pt-4">
               <Link
                 href="#contact"
+                onClick={() => trackCTAClick("Get Started Today", "CTASection")}
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-white text-teal-700 font-bold text-sm shadow-lg hover:bg-teal-50 transition-all duration-300 hover:scale-105"
               >
                 <span>Get Started Today</span>

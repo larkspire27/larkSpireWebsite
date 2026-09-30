@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import ServicesClient from "@/components/ServicesClient";
 
 export const metadata: Metadata = {
-  title: "Web, SEO & Marketing Services in Jaipur | Larkspire",
+  title: "Web, SEO & Marketing Services in Jaipur",
   description:
     "Website design, development, SEO, Shopify, Google Business Profile, digital marketing and more, all under one roof at Larkspire, Jaipur.",
   alternates: {
-    canonical: "https://larkspire.in/services",
+    canonical: "https://www.larkspire.in/services",
   },
   keywords: [
     "digital agency services jaipur",
@@ -16,17 +16,17 @@ export const metadata: Metadata = {
     "web development in jaipur",
   ],
   openGraph: {
-    title: "Web, SEO & Marketing Services in Jaipur | Larkspire",
+    title: "Web, SEO & Marketing Services in Jaipur",
     description:
       "Website design, development, SEO, Shopify, Google Business Profile, digital marketing and more, all under one roof at Larkspire, Jaipur.",
-    url: "https://larkspire.in/services",
+    url: "https://www.larkspire.in/services",
     siteName: "Larkspire",
     locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Web, SEO & Marketing Services in Jaipur | Larkspire",
+    title: "Web, SEO & Marketing Services in Jaipur",
     description:
       "Website design, development, SEO, Shopify, Google Business Profile, digital marketing and more, all under one roof at Larkspire, Jaipur.",
   },

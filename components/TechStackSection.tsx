@@ -260,9 +260,9 @@ export default function TechStackSection() {
             </div>
 
             {/* Title */}
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-[1.15]">
+            <h3 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-[1.15]">
               Our <span className="text-teal-700">Technologies</span> Stack
-            </h2>
+            </h3>
 
             {/* Description */}
             <p className="text-slate-600 text-sm sm:text-base leading-relaxed font-light">

@@ -106,10 +106,10 @@ export default function Testimonials() {
           <span className="text-xs font-semibold uppercase tracking-widest text-teal-700">
             Client Success Stories
           </span>
-          <h2 className="text-3xl sm:text-5xl font-bold tracking-tight text-slate-900">
+          <h3 className="text-3xl sm:text-5xl font-bold tracking-tight text-slate-900">
             Trusted by Brands That <br />
             <span className="text-teal-700">Demand Excellence</span>
-          </h2>
+          </h3>
           <p className="text-slate-600 text-base sm:text-lg">
             See how our tailored web engineering, graphic design, and performance marketing drive measurable results.
           </p>

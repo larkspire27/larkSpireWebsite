@@ -22,18 +22,6 @@ export const metadata: Metadata = {
   },
   description:
     "Larkspire builds fast Next.js websites, Shopify stores and runs SEO & Meta ads for Jaipur businesses. See live projects and get a free quote.",
-  keywords: [
-    "digital agency in jaipur",
-    "web development services in jaipur",
-    "website design in jaipur",
-    "seo services in jaipur",
-    "digital wedding invitation jaipur",
-    "shopify store design jaipur",
-    "meta ads agency jaipur",
-    "Larkspire",
-    "Larkspire Agency",
-    "Larkspire Digital Agency",
-  ],
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon.png",
@@ -46,14 +34,23 @@ export const metadata: Metadata = {
       "Larkspire builds fast Next.js websites, Shopify stores and runs SEO & Meta ads for Jaipur businesses. See live projects and get a free quote.",
     url: "https://www.larkspire.in",
     siteName: "Larkspire",
-    locale: "en_US",
+    locale: "en_IN",
     type: "website",
+    images: [
+      {
+        url: "/logo.webp",
+        width: 1200,
+        height: 630,
+        alt: "Larkspire Digital Agency Jaipur",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Larkspire – Digital Agency in Jaipur: Web, SEO & Marketing",
     description:
       "Larkspire builds fast Next.js websites, Shopify stores and runs SEO & Meta ads for Jaipur businesses. See live projects and get a free quote.",
+    images: ["/logo.webp"],
   },
 };
 

@@ -1,4 +1,4 @@
-﻿import { getAssetPath } from "./basePath";
+import { getAssetPath } from "./basePath";
 
 export interface ServiceFeature {
   title: string;
@@ -136,11 +136,11 @@ const graphicDesignData: ServiceData = {
   whyUsPoints: [
     {
       title: "Strategic Design Focus",
-      description: "We don't just make pretty pictures â€” every element is designed to drive recall and trust.",
+      description: "We don't just make pretty pictures — every element is designed to drive recall and trust.",
     },
     {
       title: "100% Vector & Original",
-      description: "No generic clip art or stock templates â€” 100% custom crafted artwork.",
+      description: "No generic clip art or stock templates — 100% custom crafted artwork.",
     },
     {
       title: "Full Commercial Ownership",
@@ -372,7 +372,7 @@ export const servicesDataMap: Record<string, ServiceData> = {
     slug: "web-development",
     title: "Web Development Services in Jaipur (Next.js & React)",
     iconName: "Code",
-    tagline: "Fast, SEO-Ready Next.js & React Websites â€” 100% Custom Built",
+    tagline: "Fast, SEO-Ready Next.js & React Websites — 100% Custom Built",
     heroDescription:
       "Web development services in Jaipur: fast, SEO-ready Next.js and React websites, 100% custom. Talk to the Larkspire team.",
     heroImage: getAssetPath("/images/services/web-development.webp"),
@@ -436,7 +436,7 @@ export const servicesDataMap: Record<string, ServiceData> = {
     whyUsPoints: [
       {
         title: "Clean Modern Stack",
-        description: "We use Next.js, React, and TypeScript â€” avoiding bloated plugins and slow code.",
+        description: "We use Next.js, React, and TypeScript — avoiding bloated plugins and slow code.",
       },
       {
         title: "Lighthouse 95+ Performance",
@@ -478,7 +478,7 @@ export const servicesDataMap: Record<string, ServiceData> = {
       },
       {
         question: "Is technical SEO included in web development?",
-        answer: "Yes, technical SEO is baked into our development process â€” including semantic HTML5, dynamic XML sitemaps, structured JSON-LD schemas, and meta tag optimization.",
+        answer: "Yes, technical SEO is baked into our development process — including semantic HTML5, dynamic XML sitemaps, structured JSON-LD schemas, and meta tag optimization.",
       },
       {
         question: "What support and maintenance do you offer after launch?",
@@ -1491,7 +1491,7 @@ export const servicesDataMap: Record<string, ServiceData> = {
       },
       {
         title: "Full Product Ownership",
-        description: "100% IP ownership â€” all custom code and cloud accounts belong entirely to you.",
+        description: "100% IP ownership — all custom code and cloud accounts belong entirely to you.",
       },
     ],
     relatedProjects: [
@@ -1568,7 +1568,7 @@ export const servicesDataMap: Record<string, ServiceData> = {
     slug: "google-business-profile",
     title: "Google Business Profile Optimization & Management in Jaipur",
     iconName: "MapPin",
-    tagline: "Rank Top on Google Maps in Jaipur â€” Profile Setup, Verification & Local SEO",
+    tagline: "Rank Top on Google Maps in Jaipur — Profile Setup, Verification & Local SEO",
     heroDescription:
       "Rank on Google Maps in Jaipur. Profile setup, verification, review management and local SEO to bring more calls and walk-ins.",
     heroImage: getAssetPath("/images/services/google-business-profile.webp"),
@@ -1937,7 +1937,7 @@ export const servicesDataMap: Record<string, ServiceData> = {
       },
       {
         title: "Transparent Ad Spend",
-        description: "You retain 100% ownership of your Meta ad accounts â€” no hidden markups.",
+        description: "You retain 100% ownership of your Meta ad accounts — no hidden markups.",
       },
     ],
     relatedProjects: [
@@ -2174,7 +2174,7 @@ export const servicesDataMap: Record<string, ServiceData> = {
       {
         title: "Custom Royal & Modern Designs",
         description:
-          "Bespoke digital wedding invitation card themes tailored for your love story â€” from Royal Rajasthani heritage palace motifs to modern minimalist luxury and floral pastel aesthetics.",
+          "Bespoke digital wedding invitation card themes tailored for your love story — from Royal Rajasthani heritage palace motifs to modern minimalist luxury and floral pastel aesthetics.",
       },
       {
         title: "Smooth Animations & Motion Transitions",
@@ -2189,7 +2189,7 @@ export const servicesDataMap: Record<string, ServiceData> = {
       {
         title: "Interactive Multi-Event Schedule with Google Maps",
         description:
-          "Keep guests informed with dedicated event schedules for Haldi, Mehendi, Sangeet, Wedding, and Reception â€” featuring direct Google Maps GPS venue navigation links.",
+          "Keep guests informed with dedicated event schedules for Haldi, Mehendi, Sangeet, Wedding, and Reception — featuring direct Google Maps GPS venue navigation links.",
       },
       {
         title: "Background Music & Couple Photo Gallery",

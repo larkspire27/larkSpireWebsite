@@ -272,11 +272,14 @@ export default function ContactClient() {
                       className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-white text-slate-900 text-sm focus:border-teal-700 focus:outline-none transition-colors"
                     >
                       <option value="web-development">Custom Web Development</option>
+                      <option value="shopify-store-design">Shopify &amp; E-Commerce Development</option>
+                      <option value="digital-wedding-invitation">Digital Wedding Invitation Cards</option>
+                      <option value="google-business-profile">Google Business Profile &amp; Local SEO</option>
                       <option value="graphic-design">Graphic &amp; Brand Design</option>
                       <option value="digital-marketing">Digital Growth Marketing</option>
                       <option value="poster-design">Poster &amp; Print Design</option>
                       <option value="seo">SEO Strategy &amp; Audit</option>
-                      <option value="meta-ads">Meta &amp; Social Paid Ads</option>
+                      <option value="meta-ads">Meta &amp; Paid Social Ads</option>
                     </select>
                   </div>
 
@@ -300,6 +303,11 @@ export default function ContactClient() {
                       </p>
                     )}
                   </div>
+
+                  {/* Privacy Consent text */}
+                  <p className="text-xs text-slate-500 leading-relaxed font-light">
+                    By submitting this form, you agree to allow Larkspire to contact you regarding your inquiry. We protect your details according to our Privacy Policy.
+                  </p>
 
                   {/* Submit Button */}
                   <button

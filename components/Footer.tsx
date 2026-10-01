@@ -268,6 +268,14 @@ export default function Footer() {
       {/* Bottom Legal Bar */}
       <div className="max-w-7xl mx-auto px-6 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400 font-mono">
         <p>&copy; 2026 Larkspire Agency. All rights reserved.</p>
+        <div className="flex items-center gap-6">
+          <Link href="/privacy" className="hover:text-teal-700 transition-colors">
+            Privacy Policy
+          </Link>
+          <Link href="/terms" className="hover:text-teal-700 transition-colors">
+            Terms of Service
+          </Link>
+        </div>
       </div>
     </footer>
   );

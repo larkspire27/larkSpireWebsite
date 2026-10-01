@@ -99,8 +99,8 @@ export default function Hero() {
 
           {/* Action Pill Prompt Buttons */}
           <div className="pt-2 space-y-2">
-            <p className="text-xs font-bold text-slate-500 tracking-wider">
-              Quick Actions / Prompts:
+            <p className="text-xs font-bold text-slate-500 uppercase tracking-wider">
+              Explore Options:
             </p>
             <div className="flex flex-wrap items-center gap-2">
               <Link

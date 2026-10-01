@@ -36,10 +36,10 @@ const industries: IndustryItem[] = [
     id: "healthcare",
     name: "Healthcare & MedTech",
     shortLabel: "Healthcare",
-    tagline: "HIPAA-compliant platforms & telehealth apps",
+    tagline: "Secure patient portals & medical appointment apps",
     description:
       "Secure patient portals, telemedicine dashboards, medical booking systems, and health tech interfaces crafted with privacy and precision.",
-    highlights: ["Patient Portals", "Telehealth Booking", "HIPAA Compliant"],
+    highlights: ["Patient Portals", "Telehealth Booking", "Data Privacy & Security"],
     icon: <HeartPulse className="w-5 h-5 sm:w-6 sm:h-6" />,
     color: "#0891b2", // Cyan-teal
     angle: 270, // Top

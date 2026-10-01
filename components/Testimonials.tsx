@@ -18,28 +18,28 @@ const testimonialsData: TestimonialItem[] = [
   {
     id: "t1",
     quote:
-      "Larkspire transformed our online presence completely. Our new custom web platform is blazingly fast, and our conversion rate jumped by 42% in the first month.",
-    author: "Elena Rostova",
-    role: "VP of Product",
-    company: "Vanguard Tech",
+      "Larkspire designed a modern, fast website for AKN CCTV Hub. The lead generation structure and clear service showcase significantly boosted customer calls for CCTV installations.",
+    author: "Ashok Kumar",
+    role: "Founder",
+    company: "AKN CCTV Hub",
     rating: 5,
   },
   {
     id: "t2",
     quote:
-      "Working with Larkspire on our visual identity and Meta ads was seamless. Their design aesthetic is world-class, and their ad campaigns delivered 3.8x ROAS.",
-    author: "Marcus Vance",
-    role: "Founder & CEO",
-    company: "Aura Apparel",
+      "Our natural stone showroom needed an elegant digital presence to match our craftsmanship. Larkspire delivered a gorgeous website with product galleries that our clients love.",
+    author: "Shyam Singh",
+    role: "Managing Director",
+    company: "Shahpura Granite & Marbles",
     rating: 5,
   },
   {
     id: "t3",
     quote:
-      "The poster designs and print collateral Larkspire created for our global summit received unanimous praise. They bring true artistic vision combined with speed.",
-    author: "Sophia Lin",
-    role: "Creative Director",
-    company: "Nexus Events",
+      "Working with Larkspire on our web presence and local SEO was seamless. They combine high engineering standards with quick execution and transparent communication.",
+    author: "Rajesh Rathore",
+    role: "Proprietor",
+    company: "Rathore Crafts & Designs",
     rating: 5,
   },
 ];
@@ -106,12 +106,12 @@ export default function Testimonials() {
           <span className="text-xs font-semibold uppercase tracking-widest text-teal-700">
             Client Success Stories
           </span>
-          <h3 className="text-3xl sm:text-5xl font-bold tracking-tight text-slate-900">
-            Trusted by Brands That <br />
+          <h2 className="text-3xl sm:text-5xl font-bold tracking-tight text-slate-900">
+            Trusted by Businesses That <br />
             <span className="text-teal-700">Demand Excellence</span>
-          </h3>
+          </h2>
           <p className="text-slate-600 text-base sm:text-lg">
-            See how our tailored web engineering, graphic design, and performance marketing drive measurable results.
+            See how our custom web engineering, graphic design, and performance marketing drive real-world results.
           </p>
         </div>
 

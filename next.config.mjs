@@ -46,6 +46,21 @@ const nextConfig = {
     unoptimized: true,
   },
   reactStrictMode: true,
+  async redirects() {
+    return [
+      {
+        source: "/:path*",
+        has: [
+          {
+            type: "host",
+            value: "larkspire.in",
+          },
+        ],
+        destination: "https://www.larkspire.in/:path*",
+        permanent: true,
+      },
+    ];
+  },
   async headers() {
     return [
       {

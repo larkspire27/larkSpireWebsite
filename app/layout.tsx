@@ -60,6 +60,7 @@ export const metadata: Metadata = {
 import LeadPopup from "@/components/LeadPopup";
 import ArcadeGameWidget from "@/components/ArcadeGameWidget";
 import CustomCursor from "@/components/CustomCursor";
+import AIChatbot from "@/components/AIChatbot";
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -203,6 +204,7 @@ export default function RootLayout({
         {children}
         <LeadPopup />
         <ArcadeGameWidget />
+        <AIChatbot />
       </body>
     </html>
   );

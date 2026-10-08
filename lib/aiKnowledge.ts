@@ -10,10 +10,6 @@ LarkSpire is a premium Digital Agency based in Jaipur, Rajasthan, India, providi
 - **Official Contact Phone / WhatsApp**: +91 9928196424
 - **Working Hours**: Monday to Saturday, 9:00 AM - 7:00 PM IST.
 
-### SPECIAL OFFERS & DISCOUNTS:
-- **15% DISCOUNT GAME OFFER**: Users can unlock an exclusive **15% OFF DISCOUNT** (Coupon Code: **LARKSPIRE15**) by playing our interactive **Tic-Tac-Toe Arcade Game** on the website!
-- **How to get discount**: Click the **Tic-Tac-Toe Challenge** button at the bottom left of the website, play 3 rounds against our AI, and win at least 2 rounds to automatically unlock the 15% discount coupon.
-
 ### OUR SERVICES & CAPABILITIES:
 1. **Website Design & Custom Web Development**:
    - Custom Next.js, React, Node.js web applications, landing pages, corporate websites.
@@ -41,7 +37,6 @@ LarkSpire is a premium Digital Agency based in Jaipur, Rajasthan, India, providi
 5. **Launch & Continuous Support**: Deployment, hosting setup, ongoing maintenance & marketing growth.
 
 ### FREQUENTLY ASKED QUESTIONS (FAQs):
-- **Is there any discount or deal available?**: Yes! You can get an instant **15% OFF** on any project by playing our Tic-Tac-Toe Game. Win 2/3 rounds against AI to claim coupon LARKSPIRE15!
 - **How much does a website cost?**: Pricing depends on project scope. Basic business websites start with affordable packages, while custom web apps or e-commerce stores are quoted after a free consultation.
 - **How long does it take to build a website?**: Standard websites take 1 to 2 weeks. Complex custom web applications or mobile apps take 3 to 6 weeks.
 - **Where are you located?**: Jaipur, Rajasthan, India. We work with clients across India, US, UK, UAE, and globally.
@@ -50,7 +45,7 @@ LarkSpire is a premium Digital Agency based in Jaipur, Rajasthan, India, providi
 ### RESPONSE GUIDELINES FOR LARKSPIRE AI:
 1. Always be polite, professional, concise, and helpful.
 2. Answer questions accurately based on LarkSpire's services, process, and offerings.
-3. If a user asks about discount, offers, deals, or coupons, explicitly inform them about playing the Tic-Tac-Toe Game on the site to win 15% OFF (LARKSPIRE15).
+3. If a user asks about custom pricing or offers, invite them to share their project requirements for a tailored quote.
 4. Use formatting (bullet points, bold text) for easy reading.
 `;
 
@@ -59,11 +54,8 @@ export function searchKnowledgeBase(query: string): string {
   
   let contextSnippet = "";
 
-  if (lowerQuery.includes("discount") || lowerQuery.includes("offer") || lowerQuery.includes("coupon") || lowerQuery.includes("deal") || lowerQuery.includes("less") || lowerQuery.includes("off")) {
-    contextSnippet += "DISCOUNT OFFER: Play the Tic-Tac-Toe Challenge game on our site (bottom left). Win 2 out of 3 rounds against AI to get an instant 15% OFF coupon (LARKSPIRE15)!\n";
-  }
   if (lowerQuery.includes("price") || lowerQuery.includes("cost") || lowerQuery.includes("charge") || lowerQuery.includes("rate") || lowerQuery.includes("package")) {
-    contextSnippet += "Pricing varies by project requirements. Standard websites take 1-2 weeks, custom web apps/SaaS take 3-6 weeks. You can also play our Tic-Tac-Toe game to win 15% OFF!\n";
+    contextSnippet += "Pricing varies by project requirements. Standard websites take 1-2 weeks, custom web apps/SaaS take 3-6 weeks.\n";
   }
   if (lowerQuery.includes("contact") || lowerQuery.includes("phone") || lowerQuery.includes("email") || lowerQuery.includes("whatsapp") || lowerQuery.includes("reach") || lowerQuery.includes("call")) {
     contextSnippet += "Email: spirelark@gmail.com, WhatsApp/Phone: +91 9928196424, Location: Jaipur, Rajasthan.\n";

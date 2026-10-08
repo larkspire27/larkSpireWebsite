@@ -37,7 +37,7 @@ export default function AIChatbot() {
       id: "welcome-1",
       role: "assistant",
       content:
-        "Namaste! 🙏 Welcome to **LarkSpire AI**.\n\nI can answer any question about our web development, mobile apps, SEO, branding, **15% Game Discount**, or project timelines. How can I help your business scale today?",
+        "Namaste! 🙏 Welcome to **LarkSpire AI**.\n\nI can answer any question about our web development, mobile apps, SEO, branding, or project timelines. How can I help your business scale today?",
       timestamp: new Date().toLocaleTimeString([], {
         hour: "2-digit",
         minute: "2-digit",

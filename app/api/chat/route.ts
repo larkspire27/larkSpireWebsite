@@ -110,22 +110,16 @@ function generateSmartFallbackReply(userMessage: string): { reply: string; isUnk
     query.includes("concession")
   ) {
     return {
-      reply: "🎉 **Exclusive 15% Discount Offer!**\n\n" +
-        "You can claim an instant **15% OFF** on your project by playing our interactive **Tic-Tac-Toe Arcade Game**!\n\n" +
-        "🎮 **How to win:**\n" +
-        "1. Click the **Tic-Tac-Toe Challenge** button (bottom-left of the screen).\n" +
-        "2. Play 3 rounds against our AI.\n" +
-        "3. Win at least **2 out of 3 rounds** to unlock coupon code **`LARKSPIRE15`**!\n\n" +
-        "Would you like to try the game or speak directly with our team at **+91 9928196424**?",
+      reply: "We offer competitive pricing tailored to your specific project needs.\n\n" +
+        "💡 **Get a custom quote**: Contact our team directly on WhatsApp/Phone at **+91 9928196424** or email **spirelark@gmail.com** to discuss your project scope!",
       isUnknown: false,
     };
   }
 
   if (
     query.includes("service") ||
-    query.includes("offer") ||
-    query.includes("what do you do") ||
-    query.includes("capabilities")
+    query.includes("capabilities") ||
+    query.includes("what do you do")
   ) {
     return {
       reply: "At LarkSpire, we provide end-to-end digital services:\n\n" +
@@ -151,7 +145,6 @@ function generateSmartFallbackReply(userMessage: string): { reply: string; isUnk
   ) {
     return {
       reply: "Our pricing depends on your custom project requirements. We offer flexible packages tailored for startups and businesses.\n\n" +
-        "🎁 **Bonus**: You can play our website **Tic-Tac-Toe game** to win an instant **15% DISCOUNT**!\n\n" +
         "💡 **Get a free quote**: Contact our team directly on WhatsApp/Phone at **+91 9928196424** or email **spirelark@gmail.com**.",
       isUnknown: false,
     };
@@ -247,7 +240,7 @@ function generateSmartFallbackReply(userMessage: string): { reply: string; isUnk
 
   return {
     reply: "Thank you for reaching out! LarkSpire specializes in custom web development, mobile apps, UI/UX design, SEO, and Meta ads to help businesses grow.\n\n" +
-      "💡 **Special Offer**: Play our website **Tic-Tac-Toe Game** (bottom left) to win 15% OFF on any service! Or chat with us directly on WhatsApp at **+91 9928196424**.",
+      "💡 **Contact us directly**: Chat with us on WhatsApp at **+91 9928196424** or email **spirelark@gmail.com**.",
     isUnknown: true,
   };
 }

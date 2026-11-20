@@ -370,81 +370,88 @@ export const servicesDataMap: Record<string, ServiceData> = {
   // 2. Web Development
   "web-development": {
     slug: "web-development",
-    title: "Web Development Services in Jaipur (Next.js & React)",
+    title: "Web Development Services in Jaipur",
     iconName: "Code",
-    tagline: "Fast, SEO-Ready Next.js & React Websites — 100% Custom Built",
+    tagline: "Websites that load fast, look right on every phone, and bring in real enquiries.",
     heroDescription:
-      "Web development services in Jaipur: fast, SEO-ready Next.js and React websites, 100% custom. Talk to the Larkspire team.",
+      "Think about the last time you checked a business online before calling them. You probably gave their website about five seconds. Your customers do the same thing to you. If the site is slow or confusing, they leave. They don't complain, they just open the next result. Larkspire is a web development agency in Jaipur. We build custom websites with Next.js and React for local shops, service businesses, startups and growing companies. We handle everything from the first conversation to launch day, and we explain things in plain language along the way. We've built fast, high-converting websites for businesses across Jaipur, Rajasthan, and pan-India.",
     heroImage: getAssetPath("/images/services/web-development.webp"),
-    metaTitle: "Next.js Web Development Services in Jaipur",
+    metaTitle: "Web Development Services in Jaipur | Next.js | Larkspire",
     metaDescription:
-      "Web development services in Jaipur: fast, SEO-ready Next.js and React websites, 100% custom. Talk to the Larkspire team.",
+      "Larkspire builds custom, fast, mobile-friendly websites in Jaipur using Next.js and React. Most business sites ready in 10 to 18 days. Ask for a quote today.",
     featuresList: [
       {
-        title: "Custom Modern Web Applications",
+        title: "Custom Website Development",
         description:
-          "Tailor-made web solutions engineered with clean serverless architecture, micro-animations, and dynamic capabilities.",
+          "Templates are fine if you want to look like everyone else. Most of our clients don't. We start with your brand, your customers and what you want visitors to do. Then we design and build around that, whether it's a five-page business site or something with custom features like booking or a dashboard. You only pay for what you'll use.",
       },
       {
-        title: "Sub-Second Speed & Core Web Vitals",
+        title: "Fast Loading, On Every Device",
         description:
-          "Performance-first engineering delivering 95+ Lighthouse scores, instant page loads, and smooth interaction states.",
+          "A slow site costs you customers. It's that simple. We compress images, trim unused scripts and fonts, and keep the code lean. Then we test on real phones, tablets and laptops—not just on a developer's fast office WiFi.",
       },
       {
-        title: "Full Responsive & Mobile Design",
+        title: "SEO-Friendly Structure",
         description:
-          "Adaptive layouts crafted to look stunning across desktop, tablet, and mobile displays without layout shifts.",
+          "Google needs to understand your website too. During development we set up clean semantic HTML, readable URLs, meta tags, server-side rendering, XML sitemaps, robots.txt, structured data, and internal links between related pages to build a solid search foundation.",
       },
       {
-        title: "Custom CMS & API Integrations",
+        title: "A CMS You Can Actually Use",
         description:
-          "Seamless connections to headless CMS platforms, payment gateways, CRM tools, and analytics dashboards.",
+          "If you post blogs, change prices or swap photos often, you shouldn't have to call us each time. We can add a CMS dashboard so your team edits content directly, with no code.",
       },
       {
-        title: "Technical SEO & Accessibility",
+        title: "WhatsApp, Calling and Enquiry Forms",
         description:
-          "Built-in semantic HTML structure, ARIA accessibility, automated sitemaps, and optimized metadata for search engines.",
+          "In India, most people would rather WhatsApp than fill a form. So we add WhatsApp chat, click-to-call buttons, enquiry forms and a clear call-to-action on every important page.",
       },
       {
-        title: "Scalable Codebase & Security",
+        title: "You Own Everything",
         description:
-          "Enterprise-grade, type-safe codebase structured for easy maintenance, high security, and long-term scalability.",
+          "When the project ends, you get the source code, design files, and access to your domain, hosting and deployment. We'll also show you where everything lives. No hostage situations.",
       },
     ],
     processSteps: [
       {
         number: "01",
-        title: "Architecture & Tech Stack",
-        description: "Defining data models, framework selection, and API requirements.",
+        title: "We Talk First",
+        description:
+          "What do you sell? Who buys? What should a visitor do on your site? We note down the pages and features you need, then send a plan with scope and timeline.",
       },
       {
         number: "02",
-        title: "Agile Development",
-        description: "Writing clean, type-safe code with modular components and animations.",
+        title: "Design Before Code",
+        description:
+          "We make wireframes and visual designs for mobile and desktop. You review them and tell us what to change. It's far cheaper to fix a design than a finished website.",
       },
       {
         number: "03",
-        title: "QA & Performance Testing",
-        description: "Auditing cross-browser support, core web vitals, and mobile responsiveness.",
+        title: "Development & Testing",
+        description:
+          "Once you approve the design, we build it in Next.js and React. Before launch we test across browsers and screen sizes, and we hunt for broken links and bugs.",
       },
       {
         number: "04",
-        title: "Deployment & Support",
-        description: "Deploying to high-speed CDN infrastructure with SSL and 24/7 monitoring.",
+        title: "Launch & Handover",
+        description:
+          "We connect your domain, set up hosting and SSL, add Google Search Console, submit the sitemap and test the forms. Then we go live and walk you through the basics.",
       },
     ],
     whyUsPoints: [
       {
-        title: "Clean Modern Stack",
-        description: "We use Next.js, React, and TypeScript — avoiding bloated plugins and slow code.",
+        title: "No Unnecessary Extras",
+        description:
+          "Plenty of agencies pad a project with extras. We don't add things you don't need; we'd rather suggest the simplest setup that does the job.",
       },
       {
-        title: "Lighthouse 95+ Performance",
-        description: "Fast loading pages that improve Google rankings and decrease bounce rates.",
+        title: "Direct Access to Developers",
+        description:
+          "You talk to the people building your site. No middle layer, no sales runaround, and no waiting a week for a reply.",
       },
       {
-        title: "Long Term Support",
-        description: "Dedicated maintenance, feature additions, and security updates post-launch.",
+        title: "Clean Code & Upfront Pricing",
+        description:
+          "Next.js and React are our main tools. We avoid heavy third-party plugins to keep your site easy to maintain. Scope, timeline, and payments are agreed in writing before we start.",
       },
     ],
     relatedProjects: [
@@ -465,53 +472,64 @@ export const servicesDataMap: Record<string, ServiceData> = {
     ],
     faqs: [
       {
-        question: "What frameworks do you use for custom web development?",
-        answer: "We specialize in modern frontend and backend frameworks including Next.js, React, Node.js, TypeScript, and serverless platforms like Vercel.",
+        question: "How much does website development cost in Jaipur?",
+        answer:
+          "It depends on the pages, design and features. A five-page business site is a smaller job than an online store or a booking system. Tell us what you need and we'll quote based on the actual work. Business websites typically start from ₹15,000.",
       },
       {
-        question: "Will my website be mobile-friendly and fast?",
-        answer: "Yes! Every site we build is optimized for 95+ performance scores and engineered for responsive performance on all screen sizes.",
+        question: "How long does it take?",
+        answer:
+          "A standard business website usually takes 10 to 18 working days. Custom dashboards, integrations and web apps can take three to five weeks or more. Content also matters: if photos and text arrive on time, we stay right on schedule.",
       },
       {
-        question: "Can you build custom API integrations and headless CMS platforms?",
-        answer: "Yes, we integrate third-party APIs, payment gateways (Stripe, Razorpay, PayPal), CRM systems, and headless CMS platforms like Sanity, Strapi, or Contentful.",
+        question: "Next.js and React, or WordPress?",
+        answer:
+          "Both are good. Next.js and React work best when you want a custom design, lightning-fast speed, and flexible features with zero plugin bloat. WordPress makes sense if you want a familiar dashboard and a simple site. We'll tell you honestly which one fits.",
       },
       {
-        question: "Is technical SEO included in web development?",
-        answer: "Yes, technical SEO is baked into our development process — including semantic HTML5, dynamic XML sitemaps, structured JSON-LD schemas, and meta tag optimization.",
+        question: "Will my website work on mobile?",
+        answer:
+          "Yes. Every site we build is responsive. We test on different screen sizes so menus, text and forms work properly on phones, tablets and computers.",
       },
       {
-        question: "What support and maintenance do you offer after launch?",
-        answer: "We provide 30 days of post-launch technical warranty, continuous security monitoring, speed audits, and ongoing monthly maintenance retainers.",
+        question: "Can you redesign my existing website?",
+        answer:
+          "Yes. If your current site already gets Google traffic, we check its SEO first. That means keeping important URLs, setting up 301 redirects and updating the sitemap to lower the risk of losing rankings.",
       },
       {
-        question: "Can you migrate my legacy site to Next.js without losing SEO rankings?",
-        answer: "Yes, we handle seamless zero-downtime migrations with 301 redirect mappings, canonical link setup, and structure preservation to protect and boost your organic search rankings.",
+        question: "Will I get the source code and hosting access?",
+        answer:
+          "Yes. After the project, you get the agreed source code, design assets and hosting and deployment access, as per the project agreement.",
       },
       {
-        question: "Who owns the codebase once the website is built?",
-        answer: "You retain 100% full intellectual property ownership of the source code, repository, hosting infrastructure, and deployment keys.",
+        question: "Do you offer maintenance?",
+        answer:
+          "Every project includes 30 days of post-launch support for issues covered by the agreed scope. After that, we offer separate maintenance plans with backups, troubleshooting, performance checks, content updates and security support.",
       },
     ],
     detailedSeoContent: {
       overview:
-        "Larkspire builds high-performance custom web applications for businesses that want to scale. Combining Next.js, React, and modern UI engineering, we deliver fast, conversion-driven websites.",
+        "Larkspire is a web development agency in Jaipur building custom websites with Next.js and React for local shops, service businesses, startups and growing companies. We focus on what matters to your business: websites that load fast on any phone, rank clearly on Google, and make it effortless for visitors to reach you via WhatsApp or phone call.",
       keyBenefits: [
-        "Sub-second page load times for improved organic search rankings",
-        "Clean, maintainable TypeScript codebase ready for future expansion",
-        "Seamless integration with third-party APIs and payment processors",
-        "Responsive, intuitive user interfaces tailored to your brand",
+        "Custom website development in Jaipur tailored to your brand, not templates",
+        "Sub-second mobile loading speed tested on real devices and real networks",
+        "Solid SEO foundation: semantic HTML, clean URLs, schema, and sitemap",
+        "WhatsApp chat, click-to-call, and instant enquiry forms for high conversions",
+        "100% full ownership of source code, design files, domain, and hosting",
       ],
       deliverables: [
-        "Full Production Web Application",
-        "CMS Integration & Admin Access",
-        "Technical SEO Setup & XML Sitemap",
-        "Core Web Vitals & Speed Optimization",
+        "Custom-built responsive Next.js & React website",
+        "User-friendly CMS dashboard for blog and content edits",
+        "Google Search Console and XML sitemap setup",
+        "Mobile Core Web Vitals speed optimization",
+        "Complete source code and deployment handover with 30 days support",
       ],
       idealFor: [
-        "Growing brands needing custom web solutions beyond templates",
-        "SaaS companies requiring interactive web platforms",
-        "Businesses wanting top-tier web performance and security",
+        "Local businesses: shops, restaurants, clinics and service providers",
+        "Professionals: consultants, accountants, lawyers and agencies building trust",
+        "Startups: launch-ready MVPs or custom web applications",
+        "Manufacturers: clean product showcase, capabilities, and catalogue display",
+        "Growing companies: rebuilding slow or outdated WordPress sites",
       ],
     },
   },
